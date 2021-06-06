@@ -6,6 +6,8 @@
   <router-view/>
 </template>
 
+<style src=".\assets\css\fonts.css"></style>
+<style src=".\assets\css\style.css"></style>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

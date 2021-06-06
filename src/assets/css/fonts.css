@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'BRFirma';
+    src: url('../fonts/brf-fimma/BRFirma-Regular.ttf');
+}
+@font-face {
+    font-family: 'BRFirma-smbold';
+    src: url('../fonts/brf-fimma/BRFirma-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'BRFirma-bold';
+    src: url('../fonts/brf-fimma/BRFirma-Bold.ttf');
+}
+@font-face {
+    font-family: 'BRFirma-light';
+    src: url('../fonts/brf-fimma/BRFirma-Light.ttf');
+}
+@font-face {
+    font-family: 'BRFirma-xlight';
+    src: url('../fonts/brf-fimma/BRFirma-ExtraLight.ttf');
+}
