@@ -28,6 +28,88 @@
             </div>
         </div>
     </section>
+
+    <section id="more-about">
+        <div class="row">
+            <div class="container">
+                <div class="col s12 pad0">
+                    <h4 class="abt-title">Speeding Ticket</h4>
+                    <p class="text-justify abt-p-txt">
+                        Technology is at the core of our company. Using the latest management 
+                        systems allows us to serve our clients at a higher and more effective 
+                        level. Our agents are trained to quickly respond to text messages, 
+                        livechat messages, emails, and provide over the phone customer service. 
+                        All members of our team are cross trained and able to assist throughout 
+                        the entire dismissal process.
+                    </p>
+                    <p class="text-justify abt-p-txt">
+                        We have changed the way traffic tickets are contested by modernizing the 
+                        process using intricate technology implementations to improve efficiency and 
+                        overall user experience.
+                    </p>
+                </div>
+                <div class="col s12 m10 offset-m1">
+                    <div class="about-block-grid">
+                        <div class="about-block">
+                            <img src="../assets/images/court-icon.svg" alt="court">
+                            <p>
+                                No fines, court appearances, insurance hikes or points on your record.
+                            </p>
+                        </div>
+                        <div class="about-block">
+                            <img src="../assets/images/case-icon.svg" alt="case">
+                            <p>
+                                California traffic ticket specialists.
+                            </p>
+                        </div>
+                        <div class="about-block">
+                            <img src="../assets/images/users-icon.svg" alt="users">
+                            <p>
+                                We've helped 10,000+ beat their California ticket cases.
+                            </p>
+                        </div>
+                        <div class="about-block">
+                            <img src="../assets/images/refund-icon.svg" alt="refund">
+                            <p>
+                                Refund available if you don't win your case.
+                            </p>
+                        </div>
+                        <div class="about-block">
+                            <img src="../assets/images/stopwatch-icon.svg" alt="stopwatch">
+                            <p>
+                                Rush service available!
+                            </p>
+                        </div>
+                        <div class="about-block">
+                            <img src="../assets/images/california-icon.svg" alt="california" style="margin-bottom: -10px;">
+                            <p>
+                                We've helped 10,000+ beat their California ticket cases.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator-sec">
+        <div class="row">
+            <div class="container">
+                <div class="calc-sec-wrapper">
+                    <h2 class="calc-sec-title">Ticket Dismissal Calculator</h2>
+                    <div class="home-learn-more">
+                        <a href="#">
+                            <img src="../assets/images/play-white.svg" alt="play">
+                            <span>Learn More with a Free Ticket Review</span>
+                        </a>
+                    </div>
+                    <button class="pry-btn btn white-bg-btn">
+                        Can My Case Be Beat? <img src="../assets/images/calculator-blue.svg" alt="icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
   </div>
 </template>
 

@@ -27,10 +27,11 @@
 }
 
 body {
-	font-family: var(--pry-font);
+	font-family: var(--font);
 	height: auto;
     min-height: 100vh;
     background-color: white;
+    color: var(--sec-color);
 }
 h1, h2, h3, h4{
     font-family: var(--font-xlite);
@@ -216,63 +217,68 @@ button.pry-btn.btn img, button.pry-btn-2.btn img {
 #home a:hover > span {
     text-decoration: underline;
 }
-#form-side form {
-    background: rgba(255, 255, 255, 0.342029);
-    mix-blend-mode: normal;
-    opacity: 0.85;
-    border: 1px solid rgba(0, 102, 245, 0.122023);
-    box-sizing: border-box;
-    box-shadow: 0px 12px 21px 10px rgba(4, 30, 139, 0.0478311);
-    backdrop-filter: blur(81.5485px);
-    border-radius: 6px;
-    padding: 30px 20px 40px;
-    position: relative;
-    top: 20px;
+
+section#more-about {
+    padding: 20px 0;
 }
-.get-started-home {
-    line-height: 3;
-    font-weight: 500;
+h4.abt-title {
+    font-size: 40px;
+    font-family: var(--font-bold);
+    margin: 20px 0;
 }
-h5.form-title {
-    font-weight: 600;
-    font-size: 26px;
-    margin-bottom: 30px;
-}
-#form-side form input {
-    background: #E9F0FD;
-    border: 1px solid #D9E2EF;
-    box-sizing: border-box;
-    border-radius: 3px;
-    height: 50px;
-    padding-left: 0.85rem;
-    padding-right: 5px;
-    width: 100%;
-}
-#form-side form input:focus{
-    box-shadow: 0 1px 0 0 var(--sec-color);
-}
-#form-side form label {
-    left: 1.75rem;
+p.abt-p-txt {
+    font-weight: normal;
     color: var(--sec-color);
-    opacity: 0.57;
+    font-size: 18px;
 }
-#form-side form label.active{
-    opacity: 1;
-    left: 0.75rem;
-    transform: translateY(-15px) scale(0.8);
+.about-block-grid {
+    display: grid;
+    grid-template-columns: calc(33.3% - 34px) calc(33.3% - 34px) calc(33.3% - 34px);
+    grid-gap: 30px 50px;
+    margin: 30px 0 20px;
 }
-#form-side form .input-field {
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+/* .about-block img {
+    width: 70px;
+} */
+.about-block p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
 }
-.form-links-cont {
-    margin-top: 20px;
+
+section#calculator-sec {
+    background: var(--sec-color) url(../images/ticket-calculator-bg.jpg);
+    background-size: cover;
+    background-position: right;
+    height: 400px;
+    position: relative;
 }
-img.input-icons {
+.calc-sec-wrapper {
     position: absolute;
-    top: 15px;
-    right: 22px;
+    top: 15%;
+    /* transform: translateY(-50%); */
+    right: calc(10% + 50px);
+    max-width: 400px;
 }
+h2.calc-sec-title{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    color: white;
+    margin-bottom: 0;
+}
+button.btn.white-bg-btn {
+    background-color: white;
+    color: var(--sec-color);
+    border-color: white;
+}
+button.btn.white-bg-btn:hover {
+    background-color: rgba(245, 245, 245, 0.9);
+}
+section#calculator-sec button.btn.white-bg-btn{
+    margin-top: 10%;
+}
+
 /* end of Some Home Styles */
 
 
