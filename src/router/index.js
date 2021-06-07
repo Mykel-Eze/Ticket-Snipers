@@ -12,11 +12,11 @@ const routes = [
     name: 'SpeedingTicket',
     component: SpeedingTicket
   },
-  {
-    path: '/speeding-ticket',
-    name: 'SpeedingTicket',
-    component: SpeedingTicket
-  },
+  // {
+  //   path: '/speeding-ticket',
+  //   name: 'SpeedingTicket',
+  //   component: SpeedingTicket
+  // },
   {
     path: '/red-light-camera',
     name: 'RedLightCamera',
