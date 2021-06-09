@@ -135,7 +135,9 @@ export default {
     name: 'Footer',
     mounted() {
         var elemsFooterCarousel = document.querySelector("#footer-carousel");
-        M.Carousel.init(elemsFooterCarousel)
+        M.Carousel.init(elemsFooterCarousel, {
+            fullWidth: true
+        })
     },
     methods:{
         nextFunc() {

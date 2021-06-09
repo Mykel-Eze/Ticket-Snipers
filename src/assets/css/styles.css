@@ -45,6 +45,12 @@ h5, h6{
 .pad0{
     padding: 0 !important;
 }
+.pad-l-0{
+    padding-left: 0 !important;
+}
+.pad-r-0{
+    padding-right: 0 !important;
+}
 .hidden{
     display: none;
 }
@@ -86,6 +92,10 @@ h5, h6{
 }
 .pry-bg{
     background-color: var(--pry-color);
+    color: white;
+}
+.sec-bg{
+    background-color: var(--sec-color);
     color: white;
 }
 .white-bg{
@@ -135,6 +145,12 @@ h5, h6{
 }
 .pointer {
     cursor: pointer;
+}
+.hover-scale {
+    transition: all 1.5s;
+}
+.hover-scale:hover {
+    transform: scale(1.1);
 }
 
 /* Some Home Styles */

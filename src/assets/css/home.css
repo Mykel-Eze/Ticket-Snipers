@@ -1,0 +1,419 @@
+#home {
+    background-color: white;
+    color: var(--sec-color);
+    background-image: url(../images/big-target-bg.png);
+    background-size: contain;
+    background-position: right;
+}
+#home::before {
+    display: none;
+}
+h1.home-title {
+    font-size: 90px;
+    line-height: 95px;
+}
+.news-div.rel-xs {
+    position: absolute;
+    right: 5%;
+    width: 20%;
+    bottom: 10%;
+}
+.news-icon-wrapper .news-link:nth-child(2) {
+    margin: 0 25px;
+}
+.thumbnail-img {
+    width: 100%;
+}
+.play-btn-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    width: 70px;
+    margin: auto;
+}
+.hover-toggle {
+    cursor: pointer;
+}
+.hover-toggle .hover-show {
+    display: none;
+}
+.hover-toggle:hover .hover-hide {
+    display: none;
+}
+.hover-toggle:hover .hover-show {
+    display: initial;
+}
+.play-btn {
+    width: 100%;
+}
+.officer-testimony {
+    margin-top: 30px;
+}
+.quote-icon {
+    width: 100%;
+}
+.quote-txt p {
+    margin-bottom: 30px;
+    font-size: 20px;
+    margin-top: 0;
+}
+.quote-txt small.quote-author {
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+}
+.mission {
+    margin-top: -70px;
+    position: relative;
+}
+.mission > div {
+    margin: 25px 0;
+}
+h4.mission-title {
+    font-size: 40px;
+    line-height: 32px;
+    font-family: var(--font-bold);
+}
+h4.mission-title img {
+    width: 35px;
+    margin-left: 20px;
+}
+.mission p {
+    font-size: 20px;
+    font-family: var(--font-light);
+}
+.home-learn-more > a.sec-color {
+    color: var(--sec-color);
+}
+.home-learn-more > a.pry-color {
+    color: var(--pry-color);
+}
+#our-mission .home-learn-more > a > img {
+    top: 0;
+}
+#our-mission .home-learn-more > a > span {
+    top: -10px;
+    position: relative;
+}
+#our-mission .home-learn-more > a:hover > span {
+    text-decoration: underline;
+}
+
+section#key-points-slide {
+    margin-top: 40px;
+}
+div#kp-carousel {
+    height: 350px;
+}
+div#kp-carousel .carousel-item {
+    min-height: 350px;
+}
+h3.kp-desc {
+    font-size: 39px;
+    line-height: 38px;
+    margin-top: 50px;
+}
+h1.kp-title {
+    font-size: 90px;
+    line-height: 129px;
+    margin-top: 0;
+}
+img.kp-img {
+    width: 80%;
+    position: relative;
+    top: 0;
+}
+img.side-block {
+    position: absolute;
+    left: 0;
+    height: calc(100% - 10px);
+}
+
+section#features {
+    padding-top: 20px;
+}
+h2.feature-sec-title {   
+    font-family: var(--font-bold);
+    font-size: 38px;
+    letter-spacing: -0.3px;
+    margin-bottom: 50px;
+}
+.about-block img {
+    height: 65px;
+}
+.feature-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 31px;
+}
+p.feature-txt {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+#auto-insurance {
+    min-height: 400px;
+    background-image: url(../images/insurance-bg-full-2.jpg);
+    background-position: left;
+    background-size: cover;
+    padding: 20px 0;
+}
+h2.auto-title {
+    font-weight: bold;
+    font-size: 50px;
+    /* line-height: 65px; */
+    color: white;
+    margin-bottom: 5px;
+}
+.auto-txt-title > p {
+    font-size: 14px;
+}
+.stepform-div {
+    margin-top: 30px;
+}
+ul.step-progress {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+ul.step-progress > li {
+    /* display: inline-block; */
+    width: 46px;
+    position: relative;
+    z-index: 1;
+}
+ul.step-progress > li > span {
+    display: block;
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+ul.step-progress > li > span::before {
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: var(--pry-color);
+    border-radius: 50%;
+}
+ul.step-progress > li.active > span::before {
+    width: 100%;
+    height: 100%;
+}
+ul.step-progress > li.active > span::after {
+    /*Add another block-level blank space*/
+    content: "";
+    position: absolute;
+    /*Make it a small rectangle so the border will create an L-shape*/
+    width: 30%;
+    height: 60%;
+    /*Add a white border on the bottom and left, creating that 'L' */
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    /*Rotate the L 45 degrees to turn it into a checkmark*/
+    transform: rotate(45deg);
+    left: 0;
+    right: 0;
+    top: -4px;
+    bottom: 0;
+    margin: auto;
+}
+ul.step-progress > li > small {
+    display: block;
+    /* width: 45%; */
+    font-size: 10px;
+    left: 10px;
+    position: relative;
+    margin-top: 8px;
+}
+ul.step-progress > li.active > small {
+    color: var(--pry-color);
+}
+.step-progress .progress {
+    position: absolute;
+    top: 6px;
+    width: calc(100% - 20px);
+    left: 10px;
+    background-color: white;
+    z-index: 0;
+}
+.step-progress .progress .determinate {
+    width: 0;
+    background-color: var(--pry-color);
+}
+.white-form-wrapper {
+    background: #F4F8FC;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 50px 0 20px;
+}
+.white-form-txt {
+    align-self: center;
+    padding-right: 10px;
+}
+.short-inp-div {
+    width: 100px;
+    background-color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+/* #stepform-2 .short-inp-div {
+    padding: 10px 20px;
+} */
+.short-inp-div > input.short-inp {
+    border-bottom: 1.8px solid !important;
+    height: 1.7rem !important;
+}
+.short-inp-div > input.short-inp:focus {
+    box-shadow: 0 1px 0 0 var(--pry-color) !important;
+}
+.short-inp-div > span {
+    padding-right: 5px;
+}
+button.stepform-btn.btn {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0;
+    min-width: 150px;
+    text-transform: none;
+}
+.white-form-wrapper.tt {
+    background-color: #F4F8FC;
+}
+table#savings-table td, table#savings-table th {
+    padding: 10px 5px;
+}
+table#savings-table thead {
+    font-size: 12px;
+}
+table#savings-table thead th:last-child, 
+table#savings-table tbody td:last-child {
+    background-color: white;
+    border-radius: 0;
+    text-align: center;
+}
+table#savings-table thead tr:last-child th:last-child {
+    border-radius: 5px 5px 0 0;
+} 
+table#savings-table tbody tr:last-child td:last-child {
+    border-radius: 0 0 5px 5px;
+}
+table#savings-table tbody {
+    font-size: 14px;
+}
+table#savings-table tbody tr:last-child {
+    border-bottom: none;
+}
+.savings-bar {
+    margin: 5px 0 10px;
+}
+.savings-year, .savings-figure {
+    width: 100px;
+    border: 1px solid white;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+}
+.savings-year {
+    width: 120px;
+    border-right: none;
+}
+.savings-figure {
+    border-left: none;
+}
+.savings-bar .progress {
+    height: 40px;
+    border-radius: 0;
+    margin: 0;
+    background-color: white;
+    text-align: center;
+    line-height: 40px;
+}
+.savings-bar .progress .determinate {
+    background-color: var(--pry-color);
+}
+
+section#drivers-testimonies {
+    margin-top: 30px;
+}
+.minor-dt-title {
+    font-size: 16px;
+    line-height: 2.5;
+}
+button.slider-control {
+    padding: 0;
+    border: none;
+    width: 50px;
+    height: 42px;
+    background-color: transparent;
+    cursor: pointer;
+}
+button.slider-control img {
+    width: 100%;
+}
+div#testimonies-carousel {
+    height: 620px;
+}
+div#testimonies-carousel .carousel-item {
+    border-left: 0 solid white;
+}
+div#testimonies-carousel .carousel-item .thumbnail-img {
+    width: calC(100% - 5px);
+}
+.testimonies-div {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.testimonies-div .video-thumbnail {
+    position: relative;
+    top: 70px;
+}
+.testimonies-div .play-btn-wrapper {
+    width: 80px;
+}
+.testimony-txt-card {
+    /* background-color: gray; */
+    background: #FFFFFF;
+    box-shadow: 0px 6px 11px 4px rgb(0 0 0 / 11%);
+    border-radius: 5px;
+    position: absolute;
+    padding: 20px 60px;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+    max-width: 295px;
+}
+.testimony-txt-card p {
+    font-size: 20px !important;
+    line-height: 32px;
+    font-weight: bold;
+}
+img.quote-bars {
+    position: absolute;
+}
+img.quote-bars.top-bars {
+    top: 5%;
+    left: 10px;
+}
+img.quote-bars.down-bars {
+    bottom: 50px;
+    right: 40px;
+}
+small.testimony-author {
+    font-size: 14px;
+}

@@ -59,7 +59,7 @@ footer .row{
     margin-bottom: 0;
 }
 footer .carousel {
-    height: 200px;
+    height: 205px !important;
 }
 footer .carousel.carousel-slider .carousel-item {
     min-height: 200px;
