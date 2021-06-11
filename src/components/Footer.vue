@@ -2,38 +2,40 @@
     <footer>
         <div class="row">
             <div class="container">
-                <div class="col s12 m3 l3 text-center-xs*">
+                <div class="col s12 m12 l3 footer-logo-contact">
                     <div class="footer-logo">
                         <router-link to="/">
                             <img src="../assets/images/ticket-snipers.svg" alt="Ticket Sniper">
                         </router-link>
                     </div>
-                    <p class="">
-                        <a href="tel:800-985-8978" class="sec-color">
-                            <b>800-985-8978</b>
-                        </a>
-                    </p>
-                    <p>
-                        <a href="mailto:legal@ticketsnipers.comm" class="sec-color">
-                            <b>Legal@TicketSnipers.com</b>
-                        </a>
-                    </p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/">
-                            <img src="../assets/images/facebook.svg" alt="facebook">
-                        </a>
-                        <a href="https://www.instagram.com//">
-                            <img src="../assets/images/instagram.svg" alt="instagram">
-                        </a>
-                        <a href="https://twitter.com/">
-                            <img src="../assets/images/twitter.svg" alt="twitter">
-                        </a>
-                        <a href="https://linkedin.com/company/">
-                            <img src="../assets/images/linkedin.svg" alt="linkedin">
-                        </a>
+                    <div class="footer-contact-det">
+                        <p class="">
+                            <a href="tel:800-985-8978" class="sec-color">
+                                <b>800-985-8978</b>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="mailto:legal@ticketsnipers.comm" class="sec-color">
+                                <b>Legal@TicketSnipers.com</b>
+                            </a>
+                        </p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/">
+                                <img src="../assets/images/facebook.svg" alt="facebook">
+                            </a>
+                            <a href="https://www.instagram.com//">
+                                <img src="../assets/images/instagram.svg" alt="instagram">
+                            </a>
+                            <a href="https://twitter.com/">
+                                <img src="../assets/images/twitter.svg" alt="twitter">
+                            </a>
+                            <a href="https://linkedin.com/company/">
+                                <img src="../assets/images/linkedin.svg" alt="linkedin">
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col s6 m3 l3 ddf">
+                <div class="col s12 m4 l3 ddf">
                     <h5 class="footer-title">One-Touch Tools</h5>
                     <ul class="footer-links-li">
                         <li>
@@ -53,7 +55,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col s6 m3 l3 ddf">
+                <div class="col s12 m4 l3 ddf">
                     <h5 class="footer-title">Company</h5>
                     <ul class="footer-links-li">
                         <li>
@@ -73,7 +75,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col s12 m2 l3 ddf">
+                <div class="col s8 m4 l3 ddf">
                     <h5 class="footer-title">CA Updates</h5>
                     <ul class="footer-links-li* footer-updates-ul">
                         <div class="carousel carousel-slider center" id="footer-carousel">

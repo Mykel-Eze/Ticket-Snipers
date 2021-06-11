@@ -6,9 +6,18 @@
                 <router-link to="/" class="brand-logo">
                     <img src="../assets/images/ticket-snipers.svg" alt="Ticket Sniper" class="logo">
                 </router-link>
-                <router-link to="#" data-target="slide-out" class="sidenav-trigger sec-color right">
-                    <img src="../assets/images/menu-icon.svg" alt="menu" />
-                </router-link>
+
+                <ul class="right dn-mobile ul-nav" id="nav-mobile-2">
+                    <li>
+                        <button class="nav-pry-btn-2 btn pointer">Sign in</button>
+                    </li>
+                    <li>
+                        <router-link to="#" data-target="slide-out" class="sidenav-trigger sec-color right">
+                            <img src="../assets/images/menu-icon.svg" alt="menu" />
+                        </router-link>
+                    </li>
+                </ul>
+
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
                         <router-link to="/about" class="">About</router-link>

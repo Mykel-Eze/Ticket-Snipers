@@ -22,6 +22,11 @@ export default {
 <style src=".\assets\css\styles.css"></style>
 
 <style>
+div#nav {
+    float: left;
+    width: 100%;
+    overflow-x: hidden;
+}
 div#main-contents-wrapper {
   padding-top: 90px;
 }

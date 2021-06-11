@@ -34,10 +34,10 @@ a.brand-logo img {
     top: 2px;
 }
 nav.main-nav ul#nav-mobile {
-    top: 10px;
+    top: 17px;
     position: relative;
 }
-nav.scrolled-nav.main-nav ul#nav-mobile {
+nav.scrolled-nav.main-nav ul#nav-mobile, nav.scrolled-nav.main-nav ul#nav-mobile-2 {
     top: 0;
 }
 nav.scrolled-nav a.brand-logo img {
@@ -88,11 +88,40 @@ nav button.nav-pry-btn.btn{
 nav.scrolled-nav ul a{
     color: var(--sec-color);
 }
-@media(max-width: 992px) {
-    li.hire-us-li {
-        position: absolute;
-        width: 100%;
-        bottom: 30px;
+.dn-mobile {
+    display: none;
+}
+
+
+@media(max-width: 992px) {    
+    nav .brand-logo {
+        left: 0;
+        transform: none;
+    }
+    a.brand-logo img {
+        width: 190px;
+    }
+    .dn-mobile {
+        display: block;
+    }
+    nav .sidenav-trigger {
+        top: 10px;
+    }
+    nav.main-nav ul#nav-mobile-2 {
+        top: 17px;
+        position: relative;
+    }
+}
+@media(max-width: 600px) {
+    nav.main-nav {
+        height: 80px;
+    }
+    a.brand-logo img {
+        width: auto;
+        height: 60px;
+    }
+    ul#nav-mobile-2 button.nav-pry-btn-2.btn {
+        min-width: auto;
     }
 }
 /* end of Navbar Section */

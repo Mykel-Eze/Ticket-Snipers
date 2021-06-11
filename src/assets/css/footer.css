@@ -96,14 +96,40 @@ img.footer-slider-ctrl.right-ctrl {
 .footer-hr-div {
     margin: 30px 0 5px;
 }
-@media (min-width: 992px) {
+@media (min-width: 993px) {
     .footer-updates-ul {
         width: 85%;
     }
 }
-@media(max-width: 600px){
+@media (max-width: 992px) {
+    .footer-logo-contact {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .social-icons a img {
+        margin: 5px 5px;
+        width: 10%;
+    }
+    .footer-logo {
+        margin-right: 15%;
+    }
     .footer-logo img {
-        width: 45%;
+        width: 100%;
+    }
+}
+@media(max-width: 600px){
+    .footer-logo-contact {
+        display: block;
+    }
+    .footer-logo img {
+        width: 70%;
+    }
+    .copyright-div {
+        flex-direction: column;
+    }
+    .copyright-div p {
+        margin: 0;
+        margin-bottom: 10px;
     }
 }
 /* end of Footer Section */
