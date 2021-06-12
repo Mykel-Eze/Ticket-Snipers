@@ -111,6 +111,24 @@ nav.scrolled-nav ul a{
         top: 17px;
         position: relative;
     }
+    .sidenav button.nav-pry-btn-2.btn {
+        width: 100%;
+    }
+    .sidenav li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    .sidenav li:nth-child(2) {
+        border-top: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    .sidenav li.hire-us-li {
+        position: absolute;
+        width: 100%;
+        bottom: 80px;
+        border-bottom: none;
+    }
+    .sidenav li.hire-us-li.hul-1 {
+        bottom: 130px;
+    }
 }
 @media(max-width: 600px) {
     nav.main-nav {

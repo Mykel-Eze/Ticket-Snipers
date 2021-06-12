@@ -61,9 +61,16 @@
         <li>
             <router-link to="#" class="">What We Do</router-link>
         </li>
+        <li class="hire-us-li hul-1">
+            <a style="cursor: pointer;">
+                <button class="nav-pry-btn btn pointer">
+                    Snipe My Ticket <img src="../assets/images/target-icon.svg" alt="target">
+                </button>
+            </a>
+        </li>
         <li class="hire-us-li">
             <a style="cursor: pointer;">
-                <button class="nav-pry-btn btn hire-link">Hire US</button>
+                <button class="nav-pry-btn-2 btn">Sign in</button>
             </a>
         </li>
     </ul>
