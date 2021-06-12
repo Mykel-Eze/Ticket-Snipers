@@ -124,4 +124,9 @@ nav.scrolled-nav ul a{
         min-width: auto;
     }
 }
+@media (max-width: 320px) {
+    ul#nav-mobile-2 button.nav-pry-btn-2.btn {
+        display: none;
+    }
+}
 /* end of Navbar Section */

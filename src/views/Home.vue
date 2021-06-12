@@ -3,12 +3,12 @@
     <section id="home">
         <div class="row">
             <div class="container">
-                <div class="col s12 m8 rel" id="title-side">
+                <div class="col s12 m10 l8 rel pad0-xs" id="title-side">
                   <h1 class="home-title">
                     California's Best Way to Erase a Traffic Ticket
                   </h1>
                   <div class="home-btn-wrapper">
-                    <button class="pry-btn btn">
+                    <button class="pry-btn btn hidden-xs">
                       Can My Case Be Beat? <img src="../assets/images/calculator.svg" alt="icon">
                     </button>
                     <button class="pry-btn btn">
@@ -43,7 +43,7 @@
               <img src="../assets/images/down-square.svg" alt="down" class="pointer go-down-img">
             </div>
           </div>
-          <div class="col s12 m10">
+          <div class="col s12 m10 pad0-xs">
             <div class="video-thumbnail rel col s12 pad0">
               <img src="../assets/images/stop-over-bg.jpg" alt="video-thumbnail" class="thumbnail-img">
               <div class="play-btn-wrapper hover-toggle">
@@ -51,8 +51,8 @@
                 <img src="../assets/images/play-blue.svg" alt="play" class="play-btn hover-show">
               </div>
             </div>
-            <div class="testimony-mission col s12 pad0">
-              <div class="officer-testimony col s12 m4 pad0">
+            <div class="testimony-mission col s11 offset-s1 m12 offset-m0 pad0">
+              <div class="officer-testimony col s12 l4 pad0">
                 <div class="quote-div col s2 pad0">
                   <img src="../assets/images/quote.svg" alt="quote" class="quote-icon">
                 </div>
@@ -62,7 +62,7 @@
                 </div>
               </div>
               <div class="col m1"></div>
-              <div class="mission col s12 m7 pad-r-0 sec-bg">
+              <div class="mission col s12 l7 pad-r-0 sec-bg">
                 <div class="col m10 offset-m1">
                   <h4 class="mission-title">
                     <span>Our Mission </span> <img src="../assets/images/flag.svg" alt="flag">
@@ -75,17 +75,17 @@
                 </div>
               </div>
 
-              <div class="learn-more-div col s12 pad0">
-                <div class="col s12 m4 pad0">
-                  <div class="col m2"></div>
+              <div class="learn-more-div col s11 offset-s1 m12 offset-m0 pad0">
+                <div class="col s12 l4 pad0 hidden-sm">
+                  <div class="col m2 hidden-xs"></div>
                   <div class="home-learn-more col m10">
                     <a href="#" class="pry-color">
                       <span style="top: 0; padding-right: 5px;">Learn More About Us</span> &#10095;
                     </a>
                   </div>
                 </div>
-                <div class="col m1"></div>
-                <div class="col s12 m7 pad0">
+                <div class="col l1"></div>
+                <div class="col s12 l7 pad0">
                   <div class="home-learn-more">
                     <a href="#" class="sec-color">
                       <img src="../assets/images/play-blue.svg" alt="play">
@@ -105,7 +105,7 @@
           <div class="carousel-item" href="#one!">
             <div class="col s12 m6">
               <h3 class="kp-desc bold-txt">We help drivers beat traffic tickets with our proven</h3>
-              <h1 class="kp-title bold-txt pry-color">Methods</h1>
+              <h1 class="kp-title bold-txt pry-color text-center-xs">Methods</h1>
             </div>
             <div class="col s12 m6 pad0">
               <img src="../assets/images/shafts.png" alt="shafts" class="full-width kp-img">
@@ -114,23 +114,23 @@
           <div class="carousel-item" href="#two!">
             <div class="col s12 m6">
               <h3 class="kp-desc bold-txt">We help drivers beat traffic tickets with our proven</h3>
-              <h1 class="kp-title bold-txt pry-color" style="font-size: 70px">Track Record</h1>
+              <h1 class="kp-title kp-title-2 bold-txt pry-color">Track Record</h1>
             </div>
-            <div class="col s12 m6 pad0">
-              <img src="../assets/images/blob.png" alt="text blob" class="full-width kp-img">
+            <div class="col s12 m6 pad0 text-center-xs">
+              <img src="../assets/images/blob.png" alt="text blob" class="full-width kp-img kp-img2">
             </div>
           </div>
           <div class="carousel-item" href="#three!">
             <div class="col s12 m6">
               <h3 class="kp-desc bold-txt">We help drivers beat traffic tickets with our proven</h3>
-              <h1 class="kp-title bold-txt pry-color">Success</h1>
+              <h1 class="kp-title bold-txt pry-color text-center-xs">Success</h1>
             </div>
             <div class="col s12 m6 pad0">
               <img src="../assets/images/growth.png" alt="text blob" class="full-width kp-img">
             </div>
           </div>
         </div>
-        <img src="../assets/images/side-block.png" alt="side-block" class="side-block">
+        <img src="../assets/images/side-block.png" alt="side-block" class="side-block hidden-xs">
       </div>
     </section>
     
@@ -140,8 +140,8 @@
       <div class="row">
         <div class="container">
           <div class="col s12 m10 offset-m1">
-            <h2 class="feature-sec-title">Features of Ticket Snipers </h2>
-            <div class="about-block-grid">
+            <h2 class="feature-sec-title text-center-xs">Features of Ticket Snipers </h2>
+            <div class="about-block-grid hidden-xs">
               <div class="about-block">
                 <img src="../assets/images/time-icon.svg" alt="time">
                 <div class="feature-title">Save Time</div>
@@ -191,6 +191,70 @@
                 </p>
               </div>
             </div>
+            <div class="about-block-xs visible-xs">
+              <div class="carousel carousel-slider center" id="features-carousel">
+                <div class="carousel-item" href="#one!">
+                  <div class="about-block">
+                    <img src="../assets/images/time-icon.svg" alt="time">
+                    <div class="feature-title">Save Time</div>
+                    <p class="feature-txt">
+                      Avoid long lines and obnoxious wait times at the courthouse 
+                      and challenge the ticket from the comfortability of your home.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" href="#two!">
+                  <div class="about-block">
+                    <img src="../assets/images/legal-icon.svg" alt="legal">
+                    <div class="feature-title">Legal Solutions</div>
+                    <p class="feature-txt">
+                      Over 12 years of experience fighting traffic tickets up and down 
+                      the coast of California.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" href="#three!">
+                  <div class="about-block">
+                    <img src="../assets/images/camera-icon.svg" alt="camera">
+                    <div class="feature-title">Easy to Use</div>
+                    <p class="feature-txt">
+                      Send us a photo of your ticket, provide the details and 
+                      our team of experts will work on your defense.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" href="#four!">
+                  <div class="about-block">
+                    <img src="../assets/images/court-icon.svg" alt="court">
+                    <div class="feature-title">No Court Appearances</div>
+                    <p class="feature-txt">
+                      Our streamlined process allows CA drivers to fight their 
+                      alleged violations without missing important events.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" href="#five!">
+                  <div class="about-block">
+                    <img src="../assets/images/communication-icon.svg" alt="communication">
+                    <div class="feature-title">Full Transparency</div>
+                    <p class="feature-txt">
+                      Chat with our California traffic ticket experts about your individual 
+                      situation via live chat, phone or text.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" href="#six!">
+                  <div class="about-block">
+                    <img src="../assets/images/wallet-icon.svg" alt="wallet">
+                    <div class="feature-title">Saves You Money</div>
+                    <p class="feature-txt">
+                      Insurance rates can increase as much as 22% with just (1) point. 
+                      Put the brakes on any surges with our help.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -198,7 +262,7 @@
     <section id="auto-insurance">
       <div class="row">
         <div class="container">
-          <div class="col s12 m5 right pad0">
+          <div class="col s12 m7 l5 right pad0">
             <div class="auto-txt-title white-txt">
               <h2 class="auto-title">Auto <br class="hidden-xs"> Insurance Saver</h2>
               <p class="mag-0">
@@ -346,7 +410,7 @@
       <div class="row">
         <div class="container">
           <div class="col s12">
-            <div class="col s12 m7 pad0">
+            <div class="col s12 m10 l7 pad0">
               <h3 class="dt-heading smbold-txt">
                 California Drivers Use Ticket Snipers Because Our Process is Fast, Easy & Effective
               </h3>
@@ -436,12 +500,17 @@ export default {
   mounted() {
     var elemsCarousel1 = document.querySelector("#kp-carousel");
     var elemsCarousel2 = document.querySelector("#testimonies-carousel");
+    var elemsCarousel3 = document.querySelector("#features-carousel");
     var elemsSelect = document.querySelectorAll("select");
     M.Carousel.init(elemsCarousel1, {
       fullWidth: true
     });
     M.Carousel.init(elemsCarousel2, {
       fullWidth: true
+    });
+    M.Carousel.init(elemsCarousel3, {
+      fullWidth: true,
+      indicators: true
     });
     setInterval(function(){ 
       M.Carousel.getInstance(elemsCarousel1).next();
@@ -522,5 +591,15 @@ export default {
 .stepform-div #stepform-3 .dropdown-content li>span {
   font-size: 14px;
   font-weight: 200;
+}
+
+div#features-carousel .indicators .indicator-item {
+  background-color: black;
+}
+div#features-carousel .indicators .indicator-item.active {
+  background-color: #fff;
+  width: 25px;
+  border-radius: 10px;
+  background-color: var(--pry-color);
 }
 </style>

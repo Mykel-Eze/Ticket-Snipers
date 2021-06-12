@@ -25,6 +25,26 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+@media (max-width: 600px) {
+    section#calculator-sec {
+        background: white url(../assets/images/ticket-calculator-bg2-xs.jpg);
+        height: 550px;
+        background-position: bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .calc-sec-wrapper {
+        position: absolute;
+        top: auto;
+        bottom: 10%;
+        right: 0;
+        left: 0;
+        width: calc(90% - 1.25rem);
+        margin: auto;
+    }
+    h2.calc-sec-title {
+        font-size: 50px;
+    }
+}
 </style>
