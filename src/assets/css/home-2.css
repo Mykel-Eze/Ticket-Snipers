@@ -1,0 +1,33 @@
+
+@media(max-width: 992px) {
+    #home {
+        height: auto;
+    }
+    .home-btn-wrapper {
+        width: 80%;
+    }
+    #home > .row {
+        position: relative;
+        top: 0;
+        transform: none;
+    }
+    div#form-side {
+        margin: 30px 0 60px;
+    }
+}
+
+@media(max-width: 600px) {
+    h1.home-title {
+        font-size: 3.2rem;
+        line-height: 1.25;
+    }
+    .home-btn-wrapper {
+        width: 90%;
+        display: block;
+        margin: 6% 0;
+    }
+    .home-btn-wrapper > button.btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

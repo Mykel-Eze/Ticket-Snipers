@@ -3,7 +3,7 @@
     <section id="home">
         <div class="row">
             <div class="container">
-                <div class="col s12 m7" id="title-side">
+                <div class="col s12 l7" id="title-side">
                     <h1 class="home-title">
                         Beat your California Speeding Ticket fast and effectively.
                     </h1>
@@ -22,7 +22,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col s12 m5 pad0" id="form-side">
+                <div class="col s12 l5 pad0" id="form-side">
                     <TopBannerForm />
                 </div>
             </div>
@@ -48,7 +48,7 @@
                         overall user experience.
                     </p>
                 </div>
-                <div class="col s12 m10 offset-m1">
+                <div class="col s12 l10 offset-l1">
                     <div class="about-block-grid">
                         <div class="about-block">
                             <img src="../assets/images/court-icon.svg" alt="court">
@@ -107,6 +107,8 @@ export default {
     }
 }
 </script>
+
+<style src="../assets/css/home-2.css" scoped></style>
 
 <style scoped>
 #home {
