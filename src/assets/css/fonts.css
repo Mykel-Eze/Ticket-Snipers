@@ -18,3 +18,7 @@
     font-family: 'BRFirma-xlight';
     src: url('../fonts/brf-fimma/BRFirma-ExtraLight.ttf');
 }
+@font-face {
+    font-family: 'BRFirma-medium';
+    src: url('../fonts/brf-fimma/BRFirma-Medium.ttf');
+}
