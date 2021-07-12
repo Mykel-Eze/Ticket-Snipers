@@ -147,8 +147,156 @@ h4.qs-div-title.bold-txt {
 }
 /*----==== end of Pricing Page Styles ====----*/
 
+/*----==== How-It-Works Page Styles ====----*/
+section#why-choose-us {
+    padding: 30px 0;
+}
+h4.wcu-sec-title {
+    font-size: 70px;
+    font-family: var(--font-bold);
+    letter-spacing: -4px;
+}
+.wcu-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    max-width: 1150px;
+    margin: 50px auto 40px;
+}
+.wcu-option-block {
+    padding: 40px 0 80px;
+    border-radius: 6px;
+    box-shadow: 0px 6px 12px 2px #00000029;
+    font-size: 14px;
+}
+.wcu-option-block .container {
+    width: 75% !important;
+}
+h4.wcu-title {
+    font-size: 29px;
+    font-family: var(--font-smbold);
+}
+ul.wcu-desc-txt {
+    padding-left: 20px;
+}
+ul.wcu-desc-txt > li {
+    list-style-type: disc;
+}
+.gs-link-div {
+    position: absolute;
+    bottom: 30px;
+}
+.gs-link-div a:hover {
+    color: var(--sec-color);
+}
+span.next-arr {
+    padding-left: 10px;
+    font-weight: 100;
+}
+li::marker {
+    color: var(--pry-color);
+}
+
+section#how-it-works {
+    margin-bottom: 40px;
+}
+.wcu-sec-title-div {
+    margin-bottom: 50px;
+}
+h4.wcu-sec-title.hiw-sec-title.center {
+    margin-bottom: 5px;
+}
+.hiw-sub-sec-title.center {
+    font-size: 30px;
+    font-family: var(--font-medium);
+}
+.hiw-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin: 20px 0;
+}
+.hiw-block {
+    font-size: 14px;
+}
+h5.bold-txt.hiw-title {
+    font-size: 24px;
+}
+p.hiw-txt {
+    margin: 5px 0;
+}
+ul.hiw-list {
+    margin: 0;
+}
+
+section#reputation-section {
+    padding-bottom: 40px;
+}
+h4.bold-txt.reputation-big-txt {
+    font-size: 32px;
+}
+.reputation-txt-1 {
+    font-size: 16px;
+}
+.reputation-txt-2 {
+    font-size: 25px;
+    font-family: var(--font-smbold);
+}
+.reputation-btn.btn {
+    background: var(--pry-color);
+    text-transform: none;
+    box-shadow: none;
+    height: 64px;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 18px;
+    font-family: var(--font-smbold);
+    line-height: 64px;
+}
+
+section#ticket-breakdown{
+    background: url(../images/breakdown-bg.png);
+    background-size: cover;
+    margin: 0 0 30px;
+}
+h3.td-main-title {
+    font-size: 50px;
+}
+.ticket-breakdown-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 40px 0;
+}
+img.breakdown-pie-chart{
+    width: 80%;
+}
+.legend-color {
+    width: 34px;
+    height: 34px;
+}
+.legend-block {
+    align-items: center;
+    padding: 5px 0;
+}
+.legend-color, .legend-img {
+    margin-right: 10px;
+}
+.ticket-breakdown-legend > div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*----==== end of How-It-Works Page Styles ====----*/
 
 /*----==== General Media Queries ====----*/
+@media(min-width: 601px) {
+    .ticket-breakdown-legend > div {
+        border-left: 1px solid #979797;
+        padding: 20px 0;
+        padding-left: 20%;
+    }
+}
 @media(max-width: 992px) {
     #home {
         height: auto;
@@ -163,6 +311,9 @@ h4.qs-div-title.bold-txt {
     }
     div#form-side {
         margin: 30px 0 60px;
+    }
+    .hiw-grid, .wcu-grid-wrapper {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -179,6 +330,35 @@ h4.qs-div-title.bold-txt {
     .home-btn-wrapper > button.btn {
         width: 100%;
         margin-top: 10px;
+    }
+    section#how-it-works {
+        margin-bottom: 0px;
+    }
+    .hiw-grid, .wcu-grid-wrapper, .ticket-breakdown-wrapper {
+        grid-template-columns: 100%;
+    }
+    h4.wcu-sec-title {
+        font-size: 50px;
+    }
+    .hiw-sub-sec-title.center {
+        font-size: 24px;
+    }
+    .wcu-sec-title-div {
+        margin-bottom: 30px;
+    }
+    .hiw-block {
+        padding: 10px 20px 0;
+        text-align: justify;
+    }
+    img.breakdown-pie-chart {
+        width: 100%;
+    }
+    .ticket-breakdown-wrapper {
+        margin-bottom: 30px;
+    }
+    .ticket-breakdown-legend {
+        padding: 0 20px;
+        margin-top: 20px;
     }
 }
 /*----==== end of General Media Queries ====----*/

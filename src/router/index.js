@@ -6,6 +6,7 @@ import GeneralTraffic from '../views/GeneralTraffic.vue'
 import StopSignTicket from '../views/StopSignTicket.vue'
 import RedLightTicket from '../views/RedLightTicket.vue'
 import Pricing from '../views/Pricing.vue'
+import HowItWorks from '../views/HowItWorks.vue'
 
 const routes = [
   {
@@ -42,6 +43,11 @@ const routes = [
     path: '/pricing',
     name: 'Pricing',
     component: Pricing
+  },
+  {
+    path: '/how-it-works',
+    name: 'HowItWorks',
+    component: HowItWorks
   }
 ]
 
