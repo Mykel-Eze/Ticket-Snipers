@@ -154,6 +154,7 @@ export default {
 <style scoped>
 #home {
     background-image: url(../assets/images/bill-bg.jpg);
+    background-position-y: bottom;
 }
 h1.home-title {
     line-height: 1.2;
