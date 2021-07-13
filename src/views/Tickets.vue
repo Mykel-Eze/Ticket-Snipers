@@ -251,8 +251,8 @@ export default {
                 const ticketCVC = tr[i].querySelectorAll("td")[1];
                 const ticketFine = tr[i].querySelectorAll("td")[3];
                 
-                txtValue1 = ticketTypeName.textContent || ticketTypeName.innerText
-                txtValue2 = ticketCVC.textContent || ticketCVC.innerText
+                txtValue1 = ticketTypeName.textContent || ticketTypeName.innerText;
+                txtValue2 = ticketCVC.textContent || ticketCVC.innerText;
                 txtValue3 = ticketFine.textContent || ticketFine.innerText ;
                 
                 if ((txtValue1.toUpperCase().indexOf(filter) > -1) || (txtValue2.toUpperCase().indexOf(filter) > -1) || (txtValue3.toUpperCase().indexOf(filter) > -1)) {
