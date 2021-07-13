@@ -48,18 +48,24 @@
 
     <ul id="slide-out" class="sidenav">
         <div class="center sidenav-logo">
-            <router-link to="/">
+            <router-link to="/" class="sidenav-close">
                 <img src="../assets/images/ticket-snipers.svg" alt="Ticket Snipers" class="logo">
             </router-link>
         </div>
         <li>
-            <router-link to="/" class="">Home</router-link>
+            <router-link to="/" class="sidenav-close">Home</router-link>
         </li>
         <li>
-            <router-link to="#" class="">About Us</router-link>
+            <router-link to="/about" class="sidenav-close">About</router-link>
         </li>
         <li>
-            <router-link to="#" class="">What We Do</router-link>
+            <router-link to="/how-it-works" class="sidenav-close">How it Works</router-link>
+        </li>
+        <li>
+            <router-link to="/tickets" class="sidenav-close">Tickets</router-link>
+        </li>
+        <li>
+            <router-link to="/pricing" class="sidenav-close">Pricing</router-link>
         </li>
         <li class="hire-us-li hul-1">
             <a style="cursor: pointer;">
