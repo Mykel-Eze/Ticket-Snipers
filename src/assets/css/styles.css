@@ -129,6 +129,12 @@ h5, h6{
 .visible-xs{
     display: none;
 }
+.hidden-sm-xs{
+    display: block;
+}
+.visible-sm-xs{
+    display: none;
+}
 .flex-div{
     display: flex;
 }
@@ -327,7 +333,7 @@ section#calculator-sec button.btn{
     }
 }
 
-@media(max-width: 991px){
+@media(max-width: 992px){
     .sidenav{
         height: 100vh;
     }
@@ -360,6 +366,12 @@ section#calculator-sec button.btn{
     }
     .calc-sec-wrapper {
         right: 0;
+    }
+    .hidden-sm-xs{
+        display: none !important;
+    }
+    .visible-sm-xs{
+        display: block !important;
     }
 }
 

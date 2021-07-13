@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import About from '../views/About.vue'
 import SpeedingTicket from '../views/SpeedingTicket.vue'
 import RedLightCamera from '../views/RedLightCamera.vue'
 import GeneralTraffic from '../views/GeneralTraffic.vue'
@@ -13,6 +14,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: About
   },
   {
     path: '/speeding-ticket',

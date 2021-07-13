@@ -12,7 +12,7 @@
                         <button class="nav-pry-btn-2 btn pointer">Sign in</button>
                     </li>
                     <li>
-                        <router-link to="#" data-target="slide-out" class="sidenav-trigger sec-color right pad0-xs">
+                        <router-link to="#" data-target="slide-out" class="sidenav-trigger sec-color right">
                             <img src="../assets/images/menu-icon.svg" alt="menu" />
                         </router-link>
                     </li>

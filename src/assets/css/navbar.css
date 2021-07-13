@@ -106,6 +106,7 @@ nav.scrolled-nav ul a{
     }
     nav .sidenav-trigger {
         top: 10px;
+        padding-right: 0;
     }
     nav.main-nav ul#nav-mobile-2 {
         top: 17px;
