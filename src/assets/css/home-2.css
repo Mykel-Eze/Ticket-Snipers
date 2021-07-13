@@ -377,6 +377,95 @@ img.breakdown-pie-chart{
 }
 /*----==== end of How-It-Works Page Styles ====----*/
 
+/*----==== Tickets Page ====----*/
+h3.tickets-home-title {
+    font-size: 70px;
+}
+.tickets-page #home p.abt-home-desc {
+    margin-top: 0;
+}
+#home input#search {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 9px rgb(0 102 245 / 16%);
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    padding: 0 10px;
+    padding-left: 60px;
+    width: calc(100% - 70px);
+}
+button.search-btn {
+    background: rgba(59, 114, 226, 16%);
+    mix-blend-mode: normal;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    line-height: 55px;
+}
+img.search-icon {
+    width: 18px;
+}
+form#search-form {
+    margin-top: 20px;
+}
+.tickets-table-wrapper {
+    margin: 20px 0 30px;
+}
+table#tickets-table {
+    margin: 30px 0 20px;
+}
+table#tickets-table thead {
+    font-size: 24px;
+    font-family: var(--font-bold);
+}
+table#tickets-table tbody {
+    font-size: 18px;
+    font-family: var(--font-medium);
+}
+table#tickets-table tr {
+    border: none;
+}
+table#tickets-table tbody tr {
+    background: #F2F6FB;
+    border-bottom: 10px solid white;
+}
+table#tickets-table tr td:first-child, table#tickets-table tr th:first-child{
+    padding-left: 20px;
+}
+table#tickets-table tbody td .flex-div {
+    align-items: center;
+}
+table#tickets-table tbody td .flex-div img {
+    width: 95px;
+    margin-right: 15px;
+}
+.ticket-type-name {
+    max-width: 480px;
+}
+.pagination li {
+    height: 30px;
+    border: 1px solid lightgray;
+    margin: 0 2px;
+}
+.pagination li.active {
+    background-color: lightgray;
+}
+.pagination li a {
+    line-height: 2.3;
+    font-size: 12px;
+}
+.pagination li.active a {
+    color: #000;
+}
+.pagination li a span.next-arr {
+    padding-left: 0;
+}
+/*----==== end of Tickets Page ====----*/
+
 /*----==== General Media Queries ====----*/
 @media(min-width: 601px) {
     .ticket-breakdown-legend > div {
@@ -402,6 +491,28 @@ img.breakdown-pie-chart{
     }
     .hiw-grid, .wcu-grid-wrapper {
         grid-template-columns: 1fr 1fr;
+    }
+
+    /* .tickets-page #home .container {
+        width: 100%;
+    } */
+    h3.tickets-home-title {
+        font-size: 50px;
+        line-height: 57px;
+        margin-top: 10px;
+    }
+    .tickets-table-wrapper > div {
+        overflow: auto;
+        margin-bottom: 20px;
+    }
+    .tickets-table-wrapper > div::-webkit-scrollbar {
+        height: 4px;
+    }
+    .ticket-type-name {
+        min-width: 240px;
+    }
+    table#tickets-table tbody td, table#tickets-table thead th {
+        min-width: 120px;
     }
 }
 
