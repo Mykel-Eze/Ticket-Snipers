@@ -466,6 +466,36 @@ table#tickets-table tbody td .flex-div img {
 }
 /*----==== end of Tickets Page ====----*/
 
+/*----==== CVC Page ====----*/
+.home-txt-desc p {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+p.abt-p-txt.pry-color{ 
+    color: var(--pry-color);
+}
+.cvc-page .home-btn-wrapper {
+    width: 70%;
+    display: block;
+    margin: 40px 0 20px;
+}
+.cvc-page h1.home-title {
+    font-size: 60px;
+}
+.cvc-page .home-btn-wrapper button.pry-btn.btn {
+    min-width: 180px;
+    font-size: 13px;
+    height: 56px;
+}
+p.quote-block {
+    font-size: 30px;
+    font-family: var(--font-smbold);
+    background: #F2F6FB;
+    padding: 20px 30px;
+}
+/*----==== end of CVC Page ====----*/
+
 /*----==== General Media Queries ====----*/
 @media(min-width: 601px) {
     .ticket-breakdown-legend > div {
