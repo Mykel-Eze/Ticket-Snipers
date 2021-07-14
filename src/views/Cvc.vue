@@ -98,7 +98,7 @@
 <script>
 import TopBannerForm from '../components/TopBannerForm.vue'
 export default {
-    name: "GeneralTraffic",
+    name: "CVC",
     components: { 
         TopBannerForm
     }

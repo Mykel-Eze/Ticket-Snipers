@@ -12,6 +12,7 @@ import GeneralTraffic from '../views/GeneralTraffic.vue'
 import StopSignTicket from '../views/StopSignTicket.vue'
 import RedLightTicket from '../views/RedLightTicket.vue'
 import Cvc from '../views/Cvc.vue'
+import ContactUs from '../views/ContactUs.vue'
 
 const routes = [
   {
@@ -68,6 +69,11 @@ const routes = [
     path: '/cvc',
     name: 'Cvc',
     component: Cvc
+  },
+  {
+    path: '/contact-us',
+    name: 'ContactUs',
+    component: ContactUs
   }
 ]
 
