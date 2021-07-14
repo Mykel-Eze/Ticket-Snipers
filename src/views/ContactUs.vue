@@ -4,7 +4,7 @@
         <div class="row">
             <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
                 <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
-                <a href="https://1map.com/map-embed">1 Map</a>
+                <!-- <a href="https://1map.com/map-embed">1 Map</a> -->
             </div>
         </div>
     </section>
