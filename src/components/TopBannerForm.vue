@@ -1,7 +1,8 @@
 <template>
     <form action="#" class="col s12">
         <div class="col s12">
-            <h5 class="form-title sec-color">Free speeding ticket review</h5>
+            <h5 class="form-title sec-color">{{ formTitleText }}</h5>
+            <!-- <h5 class="form-title sec-color">Free speeding ticket review</h5> -->
         </div>
         <div class="col s12 pad0">
             <div class="input-field col s12 m6">
@@ -41,7 +42,10 @@
 
 <script>
 export default {
-    name: "TopBannerForm"
+    name: "TopBannerForm",
+    props: {
+        formTitleText: String
+    }
 }
 </script>
 
