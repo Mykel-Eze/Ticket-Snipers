@@ -14,6 +14,7 @@ import RedLightTicket from '../views/RedLightTicket.vue'
 import Cvc from '../views/Cvc.vue'
 import ContactUs from '../views/ContactUs.vue'
 import CourtHouses from '../views/CourtHouses.vue'
+import County from '../views/County.vue'
 
 const routes = [
   {
@@ -80,6 +81,11 @@ const routes = [
     path: '/court-house',
     name: 'CourtHouses',
     component: CourtHouses
+  },
+  {
+    path: '/county',
+    name: 'County',
+    component: County
   }
 ]
 

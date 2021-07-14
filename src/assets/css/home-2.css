@@ -533,6 +533,7 @@ img.mcd-img {
 .court-list-block h4.flex-div {
     font-size: 30px;
     font-family: var(--font-smbold);
+    align-items: center;
 }
 .court-list-block h4.flex-div img {
     width: 55px;
@@ -554,6 +555,15 @@ h5.map-title {
     margin: 0px 0 20px;
 }
 /*----==== end of Court-Houses Page ====----*/
+
+/*----==== County Page ====----*/
+img.county-logo {
+    width: 150px;
+}
+.county-page .court-list-block {
+    margin: 30px 0 20px;
+}
+/*----==== end of County Page ====----*/
 
 /*----==== General Media Queries ====----*/
 @media(min-width: 601px) {
@@ -669,11 +679,21 @@ h5.map-title {
     .courthouses-page h1.home-title {
         font-size: 50px;
     }
+    .court-list-block > div {
+        background: #F2F6FB;
+        padding: 12px 30px 24px;
+    }
     .court-list-block h4.flex-div {
         display: block;
     }
     .court-list-block h4.flex-div > span {
         display: block;
+    }
+    .court-list-block h4.flex-div {
+        font-size: 24px;
+    }
+    .county-page h4.abt-title {
+        font-size: 34px;
     }
 }
 @media(max-width: 360px) {
