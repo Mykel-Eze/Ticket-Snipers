@@ -1,28 +1,16 @@
 <template>
-  <div id="nav">
-    <Navbar />
-      <div id="main-contents-wrapper">
-        <router-view />
-      </div>
-    <Footer />
+  <div id="app">
+    <router-view />
   </div>
 </template>
 
 <script>
-import Navbar from "@/components/Navbar.vue";
-import Footer from "@/components/Footer.vue";
 export default {
-  components: {
-    Navbar, Footer
-  }
 }
 </script>
 
-<style src=".\assets\css\fonts.css"></style>
-<style src=".\assets\css\styles.css"></style>
-
 <style>
-div#nav {
+div#app {
     float: left;
     width: 100%;
     overflow-x: hidden;

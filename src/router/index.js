@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+import Externals from '../Externals.vue'
+
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Pricing from '../views/Pricing.vue'
@@ -15,77 +17,90 @@ import Cvc from '../views/Cvc.vue'
 import ContactUs from '../views/ContactUs.vue'
 import CourtHouses from '../views/CourtHouses.vue'
 import County from '../views/County.vue'
+import AuthPage from '../views/AuthPage.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    component: Externals,
+    children: [
+      {
+        path: 'home',
+        alias: '',
+        name: 'Home',
+        component: Home
+      },
+      {
+        path: '/about',
+        name: 'About',
+        component: About
+      },
+      {
+        path: '/pricing',
+        name: 'Pricing',
+        component: Pricing
+      },
+      {
+        path: '/how-it-works',
+        name: 'HowItWorks',
+        component: HowItWorks
+      },
+      {
+        path: '/tickets',
+        name: 'Tickets',
+        component: Tickets
+      },
+      {
+        path: '/speeding-ticket',
+        name: 'SpeedingTicket',
+        component: SpeedingTicket
+      },
+      {
+        path: '/red-light-camera',
+        name: 'RedLightCamera',
+        component: RedLightCamera
+      },
+      {
+        path: '/general-traffic',
+        name: 'GeneralTraffic',
+        component: GeneralTraffic
+      },
+      {
+        path: '/stop-sign-ticket',
+        name: 'StopSignTicket',
+        component: StopSignTicket
+      },
+      {
+        path: '/red-light-ticket',
+        name: 'RedLightTicket',
+        component: RedLightTicket
+      },
+      {
+        path: '/cvc',
+        name: 'Cvc',
+        component: Cvc
+      },
+      {
+        path: '/contact-us',
+        name: 'ContactUs',
+        component: ContactUs
+      },
+      {
+        path: '/court-house',
+        name: 'CourtHouses',
+        component: CourtHouses
+      },
+      {
+        path: '/county',
+        name: 'County',
+        component: County
+      }
+    ]
   },
   {
-    path: '/about',
-    name: 'About',
-    component: About
-  },
-  {
-    path: '/pricing',
-    name: 'Pricing',
-    component: Pricing
-  },
-  {
-    path: '/how-it-works',
-    name: 'HowItWorks',
-    component: HowItWorks
-  },
-  {
-    path: '/tickets',
-    name: 'Tickets',
-    component: Tickets
-  },
-  {
-    path: '/speeding-ticket',
-    name: 'SpeedingTicket',
-    component: SpeedingTicket
-  },
-  {
-    path: '/red-light-camera',
-    name: 'RedLightCamera',
-    component: RedLightCamera
-  },
-  {
-    path: '/general-traffic',
-    name: 'GeneralTraffic',
-    component: GeneralTraffic
-  },
-  {
-    path: '/stop-sign-ticket',
-    name: 'StopSignTicket',
-    component: StopSignTicket
-  },
-  {
-    path: '/red-light-ticket',
-    name: 'RedLightTicket',
-    component: RedLightTicket
-  },
-  {
-    path: '/cvc',
-    name: 'Cvc',
-    component: Cvc
-  },
-  {
-    path: '/contact-us',
-    name: 'ContactUs',
-    component: ContactUs
-  },
-  {
-    path: '/court-house',
-    name: 'CourtHouses',
-    component: CourtHouses
-  },
-  {
-    path: '/county',
-    name: 'County',
-    component: County
+    path: '/auth-page',
+    name: 'AuthPage',
+    component: AuthPage
   }
 ]
 
