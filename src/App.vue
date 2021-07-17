@@ -1,19 +1,25 @@
 <template>
-  <div id="app">
+  <div id="app-wrapper">
     <router-view />
   </div>
 </template>
 
 <script>
 export default {
+  name: 'App'
 }
 </script>
 
+<style src=".\assets\css\fonts.css"></style>
+<style src=".\assets\css\styles.css"></style>
+
 <style>
-div#app {
+div#nav {
     float: left;
     width: 100%;
     overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
 }
 div#main-contents-wrapper {
   padding-top: 90px;

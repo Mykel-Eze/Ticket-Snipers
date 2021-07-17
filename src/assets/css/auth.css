@@ -1,0 +1,234 @@
+.auth-page {
+    padding: 40px 0 10px;
+}
+ul.tabs {
+    width: 250px;
+    background: var(--pry-color);
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+.tabs .tab {
+    z-index: 1;
+    text-transform: none;
+}
+.tabs .tab a {
+    color: white;
+    padding: 0 34px;
+}
+.tabs .tab a:hover, .tabs .tab a.active {
+    background-color: transparent !important;
+    color: white;
+}
+
+h4.center.auth-title {
+    font-size: 35px;
+    font-family: var(--font-bold);
+    letter-spacing: -1.5px;
+    color: rgba(2, 34, 83, 0.399038);;
+}
+form#login-form, form#signup-form{
+    background: white;
+    mix-blend-mode: normal;
+    border: 1px solid rgba(0, 102, 245, 0.122023);
+    box-sizing: border-box;
+    box-shadow: 0px 12px 21px 10px rgba(4, 30, 139, 0.0478311);
+    /* backdrop-filter: blur(81.5485px); */
+    border-radius: 6px;
+    padding: 40px 20px;
+    position: relative;
+    top: 20px;
+    max-width: 500px;
+}
+.get-started-home {
+    line-height: 3;
+    font-weight: 500;
+    color: rgba(2, 34, 83, 0.399038);
+    font-family: var(--font-smbold);
+}
+h5.form-title {
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+form#login-form input, form#signup-form input {
+    background: #E9F0FD;
+    border: 1px solid #D9E2EF;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 50px;
+    padding-left: 0.85rem;
+    padding-right: 5px;
+    width: 100%;
+    color: rgba(2, 43, 105, 0.57);
+    mix-blend-mode: normal;
+}
+::placeholder { 
+  color: rgba(2, 43, 105, 0.57);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  color: rgba(2, 43, 105, 0.57);
+}
+form#login-form input:focus, form#signup-form input:focus{
+    box-shadow: 0 1px 0 0 var(--sec-color);
+}
+form#login-form label, form#signup-form label {
+    left: 1.75rem;
+    color: var(--sec-color);
+    opacity: 0.57;
+}
+form#login-form label.active, form#signup-form label.active{
+    opacity: 1;
+    left: 0.75rem;
+    transform: translateY(-20px) scale(0.8);
+}
+form#login-form .input-field, form#signup-form .input-field {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+.form-links-cont {
+    margin-top: 20px;
+}
+img.input-icons {
+    position: absolute;
+    top: 15px;
+    right: 22px;
+    z-index: 1;
+}
+form#login-form button.submit-btn.pry-btn.btn,
+form#signup-form button.submit-btn.pry-btn.btn {
+    min-width: 126px;
+    font-size: 14px;
+    height: 46px;
+    border-radius: 2px;
+    font-weight: normal;
+    font-family: var(--font-medium);
+}
+form#login-form button.submit-btn.pry-btn.btn:hover,
+form#signup-form button.submit-btn.pry-btn.btn:hover {
+    background-color: var(--sec-color);
+}
+a.forgot-password-link, a.calculate-savings-link {
+    font-size: 13px;
+    font-family: var(--font-smbold);
+}
+
+.flex-div.below-form-txt {
+    margin-top: 35px;
+    padding: 0;
+    font-family: var(--font-smbold);
+    font-size: 12px;
+    color: rgba(2, 34, 83, 0.399038);;
+}
+.below-form-link a {
+    color: rgba(2, 34, 83, 0.399038);;
+}
+
+form#signup-form .file-field .btn {
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+form#signup-form .file-field .file-path-wrapper {
+    padding-left: 0;
+}
+input#citation-upload {
+    margin-bottom: 0;
+}
+.cards-brands-div {
+    align-items: center;
+    display: flex;
+}
+img.cards-brands {
+    width: 80%;
+}
+
+/* Stepsform Styles */
+#auth-stepsform-div {
+    max-width: 500px;
+    /* margin: auto; */
+}
+ul.step-progress {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+ul.step-progress > li {
+    /* display: inline-block; */
+    width: 46px;
+    position: relative;
+    z-index: 1;
+}
+ul.step-progress > li > span {
+    display: block;
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+ul.step-progress > li > span::before {
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: var(--pry-color);
+    border-radius: 50%;
+}
+ul.step-progress > li.active > span::before {
+    width: 100%;
+    height: 100%;
+}
+ul.step-progress > li.active > span::after {
+    /*Add another block-level blank space*/
+    content: "";
+    position: absolute;
+    /*Make it a small rectangle so the border will create an L-shape*/
+    width: 30%;
+    height: 60%;
+    /*Add a white border on the bottom and left, creating that 'L' */
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    /*Rotate the L 45 degrees to turn it into a checkmark*/
+    transform: rotate(45deg);
+    left: 0;
+    right: 0;
+    top: -4px;
+    bottom: 0;
+    margin: auto;
+}
+ul.step-progress > li > small {
+    display: block;
+    /* width: 45%; */
+    font-size: 10px;
+    left: 0;
+    position: relative;
+    margin-top: 8px;
+    text-align: center;
+    color: rgba(2, 34, 83, 0.399038);
+}
+ul.step-progress > li.active > small {
+    color: var(--pry-color);
+}
+.step-progress .progress {
+    position: absolute;
+    top: 6px;
+    width: calc(100% - 20px);
+    left: 10px;
+    background-color: white;
+    z-index: 0;
+}
+.step-progress .progress .determinate {
+    width: 0;
+    background-color: var(--pry-color);
+}
+/* end of Stepsform styles */

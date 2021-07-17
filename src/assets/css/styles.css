@@ -400,6 +400,9 @@ section#calculator-sec button.btn{
     .right-align-xs {
         text-align: right !important;
     }
+    .block-xs {
+        display: block;
+    }
 
     a.brand-logo img {
         width: auto;

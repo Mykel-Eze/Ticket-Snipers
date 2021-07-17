@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import Externals from '../Externals.vue'
+import Auth from '../Auth.vue'
 
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
@@ -99,8 +100,15 @@ const routes = [
   },
   {
     path: '/auth-page',
-    name: 'AuthPage',
-    component: AuthPage
+    component: Auth,
+    children: [
+      {
+        path: '/login',
+        alias: '',
+        name: 'AuthPage',
+        component: AuthPage
+      }
+    ]
   }
 ]
 
