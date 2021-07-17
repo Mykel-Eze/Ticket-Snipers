@@ -3,7 +3,7 @@
     <nav class="main-nav">
         <div class="container">
             <div class="nav-wrapper">
-                <router-link to="/" class="brand-logo">
+                <router-link to="/" class="brand-logo" @click="scrollToTop()">
                     <img src="../assets/images/ticket-snipers.svg" alt="Ticket Sniper" class="logo">
                 </router-link>
 
@@ -22,16 +22,16 @@
 
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
-                        <router-link to="/about" class="">About</router-link>
+                        <router-link to="/about" class="" @click="scrollToTop()">About</router-link>
                     </li>
                     <li>
-                        <router-link to="/how-it-works" class="">How it Works</router-link>
+                        <router-link to="/how-it-works" class="" @click="scrollToTop()">How it Works</router-link>
                     </li>
                     <li>
-                        <router-link to="/tickets" class="">Tickets</router-link>
+                        <router-link to="/tickets" class="" @click="scrollToTop()">Tickets</router-link>
                     </li>
                     <li>
-                        <router-link to="/pricing" class="">Pricing</router-link>
+                        <router-link to="/pricing" class="" @click="scrollToTop()">Pricing</router-link>
                     </li>
                     <li>
                         <a style="cursor: pointer;">
@@ -47,24 +47,24 @@
 
     <ul id="slide-out" class="sidenav">
         <div class="center sidenav-logo">
-            <router-link to="/" class="sidenav-close">
+            <router-link to="/" class="sidenav-close" @click="scrollToTop()">
                 <img src="../assets/images/ticket-snipers.svg" alt="Ticket Snipers" class="logo">
             </router-link>
         </div>
         <li>
-            <router-link to="/" class="sidenav-close">Home</router-link>
+            <router-link to="/" class="sidenav-close" @click="scrollToTop()">Home</router-link>
         </li>
         <li>
-            <router-link to="/about" class="sidenav-close">About</router-link>
+            <router-link to="/about" class="sidenav-close" @click="scrollToTop()">About</router-link>
         </li>
         <li>
-            <router-link to="/how-it-works" class="sidenav-close">How it Works</router-link>
+            <router-link to="/how-it-works" class="sidenav-close" @click="scrollToTop()">How it Works</router-link>
         </li>
         <li>
-            <router-link to="/tickets" class="sidenav-close">Tickets</router-link>
+            <router-link to="/tickets" class="sidenav-close" @click="scrollToTop()">Tickets</router-link>
         </li>
         <li>
-            <router-link to="/pricing" class="sidenav-close">Pricing</router-link>
+            <router-link to="/pricing" class="sidenav-close" @click="scrollToTop()">Pricing</router-link>
         </li>
         <li class="hire-us-li hul-1">
             <a style="cursor: pointer;">
@@ -92,6 +92,11 @@ export default {
       var elemsSidenav = document.querySelectorAll(".sidenav");
       M.Sidenav.init(elemsSidenav)
     });
+  },
+  methods:{
+    scrollToTop() {
+        window.scrollTo(0, 0);
+    }
   }
 };
 </script>

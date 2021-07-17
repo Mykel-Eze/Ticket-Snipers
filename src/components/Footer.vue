@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="col s12 m12 l3 footer-logo-contact">
                     <div class="footer-logo">
-                        <router-link to="/">
+                        <router-link to="/" @click="scrollToTop()">
                             <img src="../assets/images/ticket-snipers.svg" alt="Ticket Sniper">
                         </router-link>
                     </div>
@@ -149,6 +149,10 @@ export default {
         prevFunc() {
             var elemsFooterCarousel = document.querySelector("#footer-carousel");
             M.Carousel.getInstance(elemsFooterCarousel).prev();
+        },
+
+        scrollToTop() {
+            window.scrollTo(0, 0);
         }
     }
 }

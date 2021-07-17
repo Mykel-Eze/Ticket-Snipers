@@ -1,7 +1,7 @@
 <template>
     <div>
         <h4 class="center auth-title">
-            <span class="sec-color">Welcome back,</span> Login in to continue
+            <span class="sec-color block-xs">Welcome back,</span> Login in to continue
         </h4>
 
         <form action="#" class="col s12 m10 offset-m1 l6 offset-l3" id="login-form">

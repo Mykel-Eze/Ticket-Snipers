@@ -120,7 +120,8 @@ a.forgot-password-link, a.calculate-savings-link {
     padding: 0;
     font-family: var(--font-smbold);
     font-size: 12px;
-    color: rgba(2, 34, 83, 0.399038);;
+    color: rgba(2, 34, 83, 0.399038);
+    margin-bottom: 40px;
 }
 .below-form-link a {
     color: rgba(2, 34, 83, 0.399038);;
@@ -232,3 +233,21 @@ ul.step-progress > li.active > small {
     background-color: var(--pry-color);
 }
 /* end of Stepsform styles */
+
+
+@media(max-width: 992px){
+    .auth-page .tabs .tab {
+        flex-grow: inherit;
+    }
+}
+@media(max-width: 600px) {
+    img.cards-brands {
+        margin: auto;
+    }
+    h4.center.auth-title {
+        text-align: left;
+    }
+    .auth-page ul.tabs {
+        margin: inherit;
+    }
+}
