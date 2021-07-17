@@ -18,6 +18,8 @@ import Cvc from '../views/Cvc.vue'
 import ContactUs from '../views/ContactUs.vue'
 import CourtHouses from '../views/CourtHouses.vue'
 import County from '../views/County.vue'
+import MediaBlog from '../views/MediaBlog.vue'
+
 import AuthPage from '../views/AuthPage.vue'
 
 const routes = [
@@ -95,6 +97,11 @@ const routes = [
         path: '/county',
         name: 'County',
         component: County
+      },
+      {
+        path: '/media',
+        name: 'MediaBlog',
+        component: MediaBlog
       }
     ]
   },

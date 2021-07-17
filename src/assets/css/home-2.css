@@ -565,6 +565,91 @@ img.county-logo {
 }
 /*----==== end of County Page ====----*/
 
+/*----==== Media Page ====----*/
+ul.filter-links-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+ul.filter-links-wrapper > li {
+    margin: 10px 30px 10px 0;
+}
+ul.filter-links-wrapper > li:last-child {
+    margin-right: 0;
+}
+ul.filter-links-wrapper > li .filter-link {
+    color: var(--pry-color);
+    cursor: pointer;
+    font-size: 16px;
+    font-size: 16px;
+    padding: 4px 12px;
+    border-radius: 5px;
+}
+ul.filter-links-wrapper > li .filter-link:hover {
+    background-color: rgba(0, 102, 245, 0.1);
+}
+ul.filter-links-wrapper > li.active .filter-link {
+    background-color: var(--sec-color);
+    color: white;
+    border: 0.5px solid rgba(63, 41, 96, 0.114592);
+    box-shadow: 0px 3px 7px rgba(4, 0, 89, 0.0968914);
+}
+
+.media-grid-wrapper {
+    margin: 30px 0;
+}
+.media-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px 60px;
+    margin: 30px 0;
+}
+.media-block {
+    cursor: pointer;
+    position: relative;
+}
+.media-thumbnnail {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 100%;
+}
+img.media-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+}
+.media-block:hover img.media-img {
+    transform: scale(1.05);
+}
+.media-tag-div {
+    margin-top: 20px;
+}
+span.media-tag {
+    mix-blend-mode: normal;
+    opacity: 0.67;
+    font-size: 13px;
+    padding-right: 10px;
+}
+span.media-tag:last-child {
+    padding-right: 0;
+}
+.media-title.bold-txt {
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin: 10px 0;
+}
+.author-date-div {
+    letter-spacing: 0.462857px;
+    color: #757994;
+    mix-blend-mode: normal;
+    opacity: 0.67;
+    font-size: 12px;
+}
+/*----==== end of Media Page ====----*/
+
 /*----==== General Media Queries ====----*/
 @media(min-width: 601px) {
     .ticket-breakdown-legend > div {
@@ -617,6 +702,10 @@ img.county-logo {
     .court-map-grid {
         grid-template-columns: 100%;
         grid-gap: 30px;
+    }
+
+    .media-title.bold-txt {
+        font-size: 22px;
     }
 }
 
@@ -694,6 +783,24 @@ img.county-logo {
     }
     .county-page h4.abt-title {
         font-size: 34px;
+    }
+
+    .media-grid {
+        grid-template-columns: 100%;
+        grid-gap: 30px;
+    }
+    .media-title.bold-txt {
+        font-size: 24px;
+    }
+    .media-page h1.home-title {
+        font-size: 2.9rem;
+        line-height: 1.25;
+    }
+    ul.filter-links-wrapper > li {
+        margin-right: 10px;
+    }
+    ul.filter-links-wrapper > li .filter-link{
+        font-size: 14px;
     }
 }
 @media(max-width: 360px) {
