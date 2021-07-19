@@ -25,38 +25,38 @@
             <div class="container">
                 <div class="col s12 filter-div">
                     <ul class="filter-links-wrapper">
-                        <li class="active">
+                        <li class="active" @click="filterSelection('all')">
                             <span class="filter-link">All</span>
                         </li>
-                        <li>
+                        <li @click="filterSelection('cell-phone')">
                             <span class="filter-link">Cell Phone</span>
                         </li>
-                        <li>
+                        <li @click="filterSelection('driving-record')">
                             <span class="filter-link">Driving Record</span>
                         </li>
-                        <li>
+                        <li @click="filterSelection('traffic-school')">
                             <span class="filter-link">Traffic School</span>
                         </li>
-                        <li>
+                        <li @click="filterSelection('commercial-driver')">
                             <span class="filter-link">Commercial Driver</span>
                         </li>
-                        <li>
+                        <li @click="filterSelection('california')">
                             <span class="filter-link">California</span>
                         </li>
-                        <li>
+                        <li @click="filterSelection('distracted-driving')">
                             <span class="filter-link">Distracted Driving</span>
                         </li>
-                        <li>
+                        <li @click="filterSelection('stop-sign')">
                             <span class="filter-link">Stop Sign</span>
                         </li>
-                        <li>
+                        <li @click="filterSelection('speeding')">
                             <span class="filter-link">Speeding</span>
                         </li>
-                        <li>
+                        <li @click="filterSelection('red-light-camera-ticket')">
                             <span class="filter-link">Red Light Camera Ticket</span>
                         </li>
-                        <li>
-                            <span class="filter-link">California Traffic</span>
+                        <li @click="filterSelection('lane-splitting')">
+                            <span class="filter-link">Lane Splitting</span>
                         </li>
                     </ul>
                 </div>
@@ -64,7 +64,7 @@
                 <div class="media-grid-wrapper">
                     <div class="col s12 media-grid">
                         <router-link to="/auth-page" custom v-slot="{ navigate }">
-                            <div class="media-block" @click="navigate" @keypress.enter="navigate" role="link">
+                            <div class="media-block driving-record traffic-school" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-1.png" alt="blog-thumbnail" class="media-img">
                                 </div>
@@ -84,7 +84,7 @@
                             </div>
                         </router-link>
                         <router-link to="/auth-page" custom v-slot="{ navigate }">
-                            <div class="media-block" @click="navigate" @keypress.enter="navigate" role="link">
+                            <div class="media-block distracted-driving" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-2.png" alt="blog-thumbnail" class="media-img">
                                 </div>
@@ -103,7 +103,7 @@
                             </div>
                         </router-link>
                         <router-link to="/auth-page" custom v-slot="{ navigate }">
-                            <div class="media-block" @click="navigate" @keypress.enter="navigate" role="link">
+                            <div class="media-block red-light-camera-ticket" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-3.png" alt="blog-thumbnail" class="media-img">
                                 </div>
@@ -122,7 +122,7 @@
                             </div>
                         </router-link>
                         <router-link to="/auth-page" custom v-slot="{ navigate }">
-                            <div class="media-block" @click="navigate" @keypress.enter="navigate" role="link">
+                            <div class="media-block california" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-4.png" alt="blog-thumbnail" class="media-img">
                                 </div>
@@ -141,7 +141,7 @@
                             </div>
                         </router-link>
                         <router-link to="/auth-page" custom v-slot="{ navigate }">
-                            <div class="media-block" @click="navigate" @keypress.enter="navigate" role="link">
+                            <div class="media-block stop-sign california" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-5.png" alt="blog-thumbnail" class="media-img">
                                 </div>
@@ -161,7 +161,7 @@
                             </div>
                         </router-link>
                         <router-link to="/auth-page" custom v-slot="{ navigate }">
-                            <div class="media-block" @click="navigate" @keypress.enter="navigate" role="link">
+                            <div class="media-block california-traffic-ticket lane-splitting" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-6.png" alt="blog-thumbnail" class="media-img">
                                 </div>
@@ -181,7 +181,7 @@
                             </div>
                         </router-link>
                         <router-link to="/auth-page" custom v-slot="{ navigate }">
-                            <div class="media-block" @click="navigate" @keypress.enter="navigate" role="link">
+                            <div class="media-block commercial-driver" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-7.png" alt="blog-thumbnail" class="media-img">
                                 </div>
@@ -200,7 +200,7 @@
                             </div>
                         </router-link>
                         <router-link to="/auth-page" custom v-slot="{ navigate }">
-                            <div class="media-block" @click="navigate" @keypress.enter="navigate" role="link">
+                            <div class="media-block speeding" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-8.png" alt="blog-thumbnail" class="media-img">
                                 </div>
@@ -219,7 +219,7 @@
                             </div>
                         </router-link>
                         <router-link to="/auth-page" custom v-slot="{ navigate }">
-                            <div class="media-block" @click="navigate" @keypress.enter="navigate" role="link">
+                            <div class="media-block california-traffic-ticket" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-9.png" alt="blog-thumbnail" class="media-img">
                                 </div>
@@ -264,27 +264,70 @@ export default {
     methods: {
         searchFunction() {
             // Declare variables
-            let i, txtValue1, txtValue2, txtValue3;
+            let i, txtValue1, txtValue2;
             const input = document.querySelector('#search');
             const filter = input.value.toUpperCase();
-            const tr = document.querySelectorAll("#tickets-table tbody tr");
+            const mediaBlock = document.querySelectorAll(".media-block");
 
             // Loop through all list items, and hide those who don't match the search query
-            for (i = 0; i < tr.length; i++) {
-                const ticketTypeName = tr[i].querySelectorAll("td")[0];
-                const ticketCVC = tr[i].querySelectorAll("td")[1];
-                const ticketFine = tr[i].querySelectorAll("td")[3];
+            for (i = 0; i < mediaBlock.length; i++) {
+                const mediaTag = mediaBlock[i].querySelectorAll(".media-tag-div")[0];
+                const mediaTitle = mediaBlock[i].querySelectorAll(".media-title")[0];
                 
-                txtValue1 = ticketTypeName.textContent || ticketTypeName.innerText;
-                txtValue2 = ticketCVC.textContent || ticketCVC.innerText;
-                txtValue3 = ticketFine.textContent || ticketFine.innerText ;
+                txtValue1 = mediaTag.textContent || mediaTag.innerText;
+                txtValue2 = mediaTitle.textContent || mediaTitle.innerText;
                 
-                if ((txtValue1.toUpperCase().indexOf(filter) > -1) || (txtValue2.toUpperCase().indexOf(filter) > -1) || (txtValue3.toUpperCase().indexOf(filter) > -1)) {
-                tr[i].style.display = "";
+                if ((txtValue1.toUpperCase().indexOf(filter) > -1) || (txtValue2.toUpperCase().indexOf(filter) > -1)) {
+                mediaBlock[i].style.display = "";
                 } else {
-                tr[i].style.display = "none";
+                mediaBlock[i].style.display = "none";
                 }
             }
+        },
+
+        filterSelection(c) {
+            var x, i;
+            x = document.querySelectorAll(".media-block");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                this.w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) this.w3AddClass(x[i], "show");
+            }
+        },
+
+        w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+            }
+        },
+
+        w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+            }
+            element.className = arr1.join(" ");
+        },
+    },
+    mounted() {
+        this.filterSelection("all")
+
+        // Add active class to the current button (highlight it)
+        var linksContainer = document.querySelector("ul.filter-links-wrapper");
+        var btns = linksContainer.querySelectorAll("li");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace("active", "");
+                this.className += " active";
+            });
         }
     }
 }

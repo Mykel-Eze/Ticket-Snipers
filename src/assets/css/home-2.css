@@ -606,6 +606,10 @@ ul.filter-links-wrapper > li.active .filter-link {
 .media-block {
     cursor: pointer;
     position: relative;
+    display: none;
+}
+.media-block.show {
+  display: block;
 }
 .media-thumbnnail {
     border-radius: 15px;
