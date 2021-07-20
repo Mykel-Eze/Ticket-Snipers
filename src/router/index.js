@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import Externals from '../Externals.vue'
 import Auth from '../Auth.vue'
+import Overview from '../Overview.vue'
 
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
@@ -21,9 +22,14 @@ import County from '../views/County.vue'
 import MediaBlog from '../views/MediaBlog.vue'
 import MediaItem from '../views/MediaItem.vue'
 
-import AuthPage from '../views/AuthPage.vue'
+import AuthPage from '../auth-pages/AuthPage.vue'
 
 const routes = [
+  {
+    path: '/overview',
+    name: 'Overview',
+    component: Overview
+  },
   {
     path: '/',
     component: Externals,
