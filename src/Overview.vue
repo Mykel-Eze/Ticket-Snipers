@@ -6,7 +6,7 @@
             </div>
             <h1 class="bold-txt pry-color">Ticket Snipers Pages</h1>
             <div class="container">
-                <h5 class="reg-txt left-align sec-color">Done Pages <small>(15)</small></h5>
+                <h5 class="reg-txt left-align sec-color">Done Pages <small>(17)</small></h5>
                 <div class="flex-div btn-links-wrapper">
                     <router-link to="/auth-page" class="btn btn-link">Login/Signup</router-link>
 
