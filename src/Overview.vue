@@ -17,7 +17,7 @@
                     <router-link to="/how-it-works" class="btn btn-link">How It Works</router-link>
 
                     <router-link to="/contact-us" class="btn btn-link">Contact Us</router-link>
-                    <router-link to="/courthouses" class="btn btn-link">Courthouses</router-link>
+                    <router-link to="/court-house" class="btn btn-link">Courthouses</router-link>
                     <router-link to="/cvc" class="btn btn-link">California Vehicle Code</router-link>
                     <router-link to="/media" class="btn btn-link">Media/Blog</router-link>
                     <router-link to="/media-item" class="btn btn-link">Individual Media/Blog Posts</router-link>
