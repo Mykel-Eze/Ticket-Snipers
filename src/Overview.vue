@@ -2,11 +2,11 @@
   <section id="home" class="center">
         <div class="main-txt">
             <div class="img-div">
-                <img src="./assets/images/ticket-snipers.svg" alt="Ticket Sniper" class="logo">
+                <img src="./assets/images/ticket-snipers.svg" alt="Ticket Sniper" class="">
             </div>
-            <h1 class="bold-txt pry-color">Ticket Snipers Pages</h1>
+            <h1 class="bold-txt pry-color">Pages Done (17)</h1>
             <div class="container">
-                <h5 class="reg-txt left-align sec-color">Done Pages <small>(17)</small></h5>
+                <h5 class="reg-txt left-align sec-color"></h5>
                 <div class="flex-div btn-links-wrapper">
                     <router-link to="/auth-page" class="btn btn-link">Login/Signup</router-link>
 
@@ -43,7 +43,8 @@ export default {
     #home {
         height: 100vh;
         width: 100%;
-        background-color: white;
+        background-color: #F2F6FB;
+        background-image: url(./assets/images/breakdown-bg.png);
     }
     #home::before{
         display: none;
@@ -54,14 +55,14 @@ export default {
         transform: translateY(-50%);
     }
     .img-div img {
-        width: 15%;
+        width: 18%;
         min-width: 150px;
     }
     /* h1.bold-txt {
         margin-top: 0;
     } */
     a.btn.btn-link {
-        margin: 5px 10px;
+        margin: 10px;
         background: white;
         border: 1px solid var(--pry-color);
         color: var(--pry-color);
@@ -70,9 +71,14 @@ export default {
         min-width: 130px;
         border-radius: 50px;
         font-size: 12px;
+        transition: transform 1s;
+    }
+    a.btn.btn-link:hover {
+        transform: scale(1.05);
     }
     .btn-links-wrapper {
         flex-wrap: wrap;
+        margin-top: 40px;
     }
     h5.reg-txt.left-align {
         position: relative;
