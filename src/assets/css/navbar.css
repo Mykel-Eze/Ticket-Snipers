@@ -19,11 +19,14 @@ nav.scrolled-nav.main-nav{
     height: 65px;
     background-color: rgba(241, 241, 241, 0.9);
 }
-nav.main-nav ul>li>a{
+nav.main-nav ul > li > a{
     color: var(--sec-color);
 }
-nav.main-nav ul>li>a:hover {
+nav.main-nav ul > li > a:hover {
     color: var(--pry-color);
+}
+nav.main-nav ul#nav-mobile > li:last-child > a {
+    padding-right: 0;
 }
 nav .brand-logo {
     top: 10px;

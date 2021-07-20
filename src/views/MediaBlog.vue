@@ -63,7 +63,7 @@
 
                 <div class="media-grid-wrapper">
                     <div class="col s12 media-grid">
-                        <router-link to="/auth-page" custom v-slot="{ navigate }">
+                        <router-link to="/media-item" custom v-slot="{ navigate }">
                             <div class="media-block driving-record traffic-school" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-1.png" alt="blog-thumbnail" class="media-img">
@@ -83,7 +83,7 @@
                                 </div>
                             </div>
                         </router-link>
-                        <router-link to="/auth-page" custom v-slot="{ navigate }">
+                        <router-link to="/media-item" custom v-slot="{ navigate }">
                             <div class="media-block distracted-driving" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-2.png" alt="blog-thumbnail" class="media-img">
@@ -102,7 +102,7 @@
                                 </div>
                             </div>
                         </router-link>
-                        <router-link to="/auth-page" custom v-slot="{ navigate }">
+                        <router-link to="/media-item" custom v-slot="{ navigate }">
                             <div class="media-block red-light-camera-ticket" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-3.png" alt="blog-thumbnail" class="media-img">
@@ -121,7 +121,7 @@
                                 </div>
                             </div>
                         </router-link>
-                        <router-link to="/auth-page" custom v-slot="{ navigate }">
+                        <router-link to="/media-item" custom v-slot="{ navigate }">
                             <div class="media-block california" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-4.png" alt="blog-thumbnail" class="media-img">
@@ -140,7 +140,7 @@
                                 </div>
                             </div>
                         </router-link>
-                        <router-link to="/auth-page" custom v-slot="{ navigate }">
+                        <router-link to="/media-item" custom v-slot="{ navigate }">
                             <div class="media-block stop-sign california" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-5.png" alt="blog-thumbnail" class="media-img">
@@ -160,7 +160,7 @@
                                 </div>
                             </div>
                         </router-link>
-                        <router-link to="/auth-page" custom v-slot="{ navigate }">
+                        <router-link to="/media-item" custom v-slot="{ navigate }">
                             <div class="media-block california-traffic-ticket lane-splitting" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-6.png" alt="blog-thumbnail" class="media-img">
@@ -180,7 +180,7 @@
                                 </div>
                             </div>
                         </router-link>
-                        <router-link to="/auth-page" custom v-slot="{ navigate }">
+                        <router-link to="/media-item" custom v-slot="{ navigate }">
                             <div class="media-block commercial-driver" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-7.png" alt="blog-thumbnail" class="media-img">
@@ -199,7 +199,7 @@
                                 </div>
                             </div>
                         </router-link>
-                        <router-link to="/auth-page" custom v-slot="{ navigate }">
+                        <router-link to="/media-item" custom v-slot="{ navigate }">
                             <div class="media-block speeding" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-8.png" alt="blog-thumbnail" class="media-img">
@@ -218,7 +218,7 @@
                                 </div>
                             </div>
                         </router-link>
-                        <router-link to="/auth-page" custom v-slot="{ navigate }">
+                        <router-link to="/media-item" custom v-slot="{ navigate }">
                             <div class="media-block california-traffic-ticket" @click="navigate" @keypress.enter="navigate" role="link">
                                 <div class="media-thumbnnail">
                                     <img src="../assets/images/blog-images/blog-9.png" alt="blog-thumbnail" class="media-img">
