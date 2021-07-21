@@ -121,9 +121,9 @@
                         Copyright © <span class="pry-color">2008-2020</span> Ticket Snipers. All rights reserved
                     </p>
                     <p>
-                        <router-liink to="#" class="sec-color">Privacy Policy</router-liink>
+                        <router-link to="#" class="sec-color">Privacy Policy</router-link>
                         <span> || </span>
-                        <router-liink to="#" class="sec-color">Terms & Conditions</router-liink>
+                        <router-link to="#" class="sec-color">Terms & Conditions</router-link>
                     </p>
                 </div>
             </div>
