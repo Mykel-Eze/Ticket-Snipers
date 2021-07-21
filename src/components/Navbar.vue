@@ -36,7 +36,10 @@
                             <button @click="navigate" @keypress.enter="navigate" role="link" class="nav-pry-btn-2 btn pointer">Sign in</button>
                         </router-link>
                     </li>
-                    <li>
+                    <li class="rel">
+                        <a href="tel:800-985-8978" class="nav-phone-number sec-color">
+                            CALL NOW: <span class="smbold-txt">800-985-8978</span>
+                        </a>
                         <a style="cursor: pointer;">
                             <button class="nav-pry-btn btn pointer">
                                 Snipe My Ticket <img src="../assets/images/target-icon.svg" alt="target">

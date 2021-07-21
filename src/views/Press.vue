@@ -136,7 +136,7 @@
                                         <h5 class="person-name">Jorian Goes</h5>
                                         <div class="flex-div pcd-row">
                                             <img src="../assets/images/telephone-blue.svg" alt="telephone" class="pcd-row-icon">
-                                            <a href="tel:+8009858978" class="sec-color">800.985.8978 ext 101</a>
+                                            <a href="tel:8009858978" class="sec-color">800.985.8978 ext 101</a>
                                         </div>
                                         <div class="flex-div pcd-row">
                                             <img src="../assets/images/envelope-blue.svg" alt="envelope" class="pcd-row-icon">
