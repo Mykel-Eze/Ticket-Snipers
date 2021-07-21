@@ -22,6 +22,7 @@ import County from '../views/County.vue'
 import MediaBlog from '../views/MediaBlog.vue'
 import MediaItem from '../views/MediaItem.vue'
 import Press from '../views/Press.vue'
+import Faq from '../views/Faq.vue'
 
 import AuthPage from '../auth-pages/AuthPage.vue'
 import ResetPassword from '../auth-pages/ResetPassword.vue'
@@ -122,6 +123,11 @@ const routes = [
         path: '/press',
         name: 'Press',
         component: Press
+      },
+      {
+        path: '/faq',
+        name: 'Faq',
+        component: Faq
       }
     ]
   },

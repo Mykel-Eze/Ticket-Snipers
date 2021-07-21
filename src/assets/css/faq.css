@@ -1,0 +1,119 @@
+section#faq-section {
+    margin: 35px 0 20px;
+}
+ul.questions-wrapper.collapsible {
+    border: none;
+    margin: 0;
+    box-shadow: none;
+}
+h3.question {
+    font-size: 24px;
+    font-family: var(--font-smbold);
+    letter-spacing: 0px;
+    margin: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    color: var(--pry-color);
+    position: relative;
+    border-bottom: none;
+}
+h3.question span {
+    display: block;
+    max-width: 550px;
+    text-align: left;
+    letter-spacing: -0.5px;
+}
+
+li.rel.question-block {
+    margin: 10px 0;
+    border: none;
+}
+li.rel.question-block:last-child h3.question, 
+li.rel.question-block.active h3.question {
+    border: none;
+}
+li.rel.question-block:nth-child(even) h3.question {
+    background-color: #F4F8FC;
+}
+.answer {
+    font-size: 18px;
+    padding-top: 0rem;
+    color: #161616;
+}
+.collapsible-header .material-icons {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: var(--pry-color);
+    color: white;
+}
+.close-icon {
+    display: none;
+}
+.active .collapsible-header .material-icons.open-icon {
+    display: none;
+}
+.active .collapsible-header .material-icons.close-icon {
+    display: initial;
+}
+ul.dotted-list {
+    padding-left: 20px;
+    margin-top: 0;
+}
+ul.dotted-list > li {
+    list-style: disc;
+    padding: 3px 0;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+h3.faq-title {
+    font-size: 38px;
+    font-family: var(--font-bold);
+}
+
+@media(min-width: 601px) {
+    #questions {
+        display: flex;
+        width: 100%;
+    }
+    h3.faq-title.center{
+        text-align: left;
+        width: 320px;
+        padding: 15px;
+        margin-right: 30px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    #questions > div.col > div.col {
+        padding-top: 15px !important;
+        text-align: justify;
+    }
+    .question-block:last-child {
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 992px) {
+    h3.question span {
+        max-width: 88%;
+    }
+}
+@media(max-width: 600px) {
+    h3.question {
+        font-size: 1.1rem;
+    }
+    h3.faq-title {
+        font-size: 28px;
+    }
+}
+@media(max-width: 320px) {
+    h3.faq-title {
+        font-size: 2.2rem;
+    }
+}
