@@ -70,7 +70,7 @@
             <router-link to="/pricing" class="sidenav-close" @click="scrollToTop()">Pricing</router-link>
         </li>
         <li class="hire-us-li hul-1">
-            <a style="cursor: pointer;">
+            <a style="cursor: pointer;" class="pad0">
                 <button class="nav-pry-btn btn pointer">
                     Snipe My Ticket <img src="../assets/images/target-icon.svg" alt="target">
                 </button>
