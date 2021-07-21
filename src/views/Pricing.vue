@@ -47,7 +47,9 @@
                                     We offer a partial refund if the case is not dismissed
                                 </div>
                                 <div class="pricing-btn-wrapper center">
-                                    <button class="btn pricing-btn">Beat My Ticket</button>
+                                    <a href="/auth-page#signup-block">
+                                        <button class="btn pricing-btn">Beat My Ticket</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +78,9 @@
                                     We offer a partial refund if the case is not dismissed
                                 </div>
                                 <div class="pricing-btn-wrapper center">
-                                    <button class="btn pricing-btn">Beat My Ticket</button>
+                                    <a href="/auth-page#signup-block">
+                                        <button class="btn pricing-btn">Beat My Ticket</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

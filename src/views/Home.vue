@@ -8,10 +8,10 @@
                     California's Best Way to Erase a Traffic Ticket
                   </h1>
                   <div class="home-btn-wrapper">
-                    <button class="pry-btn btn hidden-xs">
+                    <button class="pry-btn btn hidden-xs modal-trigger" data-target="eligibility-calculator">
                       Can My Case Be Beat? <img src="../assets/images/calculator.svg" alt="icon">
                     </button>
-                    <button class="pry-btn btn">
+                    <button class="pry-btn btn modal-trigger" data-target="eligibility-calculator">
                       Snipe My Ticket <img src="../assets/images/target-icon.svg" alt="icon">
                     </button>
                   </div>
@@ -484,18 +484,22 @@
         </div>
       </div>
     </section>
+
+    <!-- <EligibilityCalculator /> -->
   </div>
 </template>
 
 <script>
 import CalculatorTriggerSect from '../components/CalculatorTriggerSect.vue'
+// import EligibilityCalculator from '../components/EligibilityCalculatorPopup.vue'
 
 import $ from 'jquery'
 import M from 'materialize-css'
 export default {
   name: 'Home',
   components: {
-    CalculatorTriggerSect
+    CalculatorTriggerSect,
+    // EligibilityCalculator
   },
   mounted() {
     var elemsCarousel1 = document.querySelector("#kp-carousel");

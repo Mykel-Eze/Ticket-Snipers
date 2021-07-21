@@ -11,29 +11,34 @@
                         </a>
                     </div>
                     <div class="btn-wrapper flex-div">
-                        <button class="sec-btn btn hover-scale">
+                        <button class="sec-btn btn hover-scale modal-trigger" data-target="eligibility-calculator">
                             Can My Case Be Beat?
                         </button>
-                        <button class="pry-btn btn white-bg-btn hover-scale">
+                        <button class="pry-btn btn white-bg-btn hover-scale modal-trigger" data-target="eligibility-calculator">
                             Snipe My Ticket <img src="../assets/images/target-icon-blue.svg" alt="icon">
                         </button>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- <EligibilityCalculator /> -->
     </section>
 </template>
 
 <script>
+// import EligibilityCalculator from "./EligibilityCalculatorPopup.vue"
 export default {
-    name: "CalculatorTriggerSection2"
+    name: "CalculatorTriggerSection2",
+    components: {
+        // EligibilityCalculator
+    }
 }
 </script>
 
 <style scoped>
     button.pry-btn.btn, button.pry-btn-2.btn, 
     button.sec-btn.btn {
-        font-size: 11px;
+        font-size: 12px;
     }
     .btn-wrapper.flex-div > button {
         margin-right: 12px;

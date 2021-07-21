@@ -10,18 +10,23 @@
                             <span>Learn More with a Free Ticket Review</span>
                         </a>
                     </div>
-                    <button class="pry-btn btn white-bg-btn">
+                    <button class="pry-btn btn white-bg-btn modal-trigger" data-target="eligibility-calculator">
                         Can My Case Be Beat? <img src="../assets/images/calculator-blue.svg" alt="icon">
                     </button>
                 </div>
             </div>
         </div>
+        <!-- <EligibilityCalculator /> -->
     </section>
 </template>
 
 <script>
+// import EligibilityCalculator from "./EligibilityCalculatorPopup.vue"
 export default {
-    name: "CalculatorTriggerSection"
+    name: "CalculatorTriggerSection",
+    components: {
+        // EligibilityCalculator
+    }
 }
 </script>
 

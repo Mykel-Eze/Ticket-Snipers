@@ -117,7 +117,7 @@
 </template>
 
 <script>
-import CalculatorTriggerSect2 from '../components/CalculatorTriggerSect.vue'
+import CalculatorTriggerSect2 from '../components/CalculatorTriggerSect2.vue'
 export default {
     name: "About",
     components: {

@@ -40,8 +40,8 @@
                         <a href="tel:800-985-8978" class="nav-phone-number sec-color">
                             CALL NOW: <span class="smbold-txt">800-985-8978</span>
                         </a>
-                        <a style="cursor: pointer;">
-                            <button class="nav-pry-btn btn pointer">
+                        <a style="cursor: pointer;" class="rel">
+                            <button class="nav-pry-btn btn pointer modal-trigger" data-target="eligibility-calculator">
                                 Snipe My Ticket <img src="../assets/images/target-icon.svg" alt="target">
                             </button>
                         </a>
@@ -85,14 +85,21 @@
             </router-link>
         </li>
     </ul>
+
+    <EligibilityCalculator />
   </div>
 </template>
 
 <script>
+import EligibilityCalculator from "./EligibilityCalculatorPopup.vue"
+
 import M from "materialize-css";
 // import $ from "jquery";
 export default {
   name: "Navbar",
+  components: {
+      EligibilityCalculator
+  },
   mounted() {
     document.addEventListener("DOMContentLoaded", function() {
       var elemsSidenav = document.querySelectorAll(".sidenav");
