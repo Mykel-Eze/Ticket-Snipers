@@ -1,9 +1,17 @@
 /*---=== Modal Forms ===---*/
-.modal.modal-popup{
+.modal.modal-popup {
     max-width: 500px;
     max-height: 85%;
     background-color: transparent;
     box-shadow: none;
+}
+@media (hover: hover) {
+  .modal.modal-popup {
+    overflow: hidden;
+  }
+  .modal.modal-popup:hover {
+      overflow: auto;
+  }
 }
 .modal.modal-popup::-webkit-scrollbar {
     width: 4px;
