@@ -4,7 +4,7 @@
             <div class="img-div">
                 <img src="./assets/images/ticket-snipers.svg" alt="Ticket Sniper" class="">
             </div>
-            <h1 class="bold-txt pry-color">Pages Done (17)</h1>
+            <h1 class="bold-txt pry-color">Pages Done (18)</h1>
             <div class="container">
                 <h5 class="reg-txt left-align sec-color"></h5>
                 <div class="flex-div btn-links-wrapper">
@@ -16,17 +16,19 @@
                     <router-link to="/pricing" class="btn btn-link">Pricing</router-link>
                     <router-link to="/how-it-works" class="btn btn-link">How It Works</router-link>
 
-                    <router-link to="/contact-us" class="btn btn-link">Contact Us</router-link>
-                    <router-link to="/court-house" class="btn btn-link">Courthouses</router-link>
-                    <router-link to="/cvc" class="btn btn-link">California Vehicle Code</router-link>
-                    <router-link to="/media" class="btn btn-link">Media/Blog</router-link>
-                    <router-link to="/media-item" class="btn btn-link">Individual Media/Blog Posts</router-link>
-
                     <router-link to="/general-traffic" class="btn btn-link">General Traffic</router-link>
                     <router-link to="/red-light-camera" class="btn btn-link">Red Light Camera</router-link>
                     <router-link to="/red-light-ticket" class="btn btn-link">Red Light Ticket</router-link>
                     <router-link to="/stop-sign-ticket" class="btn btn-link">Stop Sign Ticket</router-link>
-                    
+                    <router-link to="/speeding-ticket" class="btn btn-link">Speeding Ticket</router-link>
+
+                    <router-link to="/contact-us" class="btn btn-link">Contact Us</router-link>
+                    <router-link to="/court-house" class="btn btn-link">Courthouses</router-link>
+                    <router-link to="/county" class="btn btn-link">County</router-link>
+                    <router-link to="/cvc" class="btn btn-link">California Vehicle Code</router-link>
+                    <router-link to="/media" class="btn btn-link">Media/Blog</router-link>
+                    <router-link to="/media-item" class="btn btn-link">Individual Media/Blog Posts</router-link>
+                    <router-link to="/press" class="btn btn-link">Press</router-link>
                 </div>
             </div>
         </div>

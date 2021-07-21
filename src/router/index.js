@@ -21,6 +21,7 @@ import CourtHouses from '../views/CourtHouses.vue'
 import County from '../views/County.vue'
 import MediaBlog from '../views/MediaBlog.vue'
 import MediaItem from '../views/MediaItem.vue'
+import Press from '../views/Press.vue'
 
 import AuthPage from '../auth-pages/AuthPage.vue'
 
@@ -114,6 +115,11 @@ const routes = [
         path: '/media-item',
         name: 'MediaItem',
         component: MediaItem
+      },
+      {
+        path: '/press',
+        name: 'Press',
+        component: Press
       }
     ]
   },

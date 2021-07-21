@@ -725,7 +725,90 @@ h5.ocs-sec-title {
 }
 /*----==== end of Media-Item Page ====----*/
 
+/*----==== Press Page ====----*/
+.home-sub-title {
+    font-size: 30px;
+    font-family: var(--font-medium);
+    margin-top: 30px;
+}
+.home-btn-wrapper a.pry-btn.home-btn {
+    background: var(--pry-color);
+    min-width: 235px;
+    height: 56px;
+    line-height: 56px;
+    text-transform: none;
+    font-size: 15px;
+    font-family: var(--font-smbold);
+    box-shadow: none;
+}
+
+.press-page .contents-side-wrapper {
+    grid-template-columns: 1fr 35%;
+}
+.press-page .txts-block {
+    border-bottom: 2.5px solid var(--pry-color);
+}
+
+.ocs-block-wrapper {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 102, 245, 0.122023);
+    box-sizing: border-box;
+    box-shadow: 0px 12px 21px 10px rgb(4 30 139 / 5%);
+    border-radius: 5px;
+    margin: 1.52rem 0 .912rem 0;
+    padding-bottom: 30px;
+}
+.ocs-block-wrapper .container {
+    width: 85% !important;
+}
+.anchor-links-wrapper {
+    background: var(--sec-color);
+    padding: 30px 0;
+}
+.anchor-links-wrapper > .container.flex-div {
+    justify-content: space-between;
+}
+a.ocs-anchor-links {
+    font-size: 13px;
+    color: white;
+    border: 0.5px solid #DAE5FF;
+    filter: drop-shadow(0px 3px 7px rgba(4, 0, 89, 0.0968914));
+    border-radius: 5px;
+    padding: 5px 14px;
+}
+a.ocs-anchor-links:hover {
+    border-color: white;
+    background-color: white;
+    color: var(--sec-color);
+}
+h5.person-name {
+    font-size: 24px;
+    font-family: var(--font-smbold);
+}
+img.pcd-row-icon {
+    margin-right: 15px;
+}
+.pcd-row.flex-div {
+    align-items: center;
+    margin: 10px 0;
+}
+.ocs-link-wrapper {
+    justify-content: space-between;
+    margin: 30px 0 20px;
+}
+a.ocs-link {
+    font-size: 16px;
+    text-decoration: underline;
+}
+/*----==== end of Press Page ====----*/
+
 /*----==== General Media Queries ====----*/
+@media(min-width: 993px) {
+    .ocs-block-wrapper {
+        position: relative;
+        top: 10px;
+    }
+}
 @media(min-width: 601px) {
     .ticket-breakdown-legend > div {
         border-left: 1px solid #979797;
@@ -784,7 +867,11 @@ h5.ocs-sec-title {
     }
 
     .contents-side-wrapper {
-        grid-template-columns: 100%;
+        grid-template-columns: 100% !important;
+    }
+
+    a.ocs-anchor-links {
+        padding: 5px 6%;
     }
 }
 
@@ -885,10 +972,31 @@ h5.ocs-sec-title {
     .contents-side-wrapper {
         margin: 20px 0 0;
     }
+    .hide-xs {
+        display: none;
+    }
+    .home-sub-title {
+        font-size: 26px;
+    }
+    .home-btn-wrapper a.pry-btn.home-btn {
+        margin-bottom: 10px;
+        width: 100%;
+    }
 }
 @media(max-width: 360px) {
     h3.abt-home-title {
         font-size: 42px;
+    }
+}
+@media(max-width: 350px) {
+    h3.abt-home-title {
+        font-size: 42px;
+    }
+    .ocs-link-wrapper.flex-div {
+        flex-direction: column;
+    }
+    .ocs-link-wrapper.flex-div > a.ocs-link {
+        margin-bottom: 10px;
     }
 }
 /*----==== end of General Media Queries ====----*/
