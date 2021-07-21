@@ -16,7 +16,7 @@
                     <label for="login_password">Password</label>
                     <img src="../assets/images/eye-closed.svg" alt="icon" class="input-icons">
                     <div class="forgot-password-div">
-                        <router-link to="#" class="forgot-password-link pry-color">Forgot password?</router-link>
+                        <router-link to="/reset-password" class="forgot-password-link pry-color">Forgot password?</router-link>
                     </div>
                 </div>
             </div>

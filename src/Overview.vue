@@ -4,11 +4,13 @@
             <div class="img-div">
                 <img src="./assets/images/ticket-snipers.svg" alt="Ticket Sniper" class="">
             </div>
-            <h1 class="bold-txt pry-color">Pages Done (18)</h1>
+            <h1 class="bold-txt pry-color">Pages Done (20)</h1>
             <div class="container">
                 <h5 class="reg-txt left-align sec-color"></h5>
                 <div class="flex-div btn-links-wrapper">
                     <router-link to="/auth-page" class="btn btn-link">Login/Signup</router-link>
+                    <router-link to="/reset-password" class="btn btn-link">Reset Password</router-link>
+                    <router-link to="/new-password" class="btn btn-link">New Password</router-link>
 
                     <router-link to="/" class="btn btn-link main-page">HomePage</router-link>
                     <router-link to="/about" class="btn btn-link">About</router-link>

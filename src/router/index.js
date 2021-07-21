@@ -24,6 +24,8 @@ import MediaItem from '../views/MediaItem.vue'
 import Press from '../views/Press.vue'
 
 import AuthPage from '../auth-pages/AuthPage.vue'
+import ResetPassword from '../auth-pages/ResetPassword.vue'
+import NewPassword from '../auth-pages/NewPassword.vue'
 
 const routes = [
   {
@@ -132,6 +134,16 @@ const routes = [
         alias: '',
         name: 'AuthPage',
         component: AuthPage
+      },
+      {
+        path: '/reset-password',
+        name: 'ResetPassword',
+        component: ResetPassword
+      },
+      {
+        path: '/new-password',
+        name: 'NewPassword',
+        component: NewPassword
       }
     ]
   }
