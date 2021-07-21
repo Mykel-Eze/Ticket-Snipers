@@ -80,15 +80,19 @@
                     <ul class="footer-links-li* footer-updates-ul">
                         <div class="carousel carousel-slider center" id="footer-carousel">
                             <div class="carousel-item" href="#one!">
-                                <img src="../assets/images/footer-blog-1.jpg" alt="footer-blog" class="footer-blog-img">
+                                <div class="footer-blog-img-div">
+                                    <img src="../assets/images/footer-blog-1.jpg" alt="footer-blog" class="footer-blog-img">
+                                </div>
                                 <div>
-                                    <a href="#" class="footer-blog-link">WHAT IS A “CALIFORNIA STOP”</a>
+                                    <router-link to="/media-item" class="footer-blog-link" @click="scrollToTop()">WHAT IS A “CALIFORNIA STOP”</router-link>
                                 </div>
                             </div>
                             <div class="carousel-item" href="#two!">
-                                <img src="../assets/images/footer-blog-1.jpg" alt="footer-blog" class="footer-blog-img">
+                                <div class="footer-blog-img-div">
+                                    <img src="../assets/images/insurance-bg.jpg" alt="footer-blog" class="footer-blog-img">
+                                </div>
                                 <div>
-                                    <a href="#" class="footer-blog-link">HOW TO BEAT TRAFFIC</a>
+                                    <router-link to="/media-item" class="footer-blog-link" @click="scrollToTop()">HOW TO BEAT TRAFFIC</router-link>
                                 </div>
                             </div>
                             <img src="../assets/images/left-arrow-2.png" @click="prevFunc()" alt="slider control" class="footer-slider-ctrl left-ctrl">
