@@ -1,15 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+// Layouts
 import Externals from '../Externals.vue'
 import Auth from '../Auth.vue'
+import Dashboard from '../Dashboard.vue'
 import Overview from '../Overview.vue'
 
+// External Pages
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Pricing from '../views/Pricing.vue'
 import HowItWorks from '../views/HowItWorks.vue'
 import Tickets from '../views/Tickets.vue'
 
+// More Pages with External Layouts
 import SpeedingTicket from '../views/SpeedingTicket.vue'
 import RedLightCamera from '../views/RedLightCamera.vue'
 import GeneralTraffic from '../views/GeneralTraffic.vue'
@@ -25,9 +29,14 @@ import Press from '../views/Press.vue'
 import Faq from '../views/Faq.vue'
 import Resources from '../views/Resources.vue'
 
-import AuthPage from '../auth-pages/AuthPage.vue'
-import ResetPassword from '../auth-pages/ResetPassword.vue'
-import NewPassword from '../auth-pages/NewPassword.vue'
+// Login/Signup, and other Authentication pages
+import AuthPage from '../auth-views/AuthPage.vue'
+import ResetPassword from '../auth-views/ResetPassword.vue'
+import NewPassword from '../auth-views/NewPassword.vue'
+
+// Dashboard Pages
+import DashboardHome from '../dashboard-views/DashboardHome.vue'
+
 
 const routes = [
   {
@@ -156,6 +165,18 @@ const routes = [
         path: '/new-password',
         name: 'NewPassword',
         component: NewPassword
+      }
+    ]
+  },
+  {
+    path: '/dashboard',
+    component: Dashboard,
+    children: [
+      {
+        path: '/dashboard/home',
+        alias: '',
+        name: 'DashboardHome',
+        component: DashboardHome
       }
     ]
   }
