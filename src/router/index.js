@@ -23,6 +23,7 @@ import MediaBlog from '../views/MediaBlog.vue'
 import MediaItem from '../views/MediaItem.vue'
 import Press from '../views/Press.vue'
 import Faq from '../views/Faq.vue'
+import Resources from '../views/Resources.vue'
 
 import AuthPage from '../auth-pages/AuthPage.vue'
 import ResetPassword from '../auth-pages/ResetPassword.vue'
@@ -128,6 +129,11 @@ const routes = [
         path: '/faq',
         name: 'Faq',
         component: Faq
+      },
+      {
+        path: '/resources',
+        name: 'Resources',
+        component: Resources
       }
     ]
   },

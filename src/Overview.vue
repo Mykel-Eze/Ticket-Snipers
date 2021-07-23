@@ -32,6 +32,7 @@
                     <router-link to="/media-item" class="btn btn-link">Individual Media/Blog Posts</router-link>
                     <router-link to="/press" class="btn btn-link">Press</router-link>
                     <router-link to="/faq" class="btn btn-link">FAQ</router-link>
+                    <router-link to="/resources" class="btn btn-link">Resources</router-link>
                 </div>
             </div>
         </div>
