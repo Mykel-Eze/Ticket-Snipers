@@ -1,3 +1,40 @@
+body {
+	font-family: var(--font2);
+}
+h1, h2, h3, h4{
+    font-family: var(--font2-bold);
+}
+h5, h6{
+    font-family: var(--font2-medium);
+    letter-spacing: -0.5px;
+}
+
+#dashboard-wrapper {
+    background: #F2F6FB;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: minmax(250px, 18%) 1fr;
+    /* grid-gap: 20px; */
+    transition: all 1.5s;
+}
+/* #content-body-wrapper {
+    background: #FFFFFF;
+} */
+#content-body {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 102, 245, 0.122023);
+    box-sizing: border-box;
+    box-shadow: 0px 12px 21px 10px rgba(4, 30, 139, 0.0478311);
+    border-radius: 19px 0px 0px 0px;
+    height: calc(100vh - 80px);
+    overflow: auto;
+    padding-bottom: 30px;
+}
+
 /*---============== SideBar Styling =================---*/
 #side-bar {
     color: #92A1B7;
@@ -23,7 +60,7 @@
 h2.greet-user {
     font-size: 35px;
     text-align: center;
-    font-family: var(--font-bold);
+    font-family: var(--font2-bold);
 }
 .nav-list-wrapper > div {
     margin: 15% 0;
@@ -120,7 +157,7 @@ button.nav-pry-btn.btn, button.nav-pry-btn-2.btn {
     min-width: 100px;
     font-weight: bold;
     /* margin-bottom: 20px; */
-    font-family: var(--font);
+    font-family: var(--font2);
     border: 1px solid var(--pry-color);
     transition: all 1.5ms;
     box-shadow: none;
@@ -132,6 +169,7 @@ button.nav-pry-btn.btn {
 button.nav-pry-btn-2.btn {
     background-color: white;
     color: var(--pry-color);
+    line-height: 1;
 }
 button.nav-pry-btn.btn:hover {
     background-color: var(--sec-color);
@@ -142,11 +180,64 @@ button.nav-pry-btn-2.btn:hover {
 }
 /*---====== end of Top-Nav Styling ======---*/
 
+/*---====== Dashboard-Home Styling ======---*/
+div#chart-n-table-wrapper {
+    border: 1px solid rgba(0, 102, 245, 0.122023);
+    border-color: rebeccapurple;
+    border-radius: 22px;
+    padding: 30px 40px;
+    margin-top: 40px;
+}
+#piechart-container {
+    height: 400px; 
+    width: 100%;
+}
+.tickets-summary-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+hr.summary-wrapper-divider {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border: none;
+    margin: 0;
+    height: 1px;
+    background: #2D5AF6;
+}
+.tickets-summary-block {
+    position: relative;
+    font-family: var(--font2)
+}
+span.summary-number {
+    font-size: 24px;
+}
+.summary-block-title {
+    font-size: 13px;
+    color: #747C93;
+}
+a.view-all-tickets {
+    display: flex;
+    color: var(--pry-color);
+    position: absolute;
+    bottom: 0;
+}
+a.view-all-tickets i.material-icons {
+    color: var(--sec-color);
+}
+h4.ticket-status-title {
+    font-size: 24px;
+    letter-spacing: -1px;
+    font-family: var(--font2-bold);
+    margin: 0;
+}
+
+/*---====== end of Dashboard-Home Styling ======---*/
+
 
 /*---============= Mobile View Styling =================---*/
 @media(max-width: 992px) {
-    /*---==== Mobile for Side-Bar and Top-Nav Styles ====---*/
-    #body-wrapper {
+    #dashboard-wrapper {
         display: block;
     }
     nav.top-nav {
@@ -186,6 +277,22 @@ button.nav-pry-btn-2.btn:hover {
     .sidebar-overlay.open {
         display: block;
     }
-    
-    /*---==== end of Side-Bar and Top-Nav Styles ====---*/
+}
+
+@media(max-width: 600px) {
+    #piechart-container {
+        height: 400px; 
+        margin-bottom: 30px;
+    }
+    div#chart-n-table-wrapper {
+        padding: 10px 10px 0;
+        border: none;
+    }
+    .tickets-summary-wrapper {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 10px;
+    }
+    hr.summary-wrapper-divider {
+        display: none;
+    }
 }

@@ -22,3 +22,20 @@
     font-family: 'BRFirma-medium';
     src: url('../fonts/brf-fimma/BRFirma-Medium.ttf');
 }
+
+@font-face {
+    font-family: 'Neurial-Grotesk';
+    src: url('../fonts/neurial-grotesk/Neurial-Grotesk-Regular.ttf');
+}
+@font-face {
+    font-family: 'Neurial-Grotesk-bold';
+    src: url('../fonts/neurial-grotesk/Neurial-Grotesk-Bold.ttf');
+}
+@font-face {
+    font-family: 'Neurial-Grotesk-light';
+    src: url('../fonts/neurial-grotesk/Neurial-Grotesk-Light.ttf');
+}
+@font-face {
+    font-family: 'Neurial-Grotesk-medium';
+    src: url('../fonts/neurial-grotesk/Neurial-Grotesk-Medium.ttf');
+}

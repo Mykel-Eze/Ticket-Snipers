@@ -8,6 +8,11 @@
     --font-xlight: 'BRFirma-xlight', sans-serif;
     --font-medium: 'BRFirma-medium', sans-serif;
 
+    --font2: 'Neurial-Grotesk', sans-serif;
+    --font2-bold: 'Neurial-Grotesk-bold', sans-serif;
+    --font2-light: 'Neurial-Grotesk-light', sans-serif;
+    --font2-medium: 'Neurial-Grotesk-medium', sans-serif;
+
     width: 100%;
     overflow-x: hidden;
 }
@@ -58,23 +63,32 @@ h5, h6{
 .reg-txt{
     font-family: var(--font);
 }
+.reg-txt-2{
+    font-family: var(--font2);
+}
 .smbold-txt{
     font-family: var(--font-smbold);
 }
 .bold-txt{
     font-family: var(--font-bold);
 }
+.bold-txt-2{
+    font-family: var(--font2-bold);
+}
 .xbold-txt{
     font-family: var(--font-xbold);
 }
+.medium-txt {
+    font-family: var(--font-medium);
+}
+.medium-txt-2 {
+    font-family: var(--font2-medium);
+}
 .lite-txt{
-    font-family: var(--font-lite);
+    font-family: var(--font-light);
 }
 .xlite-txt{
-    font-family: var(--font-xlite);
-}
-.pry-font{
-    font-family: var(--pry-font);
+    font-family: var(--font-xlight);
 }
 .rel{
     position: relative;
