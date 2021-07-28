@@ -32,11 +32,11 @@
                             </router-link>
                         </li>
                         <li class="link-wrapper">
-                            <router-link to="/dashboard/questionaire" class="pg-link">
+                            <router-link to="/dashboard/questionnaire" class="pg-link">
                                 <div class="flex-div">
                                     <img src="../assets/images/questionaire-icon-default.svg" alt="icon" class="link-img" />
                                     <img src="../assets/images/questionaire-icon-white.svg" alt="icon" class="a-link-img" />
-                                    <span class="link-txt">Questionaire</span>
+                                    <span class="link-txt">Questionnaire</span>
                                 </div>
                             </router-link>
                         </li>

@@ -206,7 +206,7 @@
                                                 <i class="material-icons">check_circle</i> <!-- Change text to "cancel" for Unpaid status -->
                                             </td>
                                             <td>
-                                                <router-link to="/dashboard" class="table-block-link">Fill out questionaire</router-link>
+                                                <router-link to="/dashboard" class="table-block-link">Fill out questionnaire</router-link>
                                             </td>
                                         </tr>
                                     </tbody>

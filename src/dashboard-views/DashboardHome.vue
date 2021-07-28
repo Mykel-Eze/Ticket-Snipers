@@ -170,7 +170,7 @@ export default {
                     },
                     data: [
                         { value: 1048, name: 'Dismissed Tickets' },
-                        { value: 735, name: 'Citation Questionaire' },
+                        { value: 735, name: 'Citation Questionnaire' },
                         { value: 580, name: 'Extented Tickets' }
                     ]
                 },
