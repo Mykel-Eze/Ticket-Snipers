@@ -49,7 +49,7 @@
 
 import * as echarts from 'echarts';
 export default {
-  name: "DashboardNav",
+  name: "DashboardHome",
   mounted() {
       this.pageTitle();
 

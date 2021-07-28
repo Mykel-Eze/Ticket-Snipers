@@ -228,7 +228,7 @@ import M from "materialize-css";
 import $ from "jquery";
 
 export default {
-  name: "DashboardNav",
+  name: "DashboardTickets",
   mounted() {
         this.pageTitle();
         this.setYears(-5) // set the previous five years in dropdown
