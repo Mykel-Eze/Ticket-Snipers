@@ -36,6 +36,7 @@ import NewPassword from '../auth-views/NewPassword.vue'
 
 // Dashboard Pages
 import DashboardHome from '../dashboard-views/DashboardHome.vue'
+import DashboardTickets from '../dashboard-views/DashboardTickets.vue'
 
 
 const routes = [
@@ -177,6 +178,11 @@ const routes = [
         alias: '',
         name: 'DashboardHome',
         component: DashboardHome
+      },
+      {
+        path: '/dashboard/tickets',
+        name: 'DashboardTickets',
+        component: DashboardTickets
       }
     ]
   }

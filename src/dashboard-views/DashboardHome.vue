@@ -182,7 +182,7 @@ export default {
             ]
         };
 
-        var mediaScreen = window.matchMedia("(min-width: 601px)")
+        const mediaScreen = window.matchMedia("(min-width: 601px)")
 
         if (mediaScreen.matches) { // If media query matches
             if (option && typeof option === 'object') {
@@ -200,4 +200,8 @@ export default {
 
 <style scoped src="..\assets\css\dashboard.css"></style>
 
-<style scoped></style>
+<style scoped>
+h4.ticket-status-title {
+    margin: 0;
+}
+</style>

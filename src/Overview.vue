@@ -4,7 +4,7 @@
             <div class="img-div">
                 <img src="./assets/images/ticket-snipers.svg" alt="Ticket Sniper" class="">
             </div>
-            <h1 class="bold-txt pry-color">Pages Done (23)</h1>
+            <h1 class="bold-txt pry-color">Pages Done (24)</h1>
             <div class="container">
                 <h5 class="reg-txt left-align sec-color"></h5>
                 <div class="flex-div btn-links-wrapper">
@@ -34,7 +34,8 @@
                     <router-link to="/faq" class="btn btn-link">FAQ</router-link>
                     <router-link to="/resources" class="btn btn-link">Resources</router-link>
 
-                    <router-link to="/dashboard" class="btn btn-link">Dashboard</router-link>
+                    <router-link to="/dashboard" class="btn btn-link">Dashboard Home</router-link>
+                    <router-link to="/dashboard/tickets" class="btn btn-link">Dashboard Tickets</router-link>
                 </div>
             </div>
         </div>
