@@ -61,6 +61,11 @@
                     </ul>
                 </div>
             </div>
+            <div class="logout-btn-wrapper visible-sm-xs">
+                <router-link to="/auth-page" custom v-slot="{ navigate }">
+                    <button @click="navigate" @keypress.enter="navigate" role="link" class="nav-pry-btn-2 btn pointer">Logout</button>
+                </router-link>
+            </div>
         </div>
     </section>
     <div class="sidebar-overlay"></div>
