@@ -37,7 +37,7 @@ import NewPassword from '../auth-views/NewPassword.vue'
 // Dashboard Pages
 import DashboardHome from '../dashboard-views/DashboardHome.vue'
 import DashboardTickets from '../dashboard-views/DashboardTickets.vue'
-
+import DashboardQuestionnaire from '../dashboard-views/DashboardQuestionnaire.vue'
 
 const routes = [
   {
@@ -183,6 +183,11 @@ const routes = [
         path: '/dashboard/tickets',
         name: 'DashboardTickets',
         component: DashboardTickets
+      },
+      {
+        path: '/dashboard/questionnaire',
+        name: 'DashboardQuestionnaire',
+        component: DashboardQuestionnaire
       }
     ]
   }

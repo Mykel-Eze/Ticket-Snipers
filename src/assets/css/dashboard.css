@@ -323,6 +323,41 @@ table.ticket-details-table td {
 }
 /*---====== end of Dashboard-Tickets Styling ======---*/
 
+/*---====== Dashboard-Questionnaire Styling ======---*/
+.questionnaires-wrapper {
+    width: 100%;
+    max-width: 750px;
+    border: 1px solid rgba(0, 102, 245, 0.122023);
+    box-sizing: border-box;
+    border-radius: 19px;
+    /* border-color: rebeccapurple; */
+    padding: 20px 30px;
+    margin: 30px 0 20px;
+}
+table.questionnaires-table tbody tr:last-child {
+    border-bottom: none;
+}
+.questionnaires-row {
+    font-size: 16px;
+    cursor: pointer;
+}
+.questionnaires-row.unread {
+    color: var(--pry-color);
+}
+.questionnaires-row.read {
+    color: var(--sec-color);
+}
+img.ticket-icon {
+    width: 30px;
+    position: relative;
+    top: 3px;
+}
+img.next-arr-icon {
+    width: 8px;
+    position: relative;
+}
+/*---====== end of Dashboard-Questionnaire Styling ======---*/
+
 
 /*---============= Mobile View Styling =================---*/
 @media(max-width: 992px) {
@@ -451,5 +486,21 @@ table.ticket-details-table td {
     }
     .filter-block b.fg-1 {
         width: 50px;
+    }
+
+    tr.questionnaires-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 20px 0px;
+    }
+    tr.questionnaires-row td {
+        padding: 10px 5px;
+    }
+    tr.questionnaires-row:first-child td {
+        padding-top: 0;
+    }
+    tr.questionnaires-row td:last-child {
+        display: none;
     }
 }

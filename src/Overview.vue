@@ -4,26 +4,30 @@
             <div class="img-div">
                 <img src="./assets/images/ticket-snipers.svg" alt="Ticket Sniper" class="">
             </div>
-            <h1 class="bold-txt pry-color">Pages Done (24)</h1>
+            <h1 class="bold-txt pry-color">Pages Done (25)</h1>
             <div class="container">
                 <h5 class="reg-txt left-align sec-color"></h5>
                 <div class="flex-div btn-links-wrapper">
+                    <!-- Auth Pages -->
                     <router-link to="/auth-page" class="btn btn-link">Login/Signup</router-link>
                     <router-link to="/reset-password" class="btn btn-link">Reset Password</router-link>
                     <router-link to="/new-password" class="btn btn-link">New Password</router-link>
 
+                    <!-- External Pages -->
                     <router-link to="/" class="btn btn-link main-page">HomePage</router-link>
                     <router-link to="/about" class="btn btn-link">About</router-link>
                     <router-link to="/tickets" class="btn btn-link">Tickets</router-link>
                     <router-link to="/pricing" class="btn btn-link">Pricing</router-link>
                     <router-link to="/how-it-works" class="btn btn-link">How It Works</router-link>
 
+                    <!-- Tickets Pages (External) -->
                     <router-link to="/general-traffic" class="btn btn-link">General Traffic</router-link>
                     <router-link to="/red-light-camera" class="btn btn-link">Red Light Camera</router-link>
                     <router-link to="/red-light-ticket" class="btn btn-link">Red Light Ticket</router-link>
                     <router-link to="/stop-sign-ticket" class="btn btn-link">Stop Sign Ticket</router-link>
                     <router-link to="/speeding-ticket" class="btn btn-link">Speeding Ticket</router-link>
 
+                    <!-- Other External Pages -->
                     <router-link to="/contact-us" class="btn btn-link">Contact Us</router-link>
                     <router-link to="/court-house" class="btn btn-link">Courthouses</router-link>
                     <router-link to="/county" class="btn btn-link">County</router-link>
@@ -34,8 +38,10 @@
                     <router-link to="/faq" class="btn btn-link">FAQ</router-link>
                     <router-link to="/resources" class="btn btn-link">Resources</router-link>
 
+                    <!-- Dashboard Pages -->
                     <router-link to="/dashboard" class="btn btn-link">Dashboard Home</router-link>
                     <router-link to="/dashboard/tickets" class="btn btn-link">Dashboard Tickets</router-link>
+                    <router-link to="/dashboard/questionnaire" class="btn btn-link">Dashboard Questionnaire</router-link>
                 </div>
             </div>
         </div>
