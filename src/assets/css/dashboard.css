@@ -20,6 +20,7 @@ h5, h6{
     grid-template-columns: minmax(250px, 18%) 1fr;
     /* grid-gap: 20px; */
     transition: all 1.5s;
+    overflow: hidden;
 }
 /* #content-body-wrapper {
     background: #FFFFFF;
@@ -97,24 +98,25 @@ img.link-img, img.a-link-img {
 img.a-link-img {
     display: none;
 }
-.nav-list-wrapper li.link-wrapper.active, .nav-list-wrapper li.link-wrapper:hover {
+.nav-list-wrapper li.link-wrapper a.router-link-active.pg-link, 
+.nav-list-wrapper li.link-wrapper:hover a.pg-link {
     background-color: var(--pry-color);
     border-radius: 14px;
     position: relative;
 }
-.nav-list-wrapper li.link-wrapper.active:hover {
+.nav-list-wrapper li.link-wrapper:hover a.router-link-active.pg-link {
     background-color: var(--pry-color);
 }
-.nav-list-wrapper li.link-wrapper:hover {
+.nav-list-wrapper li.link-wrapper:hover a.pg-link {
     background-color: rgba(0, 102, 245, 0.2);
 }
-.nav-list-wrapper li.link-wrapper.active img.a-link-img {
+.nav-list-wrapper a.router-link-active.pg-link img.a-link-img {
     display: block;
 }
-.nav-list-wrapper li.link-wrapper.active img.link-img {
+.nav-list-wrapper a.router-link-active.pg-link img.link-img {
     display: none;
 }
-.nav-list-wrapper li.link-wrapper.active a.pg-link {
+.nav-list-wrapper a.router-link-active.pg-link {
     color: white;
 }
 .sidebar-overlay {
@@ -358,6 +360,86 @@ img.next-arr-icon {
 }
 /*---====== end of Dashboard-Questionnaire Styling ======---*/
 
+/*---====== Questionnaire-Form Styling ======---*/
+.q-form-page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 180px;
+}
+.page-title-description {
+    font-size: 18px;
+    font-family: var(--font-medium);
+}
+.save-link-side {
+    padding-top: 1.52rem;
+}
+.save-n-continue{
+    text-decoration: underline;
+    color: var(--pry-color);
+    font-size: 14px;
+    position: relative;
+    right: -15px;
+}
+
+.questionnaire-form-field {
+    background: #E9F0FD;
+    border: 1px solid #D9E2EF;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: 20px 0;
+    padding: 15px 25px;
+}
+form#questionnaires-form-wrapper .q-inp-field {
+    background: #FFFFFF;
+    border: 1px solid #D9E2EF;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 0 10px;
+    height: 55px;
+    line-height: 55px;
+    box-shadow: none;
+}
+form#questionnaires-form-wrapper textarea.q-inp-field {
+    min-height: 200px;
+    line-height: 22px;
+    padding: 8px 10px;
+}
+.form-label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.questionnaire-form-field label {
+    /* display: block; */
+    color: #767E94;
+    mix-blend-mode: normal;
+    /* opacity: 0.8; */
+    line-height: 3;
+}
+.submit-btn-section.flex-div {
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 20px;
+}
+.submit-btn-section.flex-div .save-link-side {
+    padding: 0;
+}
+.submit-btn-section.flex-div .save-n-continue {
+    right: 0;
+}
+[type="radio"]:checked+span:after, 
+[type="radio"].with-gap:checked+span:before, 
+[type="radio"].with-gap:checked+span:after {
+    border: 2px solid #2D5AF6;
+}
+[type="radio"]:checked+span:after, 
+[type="radio"].with-gap:checked+span:after {
+    background-color: #2D5AF6;
+}
+.submit-btn-section.flex-div button.submit-btn.pry-btn.btn {
+    font-size: 13px;
+}
+/*---====== end of Questionnaire-Form Styling ======---*/
+
 
 /*---============= Mobile View Styling =================---*/
 @media(max-width: 992px) {
@@ -436,6 +518,10 @@ img.next-arr-icon {
     table.ticket-details-table th {
         text-align: left;
     }
+
+    .q-form-page-wrapper {
+        grid-template-columns: 100%;
+    }
 }
 
 @media(max-width: 600px) {
@@ -502,5 +588,14 @@ img.next-arr-icon {
     }
     tr.questionnaires-row td:last-child {
         display: none;
+    }
+
+    .submit-btn-section.flex-div {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .submit-btn-section.flex-div button.submit-btn.pry-btn.btn {
+        margin-top: 20px;
+        width: 100%;
     }
 }

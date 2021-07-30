@@ -32,7 +32,7 @@
                             </router-link>
                         </li>
                         <li class="link-wrapper">
-                            <router-link to="/dashboard/questionnaire" class="pg-link">
+                            <router-link to="/dashboard/questionnaire" class="pg-link" :class="{'router-link-active': $route.fullPath === '/dashboard/questionnaire/form'}">
                                 <div class="flex-div">
                                     <img src="../assets/images/questionaire-icon-default.svg" alt="icon" class="link-img" />
                                     <img src="../assets/images/questionaire-icon-white.svg" alt="icon" class="a-link-img" />
@@ -50,13 +50,13 @@
                             </router-link>
                         </li>
                         <li class="link-wrapper">
-                            <router-link to="#" class="pg-link">
+                            <a href="#" class="pg-link">
                                 <div class="flex-div">
                                     <img src="../assets/images/chat-icon-default.svg" alt="icon" class="link-img" />
                                     <img src="../assets/images/chat-icon-white.svg" alt="icon" class="a-link-img" />
                                     <span class="link-txt">Chat</span>
                                 </div>
-                            </router-link>
+                            </a>
                         </li>
                     </ul>
                 </div>

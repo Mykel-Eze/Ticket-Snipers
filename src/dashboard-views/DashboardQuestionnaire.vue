@@ -8,7 +8,7 @@
                     <div class="questionnaires-wrapper">
                         <table class="questionnaires-table">
                             <tbody>
-                                <router-link to="/" custom v-slot="{ navigate }">
+                                <router-link to="/dashboard/questionnaire/form" custom v-slot="{ navigate }">
                                     <tr class="questionnaires-row unread" @click="navigate" role="link">
                                         <td>
                                             <img src="../assets/images/ticket-icon-blue.svg" alt="ticket-icon" class="ticket-icon">
@@ -27,7 +27,7 @@
                                         </td>
                                     </tr>
                                 </router-link>
-                                <router-link to="/" custom v-slot="{ navigate }">
+                                <router-link to="/dashboard/questionnaire/form" custom v-slot="{ navigate }">
                                     <tr class="questionnaires-row unread" @click="navigate" role="link">
                                         <td>
                                             <img src="../assets/images/ticket-icon-blue.svg" alt="ticket-icon" class="ticket-icon">
@@ -46,7 +46,7 @@
                                         </td>
                                     </tr>
                                 </router-link>
-                                <router-link to="/" custom v-slot="{ navigate }">
+                                <router-link to="/dashboard/questionnaire/form" custom v-slot="{ navigate }">
                                     <tr class="questionnaires-row read" @click="navigate" role="link">
                                         <td>
                                             <img src="../assets/images/ticket-icon-gray.svg" alt="ticket-icon" class="ticket-icon">
@@ -65,7 +65,7 @@
                                         </td>
                                     </tr>
                                 </router-link>
-                                <router-link to="/" custom v-slot="{ navigate }">
+                                <router-link to="/dashboard/questionnaire/form" custom v-slot="{ navigate }">
                                     <tr class="questionnaires-row read" @click="navigate" role="link">
                                         <td>
                                             <img src="../assets/images/ticket-icon-gray.svg" alt="ticket-icon" class="ticket-icon">
@@ -84,7 +84,7 @@
                                         </td>
                                     </tr>
                                 </router-link>
-                                <router-link to="/" custom v-slot="{ navigate }">
+                                <router-link to="/dashboard/questionnaire/form" custom v-slot="{ navigate }">
                                     <tr class="questionnaires-row read" @click="navigate" role="link">
                                         <td>
                                             <img src="../assets/images/ticket-icon-gray.svg" alt="ticket-icon" class="ticket-icon">
@@ -103,7 +103,7 @@
                                         </td>
                                     </tr>
                                 </router-link>
-                                <router-link to="/" custom v-slot="{ navigate }">
+                                <router-link to="/dashboard/questionnaire/form" custom v-slot="{ navigate }">
                                     <tr class="questionnaires-row read" @click="navigate" role="link">
                                         <td>
                                             <img src="../assets/images/ticket-icon-gray.svg" alt="ticket-icon" class="ticket-icon">
