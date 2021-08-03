@@ -35,7 +35,7 @@
                             <div class="questionnaire-form-field">
                                 <span class="form-label">Did the officer write your birthdate on the citation?</span>
                                 <label>
-                                    <input class="with-gap" name="dob_check" type="radio" />
+                                    <input class="with-gap" name="dob_check" type="radio" checked/>
                                     <span>Yes</span>
                                 </label> <br />
                                 <label>
@@ -308,7 +308,8 @@ export default {
 
         var elemsDatepicker = document.querySelectorAll('.datepicker');
         M.Datepicker.init(elemsDatepicker, {
-            format: 'dd/mm/yyyyy'
+            format: 'dd/mm/yyyyy',
+            yearRange: [1950, new Date().getFullYear() - 1]
         });
   },
   methods:{
@@ -324,4 +325,8 @@ export default {
 
 <style scoped src="..\assets\css\dashboard.css"></style>
 
-<style></style>
+<style>
+.datepicker-date-display,.datepicker-table td.is-selected {
+    background-color: var(--pry-color);
+}
+</style>
