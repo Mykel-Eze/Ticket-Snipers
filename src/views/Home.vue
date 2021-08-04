@@ -48,7 +48,7 @@
           <div class="col s12 m10 pad0-xs">
             <div class="video-thumbnail rel col s12 pad0">
               <img src="../assets/images/stop-over-bg.jpg" alt="video-thumbnail" class="thumbnail-img">
-              <div class="play-btn-wrapper hover-toggle">
+              <div class="play-btn-wrapper hover-toggle modal-trigger" data-target="video-modal-0">
                 <img src="../assets/images/play-white.svg" alt="play" class="play-btn hover-hide">
                 <img src="../assets/images/play-blue.svg" alt="play" class="play-btn hover-show">
               </div>
@@ -436,7 +436,7 @@
                   <div class="video-thumbnail rel col s12 m10 offset-m2 pad0">
                     <img src="../assets/images/slider-1.jpg" alt="video-thumbnail" class="thumbnail-img">
                     <div class="play-btn-wrapper pointer">
-                      <img src="../assets/images/play.svg" alt="play" class="play-btn hover-scale">
+                      <img src="../assets/images/play.svg" alt="play" class="play-btn hover-scale modal-trigger" data-target="video-modal-1">
                     </div>
                   </div>
                   <div class="testimony-txt-card">
@@ -450,7 +450,7 @@
                   <div class="video-thumbnail rel col s12 m10 offset-m2 pad0">
                     <img src="../assets/images/slider-2.jpg" alt="video-thumbnail" class="thumbnail-img">
                     <div class="play-btn-wrapper pointer">
-                      <img src="../assets/images/play.svg" alt="play" class="play-btn hover-scale">
+                      <img src="../assets/images/play.svg" alt="play" class="play-btn hover-scale modal-trigger" data-target="video-modal-2">
                     </div>
                   </div>
                   <div class="testimony-txt-card">
@@ -467,7 +467,7 @@
                   <div class="video-thumbnail rel col s12 m10 offset-m2 pad0">
                     <img src="../assets/images/slider-3.jpg" alt="video-thumbnail" class="thumbnail-img">
                     <div class="play-btn-wrapper pointer">
-                      <img src="../assets/images/play.svg" alt="play" class="play-btn hover-scale">
+                      <img src="../assets/images/play.svg" alt="play" class="play-btn hover-scale modal-trigger" data-target="video-modal-3">
                     </div>
                   </div>
                   <div class="testimony-txt-card">
@@ -487,13 +487,13 @@
       </div>
     </section>
 
-    <!-- <EligibilityCalculator /> -->
+    <VideoModals />
   </div>
 </template>
 
 <script>
 import CalculatorTriggerSect from '../components/CalculatorTriggerSect.vue'
-// import EligibilityCalculator from '../components/EligibilityCalculatorPopup.vue'
+import VideoModals from '../components/VideoModals.vue'
 
 import $ from 'jquery'
 import M from 'materialize-css'
@@ -501,6 +501,7 @@ export default {
   name: 'Home',
   components: {
     CalculatorTriggerSect,
+    VideoModals,
     // EligibilityCalculator
   },
   mounted() {
