@@ -414,6 +414,7 @@ form#questionnaires-form-wrapper textarea.q-inp-field {
     mix-blend-mode: normal;
     /* opacity: 0.8; */
     line-height: 3;
+    position: relative;
 }
 .submit-btn-section.flex-div {
     justify-content: space-between;
