@@ -103,32 +103,18 @@
     </section>
     <section id="key-points-slide">
       <div class="row rel">
-        <div class="carousel carousel-slider col s12 m9 offset-m3" id="kp-carousel">
-          <div class="carousel-item" href="#one!">
+        <div class="col s12 m9 offset-m3" id="kp-carousel">
+          <div class="kp-carousel-item" href="#one!">
             <div class="col s12 m6">
               <h3 class="kp-desc bold-txt">We help drivers beat traffic tickets with our proven</h3>
-              <h1 class="kp-title bold-txt pry-color text-center-xs">Methods</h1>
+              <h1 class="kp-title bold-txt pry-color text-center-xs kp-title-1">Methods</h1>
+              <h1 class="kp-title bold-txt pry-color text-center-xs kp-title-2">Track Record</h1>
+              <h1 class="kp-title bold-txt pry-color text-center-xs kp-title-3">Success</h1>
             </div>
             <div class="col s12 m6 pad0">
-              <img src="../assets/images/shafts.png" alt="shafts" class="full-width kp-img">
-            </div>
-          </div>
-          <div class="carousel-item" href="#two!">
-            <div class="col s12 m6">
-              <h3 class="kp-desc bold-txt">We help drivers beat traffic tickets with our proven</h3>
-              <h1 class="kp-title kp-title-2 bold-txt pry-color">Track Record</h1>
-            </div>
-            <div class="col s12 m6 pad0 text-center-xs">
+              <img src="../assets/images/shafts.png" alt="shafts" class="full-width kp-img kp-img1">
               <img src="../assets/images/blob.png" alt="text blob" class="full-width kp-img kp-img2">
-            </div>
-          </div>
-          <div class="carousel-item" href="#three!">
-            <div class="col s12 m6">
-              <h3 class="kp-desc bold-txt">We help drivers beat traffic tickets with our proven</h3>
-              <h1 class="kp-title bold-txt pry-color text-center-xs">Success</h1>
-            </div>
-            <div class="col s12 m6 pad0">
-              <img src="../assets/images/growth.png" alt="text blob" class="full-width kp-img">
+              <img src="../assets/images/growth.png" alt="text blob" class="full-width kp-img kp-img3">
             </div>
           </div>
         </div>
@@ -501,17 +487,12 @@ export default {
   name: 'Home',
   components: {
     CalculatorTriggerSect,
-    VideoModals,
-    // EligibilityCalculator
+    VideoModals
   },
   mounted() {
-    var elemsCarousel1 = document.querySelector("#kp-carousel");
     var elemsCarousel2 = document.querySelector("#testimonies-carousel");
     var elemsCarousel3 = document.querySelector("#features-carousel");
     var elemsSelect = document.querySelectorAll("select");
-    M.Carousel.init(elemsCarousel1, {
-      fullWidth: true
-    });
     M.Carousel.init(elemsCarousel2, {
       fullWidth: true
     });
@@ -519,9 +500,39 @@ export default {
       fullWidth: true,
       indicators: true
     });
-    setInterval(function(){ 
-      M.Carousel.getInstance(elemsCarousel1).next();
-    }, 5000);
+
+    // Key-Points Section --- Title Carousel
+    var titleIndex = 0;
+    titleCarousel();
+
+    function titleCarousel() {
+      var i;
+      var x = document.getElementsByClassName("kp-title");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      titleIndex++;
+      if (titleIndex > x.length) {titleIndex = 1}    
+      x[titleIndex-1].style.display = "block";  
+      setTimeout(titleCarousel, 4000); // Change image every 2 seconds
+    }
+
+    // Key-Points Section --- Image Carousel
+    var imgIndex = 0;
+    imgCarousel();
+
+    function imgCarousel() {
+      var i;
+      var x = document.getElementsByClassName("kp-img");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      imgIndex++;
+      if (imgIndex > x.length) {imgIndex = 1}    
+      x[imgIndex-1].style.display = "initial";  
+      setTimeout(imgCarousel, 4000); // Change image every 2 seconds
+    }
+    
 
     M.FormSelect.init(elemsSelect);
 

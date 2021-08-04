@@ -105,11 +105,11 @@ section#key-points-slide {
     margin-top: 40px;
 }
 div#kp-carousel {
-    height: 350px;
+    height: auto;
 }
-div#kp-carousel .carousel-item {
+/* div#kp-carousel .carousel-item {
     min-height: 350px;
-}
+} */
 h3.kp-desc {
     font-size: 39px;
     line-height: 38px;
@@ -132,6 +132,9 @@ img.side-block {
     position: absolute;
     left: 0;
     height: calc(100% - 10px);
+}
+.kp-title, .kp-img {
+    display: none;
 }
 
 section#features {
@@ -502,9 +505,9 @@ small.testimony-author {
         margin: 40px 0;
     }
     div#kp-carousel {
-        height: 600px;
+        height: auto;
     }
-    div#kp-carousel .carousel-item {
+    div#kp-carousel .kp-carousel-item {
         display: flex;
         flex-direction: column-reverse;
     }
@@ -520,6 +523,10 @@ small.testimony-author {
     h1.kp-title.kp-title-2 {
         font-size: 58px;
         line-height: 60px;
+        text-align: center;
+    }
+    h3.kp-desc {
+        margin-top: 20px;
         text-align: center;
     }
 
