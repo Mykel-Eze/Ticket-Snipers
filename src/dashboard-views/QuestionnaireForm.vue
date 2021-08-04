@@ -309,7 +309,7 @@ export default {
         var elemsDatepicker = document.querySelectorAll('.datepicker');
         M.Datepicker.init(elemsDatepicker, {
             format: 'dd/mm/yyyyy',
-            yearRange: [1950, new Date().getFullYear() - 1]
+            yearRange: [1950, new Date().getFullYear() - 16]
         });
   },
   methods:{
@@ -327,6 +327,9 @@ export default {
 
 <style>
 .datepicker-date-display,.datepicker-table td.is-selected {
-    background-color: var(--pry-color);
+    background-color: var(--pry-color) !important;
+}
+.datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done {
+  color: var(--pry-color) !important;
 }
 </style>

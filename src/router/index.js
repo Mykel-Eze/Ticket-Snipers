@@ -39,6 +39,7 @@ import DashboardHome from '../dashboard-views/DashboardHome.vue'
 import DashboardTickets from '../dashboard-views/DashboardTickets.vue'
 import DashboardQuestionnaire from '../dashboard-views/DashboardQuestionnaire.vue'
 import QuestionnaireForm from '../dashboard-views/QuestionnaireForm.vue'
+import DashboardAccount from '../dashboard-views/DashboardAccount.vue'
 
 const routes = [
   {
@@ -194,6 +195,11 @@ const routes = [
         path: '/dashboard/questionnaire/form',
         name: 'QuestionnaireForm',
         component: QuestionnaireForm
+      },
+      {
+        path: '/dashboard/account',
+        name: 'DashboardAccount',
+        component: DashboardAccount
       }
     ]
   }
