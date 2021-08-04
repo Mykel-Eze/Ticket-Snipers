@@ -11,9 +11,11 @@
                     <button class="pry-btn btn hidden-xs modal-trigger" data-target="eligibility-calculator">
                       Can My Case Be Beat? <img src="../assets/images/calculator.svg" alt="icon">
                     </button>
-                    <button class="pry-btn btn modal-trigger" data-target="eligibility-calculator">
-                      Snipe My Ticket <img src="../assets/images/target-icon.svg" alt="icon">
-                    </button>
+                    <router-link to="/auth-page" custom v-slot="{ navigate }">
+                      <button class="pry-btn btn" @click="navigate" role="link">
+                        Snipe My Ticket <img src="../assets/images/target-icon.svg" alt="icon">
+                      </button>
+                    </router-link>
                   </div>
                 </div>
                 <div class="news-div rel-xs">
@@ -79,18 +81,18 @@
                 <div class="col s12 l4 pad0 hidden-sm">
                   <div class="col m2 hidden-xs"></div>
                   <div class="home-learn-more col m10">
-                    <a href="#" class="pry-color">
+                    <router-link to="/about" class="pry-color" @click="scrollToTop()">
                       <span style="top: 0; padding-right: 5px;">Learn More About Us</span> &#10095;
-                    </a>
+                    </router-link>
                   </div>
                 </div>
                 <div class="col l1"></div>
                 <div class="col s12 l7 pad0">
                   <div class="home-learn-more">
-                    <a href="#" class="sec-color">
+                    <router-link to="/about" class="sec-color">
                       <img src="../assets/images/play-blue.svg" alt="play">
                       <span>Learn More with a Free Ticket Review</span>
-                    </a>
+                    </router-link>
                   </div>
                 </div>
               </div>

@@ -5,18 +5,20 @@
                 <div class="calc-sec-wrapper">
                     <h2 class="calc-sec-title">Challenge <br> My Ticket Today!</h2>
                     <div class="home-learn-more">
-                        <a href="#">
+                        <router-link to="/about">
                             <img src="../assets/images/play-white.svg" alt="play">
                             <span>Learn More with a Free Ticket Review</span>
-                        </a>
+                        </router-link>
                     </div>
                     <div class="btn-wrapper flex-div">
                         <button class="sec-btn btn hover-scale modal-trigger" data-target="eligibility-calculator">
                             Can My Case Be Beat?
                         </button>
-                        <button class="pry-btn btn white-bg-btn hover-scale modal-trigger" data-target="eligibility-calculator">
-                            Snipe My Ticket <img src="../assets/images/target-icon-blue.svg" alt="icon">
-                        </button>
+                        <router-link to="/auth-page" custom v-slot="{ navigate }">
+                            <button @click="navigate" role="link" class="pry-btn btn white-bg-btn hover-scale">
+                                Snipe My Ticket <img src="../assets/images/target-icon-blue.svg" alt="icon">
+                            </button>
+                        </router-link>
                     </div>
                 </div>
             </div>

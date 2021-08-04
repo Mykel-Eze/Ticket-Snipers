@@ -38,11 +38,13 @@ h4.modal-form-title {
     font-size: 35px;
     font-family: var(--font-bold);
     letter-spacing: -1.5px;
+    color: var(--sec-color);
 }
 h5.modal-sub-title {
     font-size: 18px;
     font-family: var(--font-medium);
     margin-bottom: 25px;
+    color: var(--sec-color);
 }
 .flex-div.below-form-txt {
     margin-top: 20px;

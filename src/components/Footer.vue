@@ -39,13 +39,13 @@
                     <h5 class="footer-title">One-Touch Tools</h5>
                     <ul class="footer-links-li">
                         <li>
-                            <router-link to="#" class="">Let's Get Started</router-link>
+                            <router-link to="/auth-page" class="">Let's Get Started</router-link>
                         </li>
                         <li>
-                            <router-link to="#" class="">Eligibility Calculator</router-link>
+                            <router-link to="#" class="modal-trigger" data-target="eligibility-calculator">Eligibility Calculator</router-link>
                         </li>
                         <li>
-                            <router-link to="#" class="">Insurance Savings Generator</router-link>
+                            <a href="/#auto-insurance" class="">Insurance Savings Generator</a>
                         </li>
                         <li>
                             <router-link to="#" class="">Employment Opportunities</router-link>
@@ -59,19 +59,19 @@
                     <h5 class="footer-title">Company</h5>
                     <ul class="footer-links-li">
                         <li>
-                            <router-link to="#">(FAQ's)</router-link>
+                            <router-link to="/faq" @click="scrollToTop()">(FAQ's)</router-link>
                         </li>
                         <li>
-                            <router-link to="#">Press Kit</router-link>
+                            <router-link to="/press" @click="scrollToTop()">Press Kit</router-link>
                         </li>
                         <li>
-                            <router-link to="#">Media Coverage</router-link>
+                            <router-link to="/media" @click="scrollToTop()">Media Coverage</router-link>
                         </li>
                         <li>
-                            <router-link to="#">CA Vehicle Code (CVC)</router-link>
+                            <router-link to="/cvc" @click="scrollToTop()">CA Vehicle Code (CVC)</router-link>
                         </li>
                         <li>
-                            <router-link to="#">Traffic Ticket Resources</router-link>
+                            <router-link to="/resources" @click="scrollToTop()">Traffic Ticket Resources</router-link>
                         </li>
                     </ul>
                 </div>
@@ -132,13 +132,20 @@
                 </div>
             </div>
         </div>
+
+        <EligibilityCalculator />
     </footer>
 </template>
 
 <script>
+import EligibilityCalculator from "./EligibilityCalculatorPopup.vue"
+
 import M from "materialize-css";
 export default {
     name: 'Footer',
+    components: {
+        EligibilityCalculator
+    },
     mounted() {
         var elemsFooterCarousel = document.querySelector("#footer-carousel");
         M.Carousel.init(elemsFooterCarousel, {

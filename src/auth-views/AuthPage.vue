@@ -6,19 +6,19 @@
                     <div>
                         <ul class="tabs">
                             <li class="tab">
-                                <a class="active" href="#login-block">Login</a>
+                                <a class="active" href="#signup-block">Sign Up</a>
                             </li>
                             <li class="tab">
-                                <a href="#signup-block">Sign Up</a>
+                                <a href="#login-block">Login</a>
                             </li>
                         </ul>
                     </div>
                     <div class="auth-tab-content">
-                        <div id="login-block">
-                            <LoginBlock />
-                        </div>
                         <div id="signup-block">
                             <SignupBlock />
+                        </div>
+                        <div id="login-block">
+                            <LoginBlock />
                         </div>
                     </div>
                 </div>

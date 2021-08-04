@@ -67,11 +67,11 @@
             <router-link to="/pricing" class="sidenav-close" @click="scrollToTop()">Pricing</router-link>
         </li>
         <li class="hire-us-li hul-1">
-            <a style="cursor: pointer;">
+            <router-link to="/auth-page#signup-block" style="cursor: pointer;">
                 <button class="nav-pry-btn btn pointer">
                     Snipe My Ticket - CA only!
                 </button>
-            </a>
+            </router-link>
         </li>
         <!-- <li class="hire-us-li">
             <a style="cursor: pointer;">

@@ -32,19 +32,27 @@
                         <router-link to="/pricing" class="" @click="scrollToTop()">Pricing</router-link>
                     </li>
                     <li>
-                        <router-link to="/auth-page" custom v-slot="{ navigate }">
+                        <a href="/auth-page#login-block" style="cursor: pointer;" class="rel">
+                            <button class="nav-pry-btn-2 btn pointer">Sign in</button>
+                        </a>
+                        <!-- <router-link to="/auth-page" custom v-slot="{ navigate }">
                             <button @click="navigate" @keypress.enter="navigate" role="link" class="nav-pry-btn-2 btn pointer">Sign in</button>
-                        </router-link>
+                        </router-link> -->
                     </li>
                     <li class="rel">
                         <a href="tel:800-985-8978" class="nav-phone-number sec-color">
                             CALL NOW: <span class="smbold-txt">800-985-8978</span>
                         </a>
-                        <a style="cursor: pointer;" class="rel">
-                            <button class="nav-pry-btn btn pointer modal-trigger" data-target="eligibility-calculator">
+                        <!-- <a href="/auth-page#signup-block" style="cursor: pointer;" class="rel">
+                            <button class="nav-pry-btn btn pointer">
                                 Snipe My Ticket <img src="../assets/images/target-icon.svg" alt="target">
                             </button>
-                        </a>
+                        </a> -->
+                        <router-link to="/auth-page" class="rel">
+                            <button class="nav-pry-btn btn pointer">
+                                Snipe My Ticket <img src="../assets/images/target-icon.svg" alt="target">
+                            </button>
+                        </router-link>
                     </li>
                 </ul>
               </div>
@@ -73,33 +81,26 @@
             <router-link to="/pricing" class="sidenav-close" @click="scrollToTop()">Pricing</router-link>
         </li>
         <li class="hire-us-li hul-1">
-            <a style="cursor: pointer;" class="pad0">
-                <button class="nav-pry-btn btn pointer">
+            <router-link to="/auth-page" custom v-slot="{ navigate }">
+                <button @click="navigate" @keypress.enter="navigate" role="link" class="nav-pry-btn btn pointer">
                     Snipe My Ticket <img src="../assets/images/target-icon.svg" alt="target">
                 </button>
-            </a>
-        </li>
-        <li class="hire-us-li">
-            <router-link to="/auth-page" custom v-slot="{ navigate }">
-                <button @click="navigate" @keypress.enter="navigate" role="link" class="nav-pry-btn-2 btn pointer">Sign in</button>
             </router-link>
         </li>
+        <li class="hire-us-li">
+            <a href="/auth-page#login-block">
+                <button class="nav-pry-btn-2 btn pointer">Sign in</button>
+            </a>
+        </li>
     </ul>
-
-    <EligibilityCalculator />
   </div>
 </template>
 
 <script>
-import EligibilityCalculator from "./EligibilityCalculatorPopup.vue"
-
 import M from "materialize-css";
 // import $ from "jquery";
 export default {
   name: "Navbar",
-  components: {
-      EligibilityCalculator
-  },
   mounted() {
     document.addEventListener("DOMContentLoaded", function() {
       var elemsSidenav = document.querySelectorAll(".sidenav");
