@@ -1,7 +1,7 @@
 <template>
     <form action="#" class="col s12">
         <div class="col s12">
-            <h5 class="form-title sec-color">{{ formTitleText }}</h5>
+            <h5 class="form-title sec-color text-center-xs">{{ formTitleText }}</h5>
             <!-- <h5 class="form-title sec-color">Free speeding ticket review</h5> -->
         </div>
         <div class="col s12 pad0">
@@ -27,12 +27,12 @@
             </div>
         </div>
         <div class="col s12">
-            <div class="flex-div justify-content-btw form-links-cont">
-                <div class="get-started-home">
+            <div class="flex-div* justify-content-btw* form-links-cont">
+                <!-- <div class="get-started-home">
                     Fight My Ticket? 
                     <router-link to="#" class="sec-color"><span>Get Started</span></router-link>
-                </div>
-                <div>
+                </div> -->
+                <div class="center">
                     <button type="submit" class="submit-btn pry-btn btn">Submit</button>
                 </div>
             </div>
@@ -106,5 +106,11 @@ img.input-icons {
     position: absolute;
     top: 15px;
     right: 22px;
+}
+</style>
+
+<style scoped>
+.form-links-cont .center button.btn {
+    width: 60%;
 }
 </style>

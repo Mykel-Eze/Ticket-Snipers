@@ -846,6 +846,16 @@ p.resource-block-desc {
         position: relative;
         top: 10px;
     }
+    .flex-l-only {
+        display: flex;
+        align-items: center;
+    }
+    .flex-l-only h1.home-title {
+        margin-top: 0;
+    }
+    .flex-l-only .home-btn-wrapper {
+        display: none;
+    }
 }
 @media(min-width: 601px) {
     .ticket-breakdown-legend > div {

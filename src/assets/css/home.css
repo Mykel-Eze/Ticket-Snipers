@@ -492,6 +492,13 @@ small.testimony-author {
         min-height: 550px;
         margin-bottom: 20px;
     }
+    /* #home .home-btn-wrapper {
+        width: 100%;
+        justify-content: center;
+    }
+    #home .home-btn-wrapper button.btn {
+        width: 80%;
+    } */
     h1.home-title {
         font-size: 60px;
         line-height: 65px;

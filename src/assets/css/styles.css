@@ -387,6 +387,12 @@ section#calculator-sec button.btn{
     .visible-sm-xs{
         display: block !important;
     }
+    .text-center-sm-xs{
+        text-align: center;
+    }
+    .text-justify-sm-xs{
+        text-align: justify;
+    }
 }
 
 @media(max-width: 600px){

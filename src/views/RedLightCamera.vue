@@ -2,7 +2,7 @@
   <div>
     <section id="home">
         <div class="row">
-            <div class="container">
+            <div class="container flex-l-only">
                 <div class="col s12 l7" id="title-side">
                     <h1 class="home-title">
                         Beat your California Red Light Camera Ticket Fast and effectively.
@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="col s12 l5 pad0" id="form-side">
-                    <TopBannerForm formTitleText="Free speeding ticket review" />
+                    <TopBannerForm formTitleText="Sign Up Now and Save $10" />
                 </div>
             </div>
         </div>
