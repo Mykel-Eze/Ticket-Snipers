@@ -22,7 +22,7 @@
                 </div>
             </ul>
         </div>
-        <form action="#" class="col s12 m10 offset-m1 l6 offset-l3" id="signup-form">
+        <form action="/dashboard" class="col s12 m10 offset-m1 l6 offset-l3" id="signup-form">
             <div class="col s12 pad0" id="fieldset-1">
                 <div class="input-field col s12 m6">
                     <input id="first_name" name="first_name" type="text" class="">
@@ -49,7 +49,7 @@
                     <label for="password">Password</label>
                     <img src="../assets/images/eye-closed.svg" alt="icon" class="input-icons">
                     <div class="calculate-savings-div">
-                        <router-link to="#" class="calculate-savings-link pry-color">Calculate your savings?</router-link>
+                        <!-- <router-link to="#" class="calculate-savings-link pry-color">Calculate your savings?</router-link> -->
                     </div>
                 </div>
 

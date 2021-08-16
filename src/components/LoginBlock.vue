@@ -4,7 +4,7 @@
             <span class="sec-color block-xs">Welcome back,</span> Login in to continue
         </h4>
 
-        <form action="#" class="col s12 m10 offset-m1 l6 offset-l3" id="login-form">
+        <form action="/dashboard" class="col s12 m10 offset-m1 l6 offset-l3" id="login-form">
             <div class="col s12 pad0">
                 <div class="input-field col s12 m12">
                     <input id="login_email" name="email" type="email" class="">

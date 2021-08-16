@@ -3,7 +3,7 @@
         <div class="row">
             <div class="container">
                 <div class="col s12 m10 offset-m1">
-                    <div>
+                    <div style="visibility: hidden;">
                         <ul class="tabs">
                             <li class="tab">
                                 <a class="active" href="#signup-block">Sign Up</a>
