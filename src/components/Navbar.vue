@@ -9,7 +9,10 @@
 
                 <ul class="right dn-mobile ul-nav" id="nav-mobile-2">
                     <li>
-                        <button class="nav-pry-btn-2 btn pointer">Sign in</button>
+                        <!-- <button class="nav-pry-btn-2 btn pointer">Sign in</button> -->
+                        <a href="tel:8009858978" class="nav-pry-btn-2 btn pointer">
+                            <i class="material-icons">phone</i> CALL NOW
+                        </a>
                     </li>
                     <li>
                         <router-link to="#" data-target="slide-out" class="sidenav-trigger sec-color right">

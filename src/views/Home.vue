@@ -29,6 +29,9 @@
                     <a href="#" class="news-link">
                       <img src="../assets/images/cnn.svg" alt="cnn news icon">
                     </a>
+                    <a href="#" class="news-link">
+                      <img src="../assets/images/voted-in-california.svg" alt="california news icon">
+                    </a>
                   </div>
                   <div class="news-txt">
                     Read about our awesome journey across media channels  
@@ -70,9 +73,10 @@
                     <span>Our Mission </span> <img src="../assets/images/flag.svg" alt="flag">
                   </h4>
                   <p>
-                    To help your everyday driver with the only legal issue they will likely 
-                    encounter – a traffic citation – and ensure that a small mistake or misunderstanding 
-                    does not land them in a precarious situation.
+                    Help everyday drivers beat their traffic tickets. Saving you Time, Work and Money. 
+                  </p>
+                  <p>
+                    Traffic Ticket Dismissal Simplified
                   </p>
                 </div>
               </div>

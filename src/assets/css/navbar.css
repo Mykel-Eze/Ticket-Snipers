@@ -51,7 +51,8 @@ nav.scrolled-nav a.brand-logo img {
 nav.scrolled-nav .brand-logo {
     top: 7px;
 }
-button.nav-pry-btn.btn, button.nav-pry-btn-2.btn {
+button.nav-pry-btn.btn, a.nav-pry-btn.btn, 
+button.nav-pry-btn-2.btn, a.nav-pry-btn-2.btn {
     font-size: 10px;
     border-radius: 0;
     min-width: 100px;
@@ -61,18 +62,18 @@ button.nav-pry-btn.btn, button.nav-pry-btn-2.btn {
     border: 1px solid var(--pry-color);
     transition: all 1.5ms;
 }
-button.nav-pry-btn.btn {
+button.nav-pry-btn.btn, a.nav-pry-btn.btn {
     background: var(--pry-color);
     color: white;
 }
-button.nav-pry-btn-2.btn {
+button.nav-pry-btn-2.btn, a.nav-pry-btn-2.btn {
     background-color: white;
     color: var(--pry-color);
 }
-button.nav-pry-btn.btn:hover {
+button.nav-pry-btn.btn:hover, a.nav-pry-btn.btn:hover {
     background-color: var(--sec-color);
 }
-button.nav-pry-btn-2.btn:hover {
+button.nav-pry-btn-2.btn:hover, a.nav-pry-btn-2.btn:hover {
     color: var(--sec-color);
     border: 1px solid var(--sec-color);
 }
@@ -112,7 +113,18 @@ a.nav-phone-number {
         width: 190px;
     }
     .dn-mobile {
-        display: block;
+        /* display: block; */
+        display: flex;
+        align-items: center;
+    }
+    .dn-mobile a.nav-pry-btn-2.btn.pointer{
+        display: flex;
+        position: relative;
+        top: 4px;
+    }
+    .dn-mobile a.nav-pry-btn-2.btn.pointer i.material-icons {
+        font-size: 20px;
+        padding-right: 5px;
     }
     nav .sidenav-trigger {
         top: 10px;

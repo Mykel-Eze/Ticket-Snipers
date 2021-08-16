@@ -15,11 +15,13 @@ h1.home-title {
 .news-div.rel-xs {
     position: absolute;
     right: 5%;
-    width: 20%;
+    width: 380px;
     bottom: 10%;
 }
-.news-icon-wrapper .news-link:nth-child(2) {
-    margin: 0 25px;
+.news-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .thumbnail-img {
     width: 100%;
@@ -432,11 +434,19 @@ small.testimony-author {
         top: 45%;
         transform: translateY(-50%);
     }
-    .news-div.rel-xs {
+    /* .news-div.rel-xs {
         position: absolute;
         right: 5%;
         width: 30%;
         bottom: 5%;
+        float: left;
+    } */
+    .news-div.rel-xs {
+        position: relative;
+        right: 0;
+        width: 70%;
+        bottom: 0;
+        margin: 20px 0 10px;
         float: left;
     }
     .testimony-mission {
@@ -470,6 +480,10 @@ small.testimony-author {
     div#testimonies-carousel {
         height: 400px;
     }
+
+    #home .home-btn-wrapper {
+        width: 90%;
+    }
 }
 @media (max-width: 600px) {
     #home {
@@ -485,7 +499,7 @@ small.testimony-author {
     .news-div.rel-xs {
         position: relative;
         right: 0;
-        width: 80%;
+        width: 100%;
         bottom: 0;
         margin: 20px 0 10px;
     }
