@@ -94,8 +94,8 @@
                             <li>Text Message</li>
                         </ul>
                         <p class="hiw-txt">
-                            Secure bank-level encryption <br />
-                            SSL certified website <br />
+                            Secure bank-level encryption, 
+                            SSL certified website, 
                             No Past Due or Paid Tickets
                         </p>
                     </div>
@@ -123,7 +123,7 @@
                             Traffic School.
                         </p>
                     </div>
-                    <div class="hiw-block">
+                    <!-- <div class="hiw-block">
                         <div class="hiw-img-div">
                             <img src="../assets/images/email2.svg" alt="email" class="hiw-img">
                         </div>
@@ -135,7 +135,7 @@
                             If you don’t win your case, we offer a refund of your service fee with proof 
                             of your verdict within 30 days.
                         </p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
