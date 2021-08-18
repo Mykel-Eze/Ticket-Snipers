@@ -107,7 +107,7 @@
     </section>
     <section id="key-points-slide">
       <div class="row rel">
-        <div class="col s12 m9 offset-m3" id="kp-carousel">
+        <div class="col s12 m11 offset-m1 l9 offset-l3" id="kp-carousel">
           <div class="kp-carousel-item" href="#one!">
             <div class="col s12 m6">
               <h3 class="kp-desc bold-txt">We help drivers beat traffic tickets with our proven</h3>
@@ -122,7 +122,7 @@
             </div>
           </div>
         </div>
-        <img src="../assets/images/side-block.png" alt="side-block" class="side-block hidden-xs">
+        <img src="../assets/images/side-block.png" alt="side-block" class="side-block hidden-sm-xs">
       </div>
     </section>
     

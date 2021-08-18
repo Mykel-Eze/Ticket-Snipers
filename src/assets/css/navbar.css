@@ -164,11 +164,26 @@ a.nav-phone-number {
     }
     ul#nav-mobile-2 button.nav-pry-btn-2.btn {
         min-width: auto;
+        margin-right: 0;
+    }
+    ul#nav-mobile-2 a.sidenav-trigger {
+        margin-left: 0;
+    }
+    ul#nav-mobile-2 a.nav-pry-btn-2.btn.pointer i.material-icons {
+        display: none;
+    }
+}
+@media (max-width: 360px) {
+    a.brand-logo img {
+        width: 90%;
     }
 }
 @media (max-width: 320px) {
     ul#nav-mobile-2 button.nav-pry-btn-2.btn {
         display: none;
+    }
+    a.brand-logo img {
+        width: 70%;
     }
 }
 /* end of Navbar Section */

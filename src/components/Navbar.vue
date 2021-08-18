@@ -15,9 +15,9 @@
                         </a>
                     </li>
                     <li>
-                        <router-link to="#" data-target="slide-out" class="sidenav-trigger sec-color right">
+                        <a href="#" data-target="slide-out" class="sidenav-trigger sec-color right">
                             <img src="../assets/images/menu-icon.svg" alt="menu" />
-                        </router-link>
+                        </a>
                     </li>
                 </ul>
 

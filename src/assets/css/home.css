@@ -484,6 +484,12 @@ small.testimony-author {
     #home .home-btn-wrapper {
         width: 90%;
     }
+
+    h1.kp-title.kp-title-2 {
+        font-size: 80px;
+        line-height: 80px;
+        margin-top: 30px;
+    }
 }
 @media (max-width: 600px) {
     #home {
@@ -542,9 +548,10 @@ small.testimony-author {
         font-size: 80px;
     }
     h1.kp-title.kp-title-2 {
-        font-size: 58px;
-        line-height: 60px;
+        font-size: 60px;
+        line-height: 70px;
         text-align: center;
+        margin-top: 48px;
     }
     h3.kp-desc {
         margin-top: 20px;
