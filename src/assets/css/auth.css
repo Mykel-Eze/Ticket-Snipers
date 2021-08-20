@@ -234,6 +234,30 @@ ul.step-progress > li.active > small {
 }
 /* end of Stepsform styles */
 
+.price-box {
+    background: #E9F0FD;
+    border: 1px solid #D9E2EF;
+    box-sizing: border-box;
+    border-radius: 3px;
+    min-width: 126px;
+    font-size: 14px;
+    height: 46px;
+    font-family: var(--font-medium);
+    color: rgba(2, 34, 83, 0.399038);
+    text-align: center;
+    line-height: 46px;
+}
+#fieldset-2 .input-field:not(.active){
+    display: none;
+}
+button.btn.disabledBtn {
+    /* pointer-events: none; */
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+button.btn.disabledBtn[type="submit"] {
+    pointer-events: none;
+}
 
 @media(max-width: 992px){
     .auth-page .tabs .tab {

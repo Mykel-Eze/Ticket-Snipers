@@ -66,46 +66,48 @@
                 </div>
             </div>
             <div class="col s12 pad0 hidden" id="fieldset-2">
-                <div class="input-field col s12 m12">
-                    <select class="short-inp" id="ticket-type-received" name="ticket-type-received" multiple>
-                        <option value="" disabled>Type of Ticket(s) Received</option>
-                        <option value="Cell Phone">Cell Phone</option>
-                        <option value="Seat Belt">Seat Belt</option>
-                        <option value="Red Light (Officer Issued)">Red Light (Officer Issued)</option>
-                        <option value="Red Light (Camera)">Red Light (Camera)</option>
-                        <option value="Speeding">Speeding</option>
-                        <option value="Stop Sign Violation">Stop Sign Violation</option>
-                        <option value="Lane Violation">Lane Violation</option>
-                        <option value="Carpool Violation">Carpool Violation</option>
-                        <option value="Other CA Traffic Ticket">Other CA Traffic Ticket</option>
-                    </select> 
-                    <img src="../assets/images/ticket-id.svg" alt="icon" class="input-icons">
-                </div>
-                <div class="input-field col s12 m12">
-                    <select class="short-inp" id="delivery-days" name="delivery-days" multiple>
-                      <option value="" disabled>Expected Delievery Days</option>
-                      <option value="Same Day">Same Day Delivery Extra $30</option>
-                      <option value="Next Day">Next Day Delivery Extra $20</option>
-                      <option value="5 Days">Five Day Delivery Extra $10</option>
-                      <option value="10 Days">No Rush (10 Day Delivery)</option>
-                    </select> 
-                    <img src="../assets/images/date.svg" alt="icon" class="input-icons">
-                </div>
-                <div class="input-field col s12 m12">
-                    <input id="ticket-due-date" name="ticket-date" type="text" class="datepicker" placeholder="Ticket Due Date">
-                    <!-- <label for="ticket-due-date">Ticket Due Date</label> -->
-                    <img src="../assets/images/date.svg" alt="icon" class="input-icons">
-                </div>
-                <div class="input-field file-field col s12 m12">
-                    <div class="btn">
-                        <input type="file" name="citation-upload">
+                <div id="inp-field-wrapper">
+                    <div class="input-field active col s12 m12">
+                        <select class="short-inp" id="ticket-type-received" name="ticket-type-received">
+                            <option value="" price="0" selected disabled>Type of Ticket(s) Received</option>
+                            <option value="Cell Phone" price="200">Cell Phone</option>
+                            <option value="Seat Belt" price="150">Seat Belt</option>
+                            <option value="Red Light (Officer Issued)" price="100">Red Light (Officer Issued)</option>
+                            <option value="Red Light (Camera)" price="210">Red Light (Camera)</option>
+                            <option value="Speeding" price="200">Speeding</option>
+                            <option value="Stop Sign Violation" price="220">Stop Sign Violation</option>
+                            <option value="Lane Violation" price="150">Lane Violation</option>
+                            <option value="Carpool Violation" price="100">Carpool Violation</option>
+                            <option value="Other CA Traffic Ticket" price="120">Other CA Traffic Ticket</option>
+                        </select> 
+                        <img src="../assets/images/ticket-id.svg" alt="icon" class="input-icons">
                     </div>
-                    <div class="file-path-wrapper">
-                        <input class="file-path" id="citation-upload" type="text" placeholder="Citation Upload">
-                        <img src="../assets/images/picture.svg" alt="icon" class="input-icons">
-                        <!-- <label for="citation-upload"><small>Choose a file (PDF, JPEG, PNG)</small></label> -->
-                        <div class="calculate-savings-div">
-                            <router-link to="#" class="calculate-savings-link pry-color">Calculate your savings?</router-link>
+                    <div class="input-field col s12 m12">
+                        <select class="short-inp" id="delivery-days" name="delivery-days">
+                            <option value="" price="0" selected disabled>Expected Delievery Days</option>
+                            <option value="Same Day" price="30">Same Day Delivery Extra $30</option>
+                            <option value="Next Day" price="20">Next Day Delivery Extra $20</option>
+                            <option value="5 Days" price="10">Five Day Delivery Extra $10</option>
+                            <option value="10 Days" price="0">No Rush (10 Day Delivery)</option>
+                        </select> 
+                        <img src="../assets/images/date.svg" alt="icon" class="input-icons">
+                    </div>
+                    <div class="input-field col s12 m12">
+                        <input id="ticket-due-date" name="ticket-date" type="text" class="datepicker" placeholder="Ticket Due Date">
+                        <!-- <label for="ticket-due-date">Ticket Due Date</label> -->
+                        <img src="../assets/images/date.svg" alt="icon" class="input-icons">
+                    </div>
+                    <div class="input-field file-field col s12 m12">
+                        <div class="btn">
+                            <input type="file" name="citation-upload">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path" id="citation-upload" type="text" placeholder="Citation Upload">
+                            <img src="../assets/images/picture.svg" alt="icon" class="input-icons">
+                            <!-- <label for="citation-upload"><small>Choose a file (PDF, JPEG, PNG)</small></label> -->
+                            <!-- <div class="calculate-savings-div">
+                                <router-link to="#" class="calculate-savings-link pry-color">Calculate your savings?</router-link>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -113,11 +115,18 @@
                 <div class="col s12">
                     <div class="flex-div justify-content-btw form-links-cont">
                         <div class="get-started-home">
-                            Got an account?
-                            <a href="#" class="pry-color" @click="selectTab('login-block')"><span>Log in</span></a>
+                            <div>
+                                <button type="button" id="continue-btn" class="submit-btn pry-btn btn">Next</button>
+                            </div>
+                            <div>
+                                Got an account?
+                                <a href="#" class="pry-color" @click="selectTab('login-block')"><span>Log in</span></a>
+                            </div>
                         </div>
                         <div>
-                            <button type="button" class="submit-btn pry-btn btn">Continue</button>
+                            <div class="price-box">
+                                $<span id="price-box-figure">0</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -155,7 +164,7 @@
                             <img src="../assets/images/cards-brands.png" alt="cards" class="cards-brands">
                         </div>
                         <div>
-                            <button type="submit" class="submit-btn pry-btn btn">Submit</button>
+                            <button type="submit" class="submit-btn pry-btn btn disabledBtn">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -184,6 +193,63 @@ export default {
         selectTab(tabID) {
             var elemsTabs = document.querySelector('.tabs');
             M.Tabs.getInstance(elemsTabs).select(tabID);
+        },
+        fieldset1_checker() {
+            $('#fieldset-1 .input-field input').keyup(function() {
+                var isEmpty = false;
+
+                $('#fieldset-1 .input-field input').each(function() {
+                    if ( $(this).val() === '' ){
+                        isEmpty = true;
+                    }
+                });
+                var EmailField = $("#email").val();
+                var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+                if (isEmpty) {
+                    $('#fieldset-1 button.submit-btn').addClass('disabledBtn'); 
+                } else {
+                    if (testEmail.test(EmailField)){
+                        $('#fieldset-1 button.submit-btn').removeClass('disabledBtn'); 
+                        $('#fieldset-1 button.submit-btn').addClass('activatedBtn'); 
+                    }
+                }
+            });
+        },
+        // Check if all fields are filled in "Fieldset-2"
+        fieldset2_checker() {
+            $('#fieldset-2 .input-field input').keyup(function() {
+                var isEmpty = false;
+
+                $('#fieldset-2 .input-field input').each(function() {
+                    if ( $(this).val() === '' ){
+                        isEmpty = true;
+                    }
+                });
+                if (isEmpty) {
+                    $('#fieldset-2 button.submit-btn').addClass('disabledBtn'); 
+                } else {
+                    $('#fieldset-2 button.submit-btn').removeClass('disabledBtn'); 
+                    $('#fieldset-2 button.submit-btn').addClass('activatedBtn'); 
+                }
+            });
+        },
+        // Check if all fields are filled in "Fieldset-3"
+        fieldset3_checker() {
+            $('#fieldset-3 .input-field input').keyup(function() {
+                var isEmpty = false;
+
+                $('#fieldset-3 .input-field input').each(function() {
+                    if ( $(this).val() === '' ){
+                        isEmpty = true;
+                    }
+                });
+                if (isEmpty) {
+                    $('#fieldset-3 button.submit-btn').addClass('disabledBtn'); 
+                } else {
+                    $('#fieldset-3 button.submit-btn').removeClass('disabledBtn'); 
+                    $('#fieldset-3 button.submit-btn').addClass('activatedBtn'); 
+                }
+            });
         }
     },
     mounted(){
@@ -195,26 +261,77 @@ export default {
             autoClose: true
         });
 
+        //Stepforms Toggles Functions
+
+        // Check if all fields are filled in "Fieldset-1"
+        this.fieldset1_checker();
+
+        // Check if all fields are filled in "Fieldset-3"
+        this.fieldset3_checker();
+
+        $('#signup-form').on('click', 'button.disabledBtn', function() {
+            alert("Please fill out all inputs");
+        });
+
         //Stepforms Toggles
-        $("#fieldset-1 button.submit-btn").click(function(){
+
+        $('#fieldset-1').on('click', 'button.submit-btn.activatedBtn', function() {            
             $("#fieldset-1").slideUp();
             $("#fieldset-2").slideDown();
             $("li.step-2").addClass("active");
             $("ul.step-progress .progress .determinate").width("50%");
         });
-        $("#fieldset-2 button.submit-btn").click(function(){
-            $("#fieldset-2").slideUp();
-            $("#fieldset-3").slideDown();
-            $("li.step-3").addClass("active");
-            $("ul.step-progress .progress .determinate").width("98%");
+        
+        $("#continue-btn").click(function(){
+            if($('#inp-field-wrapper > .input-field.active').is(":last-child")){
+                $("#fieldset-2").slideUp();
+                $("#fieldset-3").slideDown();
+                $("li.step-3").addClass("active");
+                $("ul.step-progress .progress .determinate").width("98%");
+                $(this).text("Continue");
+            } else {
+                // Continue Button Function
+                var inpField = $("#fieldset-2 .input-field.active");
+
+                $('#fieldset-2 .input-field').removeClass('active');
+                inpField.next().addClass('active');
+
+                if($('#inp-field-wrapper > .input-field.active').is(":last-child")){
+                    $(this).text("Continue");
+                    this.fieldset3_checker();
+                }
+            }
         });
         $("ul.step-progress").click(function(){
             $("#fieldset-3").slideUp();
+            $("#fieldset-2").slideUp();
             $("#fieldset-1").slideDown();
             $("li.step-3, li.step-2").removeClass("active");
             $("ul.step-progress .progress .determinate").width("0%");
         });
+        // end of Stepforms Toggles
 
+
+        // PriceBox Function
+        $('#inp-field-wrapper .input-field select').change(function(){ 
+            var priceList = [0];
+
+            var optionPrice1 = $('.input-field:nth-child(1)').find('option:selected').attr('price');
+            var optionPrice2 = $('.input-field:nth-child(2)').find('option:selected').attr('price');
+
+            priceList[0] =  parseInt(optionPrice1);
+            priceList[1] =  parseInt(optionPrice2);
+            console.log(priceList);
+
+            var priceListSum = priceList.reduce((x, y) => x + y);
+            console.log(priceListSum);
+
+            $("#price-box-figure").text(priceListSum);
+        });
+        // end of PriceBox Function
+
+
+        // Function that formats numbers
         function cc_format(value) {
             var v = value.replace(/\s+/g, '').replace(/[^0-9]/gi, '')
             var matches = v.match(/\d{4,16}/g);
@@ -230,12 +347,12 @@ export default {
                 return value
             }
         }
-
         $(document).ready(function () {
             $('input.credit-card').keyup(function () {
                 $(this).val(cc_format($(this).val()))
             })
         });
+        // end of Function that formats numbers
     }
 }
 </script>
