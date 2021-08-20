@@ -288,7 +288,6 @@ export default {
                 $("#fieldset-3").slideDown();
                 $("li.step-3").addClass("active");
                 $("ul.step-progress .progress .determinate").width("98%");
-                $(this).text("Continue");
             } else {
                 // Continue Button Function
                 var inpField = $("#fieldset-2 .input-field.active");
