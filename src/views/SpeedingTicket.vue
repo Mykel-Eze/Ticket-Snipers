@@ -12,7 +12,7 @@
                             Can My Case Be Beat? <img src="../assets/images/calculator.svg" alt="icon">
                         </button>
                         <button class="pry-btn btn">
-                            Snipe My Ticket <img src="../assets/images/target-icon.svg" alt="icon">
+                            Fight MY Ticket <img src="../assets/images/target-icon.svg" alt="icon">
                         </button>
                     </div>
                     <div class="home-learn-more">

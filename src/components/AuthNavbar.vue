@@ -10,7 +10,7 @@
                 <ul class="right dn-mobile ul-nav hidden-sm-xs" id="nav-mobile-2">
                     <li>
                         <button class="nav-pry-btn btn pointer">
-                            Snipe My Ticket - CA only!
+                            Fight MY Ticket - CA only!
                         </button>
                     </li>
                     <li>
@@ -36,7 +36,7 @@
                     <li>
                         <a style="cursor: pointer;">
                             <button class="nav-pry-btn btn pointer">
-                                Snipe My Ticket - CA only!
+                                Fight MY Ticket - CA only!
                             </button>
                         </a>
                     </li>
@@ -69,7 +69,7 @@
         <li class="hire-us-li hul-1">
             <router-link to="/auth-page#signup-block" style="cursor: pointer;">
                 <button class="nav-pry-btn btn pointer">
-                    Snipe My Ticket - CA only!
+                    Fight MY Ticket - CA only!
                 </button>
             </router-link>
         </li>

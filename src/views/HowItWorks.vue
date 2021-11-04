@@ -151,7 +151,7 @@
                     <p class="reputation-txt-1 bold-txt pry-color">Licensed, Bonded and Accredited</p>
                     <p class="reputation-txt-2">With Sterling Reputation</p>
                     <div class="reputation-btn-wrapper">
-                        <router-link to="/auth-page" class="reputation-btn btn">Snipe My Ticket </router-link>
+                        <router-link to="/auth-page" class="reputation-btn btn">Fight MY Ticket </router-link>
                     </div>
                 </div>
             </div>

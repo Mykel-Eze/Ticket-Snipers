@@ -16,7 +16,7 @@
                         </button>
                         <router-link to="/auth-page" custom v-slot="{ navigate }">
                             <button @click="navigate" role="link" class="pry-btn btn white-bg-btn hover-scale">
-                                Snipe My Ticket <img src="../assets/images/target-icon-blue.svg" alt="icon">
+                                Fight MY Ticket <img src="../assets/images/target-icon-blue.svg" alt="icon">
                             </button>
                         </router-link>
                     </div>
