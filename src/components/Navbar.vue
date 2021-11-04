@@ -7,7 +7,16 @@
                     <img src="../assets/images/ticket-snipers.svg" alt="Ticket Sniper" class="logo">
                 </router-link>
 
-                <ul class="right dn-mobile ul-nav" id="nav-mobile-2">
+                <ul class="hide-on-med-and-down dn-web-version" id="nav-mobile-3">
+                    <li class="rel sec-color nav-phone-number ">
+                        Call or Text: <br />
+                        <a href="tel:800-985-8978">
+                            <span class="smbold-txt">800-985-8978</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="dn-mobile ul-nav" id="nav-mobile-2">
                     <li>
                         <!-- <button class="nav-pry-btn-2 btn pointer">Sign in</button> -->
                         <a href="tel:8009858978" class="nav-pry-btn-2 btn pointer">
@@ -23,37 +32,26 @@
 
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
-                        <router-link to="/about" class="" @click="scrollToTop()">About</router-link>
+                        <router-link to="/tickets" class="" @click="scrollToTop()">Ticket List</router-link>
                     </li>
                     <li>
                         <router-link to="/how-it-works" class="" @click="scrollToTop()">How it Works</router-link>
                     </li>
                     <li>
-                        <router-link to="/tickets" class="" @click="scrollToTop()">Tickets</router-link>
-                    </li>
-                    <li>
                         <router-link to="/pricing" class="" @click="scrollToTop()">Pricing</router-link>
                     </li>
                     <li>
+                        <router-link to="/about" class="" @click="scrollToTop()">About</router-link>
+                    </li>
+                    <!-- <li>
                         <a href="/auth-page#login-block" style="cursor: pointer;" class="rel">
                             <button class="nav-pry-btn-2 btn pointer">Sign in</button>
                         </a>
-                        <!-- <router-link to="/auth-page" custom v-slot="{ navigate }">
-                            <button @click="navigate" @keypress.enter="navigate" role="link" class="nav-pry-btn-2 btn pointer">Sign in</button>
-                        </router-link> -->
-                    </li>
+                    </li> -->
                     <li class="rel">
-                        <a href="tel:800-985-8978" class="nav-phone-number sec-color">
-                            CALL NOW: <span class="smbold-txt">800-985-8978</span>
-                        </a>
-                        <!-- <a href="/auth-page#signup-block" style="cursor: pointer;" class="rel">
-                            <button class="nav-pry-btn btn pointer">
-                                Snipe My Ticket <img src="../assets/images/target-icon.svg" alt="target">
-                            </button>
-                        </a> -->
                         <router-link to="/auth-page" class="rel">
                             <button class="nav-pry-btn btn pointer">
-                                Snipe My Ticket <img src="../assets/images/target-icon.svg" alt="target">
+                                Get Started
                             </button>
                         </router-link>
                     </li>
@@ -86,7 +84,7 @@
         <li class="hire-us-li hul-1">
             <router-link to="/auth-page" custom v-slot="{ navigate }">
                 <button @click="navigate" @keypress.enter="navigate" role="link" class="nav-pry-btn btn pointer">
-                    Snipe My Ticket <img src="../assets/images/target-icon.svg" alt="target">
+                    Fight MY Ticket <img src="../assets/images/target-icon.svg" alt="target">
                 </button>
             </router-link>
         </li>
