@@ -192,6 +192,94 @@
       </div>
     </section>
 
+    <!-- <section id="our-mission">
+      <div class="row">
+        <div class="container">
+          <div class="col m2 hidden-xs">
+            <div class="">
+              <img src="../assets/images/down-square.svg" alt="down" class="pointer go-down-img">
+            </div>
+          </div>
+          <div class="col s12 m10 pad0-xs">
+            <div class="video-thumbnail rel col s12 pad0">
+              <img src="../assets/images/stop-over-bg.jpg" alt="video-thumbnail" class="thumbnail-img">
+              <div class="play-btn-wrapper hover-toggle modal-trigger" data-target="video-modal-0">
+                <img src="../assets/images/play-white.svg" alt="play" class="play-btn hover-hide">
+                <img src="../assets/images/play-blue.svg" alt="play" class="play-btn hover-show">
+              </div>
+            </div>
+            <div class="testimony-mission col s11 offset-s1 m12 offset-m0 pad0">
+              <div class="officer-testimony col s12 l4 pad0">
+                <div class="quote-div col s2 pad0">
+                  <img src="../assets/images/quote.svg" alt="quote" class="quote-icon">
+                </div>
+                <div class="quote-txt col s10">
+                  <p>These guys work so well I’d like to arrest the entire team behind the scenes.</p>
+                  <small class="quote-author">Charles Miles, CHP Traffic Officer (Los Angeles Division)</small>
+                </div>
+              </div>
+              <div class="col m1"></div>
+              <div class="mission col s12 l7 pad-r-0 sec-bg">
+                <div class="col m10 offset-m1">
+                  <h4 class="mission-title">
+                    <span>Our Mission </span> <img src="../assets/images/flag.svg" alt="flag">
+                  </h4>
+                  <p>
+                    Help everyday drivers beat their traffic tickets. Saving you Time, Work and Money. 
+                  </p>
+                  <p>
+                    Traffic Ticket Dismissal Simplified
+                  </p>
+                </div>
+              </div>
+
+              <div class="learn-more-div col s11 offset-s1 m12 offset-m0 pad0">
+                <div class="col s12 l4 pad0 hidden-sm">
+                  <div class="col m2 hidden-xs"></div>
+                  <div class="home-learn-more col m10">
+                    <router-link to="/about" class="pry-color" @click="scrollToTop()">
+                      <span style="top: 0; padding-right: 5px;">Learn More About Us</span> &#10095;
+                    </router-link>
+                  </div>
+                </div>
+                <div class="col l1"></div>
+                <div class="col s12 l7 pad0">
+                  <div class="home-learn-more">
+                    <router-link to="/about" class="sec-color">
+                      <img src="../assets/images/play-blue.svg" alt="play">
+                      <span>Learn More with a Free Ticket Review</span>
+                    </router-link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section id="key-points-slide">
+      <div class="row rel">
+        <div class="col s12 m11 offset-m1 l9 offset-l3" id="kp-carousel">
+          <div class="kp-carousel-item" href="#one!">
+            <div class="col s12 m6">
+              <h3 class="kp-desc bold-txt">We help drivers beat traffic tickets with our proven</h3>
+              <h1 class="kp-title bold-txt pry-color text-center-xs kp-title-1">Methods</h1>
+              <h1 class="kp-title bold-txt pry-color text-center-xs kp-title-2">Track Record</h1>
+              <h1 class="kp-title bold-txt pry-color text-center-xs kp-title-3">Success</h1>
+            </div>
+            <div class="col s12 m6 pad0">
+              <img src="../assets/images/shafts.jpg" alt="shafts" class="full-width kp-img kp-img1">
+              <img src="../assets/images/blob.jpg" alt="text blob" class="full-width kp-img kp-img2">
+              <img src="../assets/images/growth.jpg" alt="text blob" class="full-width kp-img kp-img3">
+            </div>
+          </div>
+        </div>
+        <img src="../assets/images/side-block.png" alt="side-block" class="side-block hidden-sm-xs">
+      </div>
+    </section>
+    
+    <CalculatorTriggerSect />
+
     <section id="auto-insurance">
       <div class="row">
         <div class="container">
@@ -339,30 +427,6 @@
         </div>
       </div>
     </section>
-
-    <section id="key-points-slide">
-      <div class="row rel">
-        <div class="col s12 m11 offset-m1 l9 offset-l3" id="kp-carousel">
-          <div class="kp-carousel-item" href="#one!">
-            <div class="col s12 m6">
-              <h3 class="kp-desc bold-txt">We help drivers beat traffic tickets with our proven</h3>
-              <h1 class="kp-title bold-txt pry-color text-center-xs kp-title-1">Methods</h1>
-              <h1 class="kp-title bold-txt pry-color text-center-xs kp-title-2">Track Record</h1>
-              <h1 class="kp-title bold-txt pry-color text-center-xs kp-title-3">Success</h1>
-            </div>
-            <div class="col s12 m6 pad0">
-              <img src="../assets/images/shafts.jpg" alt="shafts" class="full-width kp-img kp-img1">
-              <img src="../assets/images/blob.jpg" alt="text blob" class="full-width kp-img kp-img2">
-              <img src="../assets/images/growth.jpg" alt="text blob" class="full-width kp-img kp-img3">
-            </div>
-          </div>
-        </div>
-        <img src="../assets/images/side-block.png" alt="side-block" class="side-block hidden-sm-xs">
-      </div>
-    </section>
-    
-    <!-- <CalculatorTriggerSect /> -->
-
     <section id="drivers-testimonies">
       <div class="row">
         <div class="container">
@@ -372,11 +436,11 @@
                 California Drivers Use Ticket Snipers Because Our Process is Fast, Easy & Effective
               </h3>
             </div>
-            <div class="col s12 pad0 flex-div justify-content-btw n-fd-xxs">
+            <div class="col s12 pad0 flex-div justify-content-btw">
               <div class="minor-dt-title">
                 <span class="pry-color">Hear from our loyal clients</span>
               </div>
-              <div class="slider-controls-div visible-xs">
+              <div class="slider-controls-div">
                 <button class="slider-control left-ctrl" @click="prevFunc()">
                   <img src="../assets/images/left-slider.svg" alt="left button">
                 </button>
@@ -385,14 +449,8 @@
                 </button>
               </div>
             </div>
-            <div class="testimonies-div col s12 pad0 rel">
-              <button class="slider-control left-ctrl hidden-xs" @click="prevFunc()">
-                <img src="../assets/images/left-slider.svg" alt="left button">
-              </button>
-              <button class="slider-control right-ctrl hidden-xs" @click="nextFunc()">
-                <img src="../assets/images/right-slider.svg" alt="right button">
-              </button>
-              <div class="carousel carousel-slider col s12 m10 offset-m1" id="testimonies-carousel">
+            <div class="testimonies-div col s12 pad0">
+              <div class="carousel carousel-slider" id="testimonies-carousel">
                 <div class="carousel-item" href="#one!">
                   <div class="video-thumbnail rel col s12 m10 offset-m2 pad0">
                     <img src="../assets/images/slider-1.jpg" alt="video-thumbnail" class="thumbnail-img">
@@ -454,7 +512,7 @@
 
 <script>
 import TopBannerFormHome from '../components/TopBannerFormHome.vue'
-// import CalculatorTriggerSect from '../components/CalculatorTriggerSect.vue'
+import CalculatorTriggerSect from '../components/CalculatorTriggerSect.vue'
 import VideoModals from '../components/VideoModals.vue'
 
 import $ from 'jquery'
@@ -463,7 +521,7 @@ export default {
   name: 'Home',
   components: {
     TopBannerFormHome,
-    // CalculatorTriggerSect,
+    CalculatorTriggerSect,
     VideoModals
   },
   mounted() {

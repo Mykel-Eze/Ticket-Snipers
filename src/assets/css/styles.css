@@ -185,7 +185,7 @@ h5, h6{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: calc(80vh - 100px);
+    /* height: calc(80vh - 100px); */
     min-height: 500px;
     position: relative;
     padding-top: 30px;
@@ -203,8 +203,8 @@ h5, h6{
 }
 #home > .row {
     position: relative;
-    top: 45%;
-    transform: translateY(-50%);
+    /* top: 45%;
+    transform: translateY(-50%); */
 }
 h1.home-title {
     font-family: var(--font-bold);

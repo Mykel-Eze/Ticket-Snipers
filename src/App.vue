@@ -24,4 +24,9 @@ div#nav {
 div#main-contents-wrapper {
   padding-top: 90px;
 }
+@media(max-width: 600px) {
+  div#main-contents-wrapper {
+    padding-top: 70px;
+  }
+}
 </style>

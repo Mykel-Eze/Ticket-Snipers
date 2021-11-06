@@ -1,11 +1,13 @@
 /* Footer Section */
 footer{
-    background-color: white;
     padding-top: 40px;
     padding-bottom: 20px;
     color: white;
     font-size: 13px;
     font-family: var(--font);
+    background: #F2F6FB url(../images/footer-bg.png);
+    background-size: contain;
+    background-position: center;
 }
 .footer-logo {
     margin-top: 15px;

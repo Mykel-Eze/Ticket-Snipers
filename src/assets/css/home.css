@@ -9,14 +9,35 @@
     display: none;
 }
 h1.home-title {
-    font-size: 90px;
-    line-height: 95px;
+    font-size: 72px;
+    line-height: 88px;
+    letter-spacing: -3.15429px;
+    text-transform: capitalize
+}
+h5.home-sub-title {
+    font-size: 30px;
+    line-height: 35px;
+    font-family: var(--font-smbold);
+}
+ul.home-lists {
+    padding: 10px 0;
+}
+ul.home-lists li {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--pry-color);
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+img.list-ticker {
+    margin-right: -20px;
 }
 .news-div.rel-xs {
-    position: absolute;
-    right: 5%;
-    width: 380px;
+    /* position: absolute;
     bottom: 10%;
+    right: 5%; */
+    max-width: 380px;
 }
 .news-icon-wrapper {
     display: flex;
@@ -141,6 +162,8 @@ img.side-block {
 
 section#features {
     padding-top: 20px;
+    background-color:  #F2F6FB;
+    position: relative;
 }
 h2.feature-sec-title {   
     font-family: var(--font-bold);
@@ -161,6 +184,23 @@ p.feature-txt {
     font-size: 15px;
     line-height: 25px;
     margin-top: 10px;
+}
+.play-trigger-box {
+    background-color: var(--sec-color);
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    padding: 40px 40px;
+    font-size: 12px;
+    border-radius: 111.5px 0px 0px 111.5px;
+    cursor: pointer;
+}
+.play-trigger {
+    transition: all 1s;
+}
+.play-trigger-box:hover .play-trigger {
+    transform: scale(1.2);
 }
 
 #auto-insurance {
@@ -375,7 +415,7 @@ button.slider-control img {
     width: 100%;
 }
 div#testimonies-carousel {
-    height: 620px;
+    height: 620px !important;
 }
 div#testimonies-carousel .carousel-item {
     border-left: 0 solid white;
@@ -426,14 +466,26 @@ small.testimony-author {
     font-size: 14px;
 }
 
+@media(min-width: 601px) {
+    button.slider-control.left-ctrl {
+        position: absolute;
+        top: 40%;
+        left: 0;
+    }
+    button.slider-control.right-ctrl {
+        position: absolute;
+        top: 40%;
+        right: 0;
+    }
+}
 @media (max-width: 992px) {
     #home {
         padding-top: 0;
     }
-    #home > .row {
+    /* #home > .row {
         top: 45%;
         transform: translateY(-50%);
-    }
+    } */
     /* .news-div.rel-xs {
         position: absolute;
         right: 5%;
@@ -478,7 +530,7 @@ small.testimony-author {
         background-position: 70%;
     }
     div#testimonies-carousel {
-        height: 400px;
+        height: 400px !important;
     }
 
     #home .home-btn-wrapper {
@@ -494,7 +546,7 @@ small.testimony-author {
 @media (max-width: 600px) {
     #home {
         padding-top: 10px;
-        height: calc(90vh - 100px);
+        /* height: calc(90vh - 100px); */
         min-height: 550px;
         margin-bottom: 20px;
     }
@@ -559,7 +611,8 @@ small.testimony-author {
     }
 
     div#features-carousel {
-        height: 300px;
+        height: 300px !important;
+        margin-bottom: 120px;
     }
     div#features-carousel .carousel-item {
         min-height: 300px;
@@ -580,13 +633,28 @@ small.testimony-author {
     }
 
     div#testimonies-carousel {
-        height: 550px;
+        height: 550px !important;
     }
     .testimony-txt-card {
         top: 25%;
     }
     .testimonies-div .video-thumbnail {
         top: 0;
+    }
+
+    .play-trigger-box[data-v-fae5bece] {
+        background-color: var(--sec-color);
+        color: white;
+        position: absolute;
+        top: auto;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: 20px 0;
+        border-radius: 4px;
+        cursor: pointer;
+        height: 100px;
+        width: 100%;
     }
 }
 @media (max-width: 320px) {
@@ -595,5 +663,8 @@ small.testimony-author {
     }
     h1.kp-title.kp-title-2 {
         font-size: 50px;
+    }
+    .n-fd-xxs {
+        display: block;
     }
 }
