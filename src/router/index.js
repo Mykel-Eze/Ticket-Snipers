@@ -28,6 +28,7 @@ import MediaItem from '../views/MediaItem.vue'
 import Press from '../views/Press.vue'
 import Faq from '../views/Faq.vue'
 import Resources from '../views/Resources.vue'
+import DismissalCalculator from '../views/DismissalCalculator.vue'
 
 // Login/Signup, and other Authentication pages
 import AuthPage from '../auth-views/AuthPage.vue'
@@ -146,6 +147,11 @@ const routes = [
         path: '/resources',
         name: 'Resources',
         component: Resources
+      },
+      {
+        path: '/calculator',
+        name: 'DismissalCalculator',
+        component: DismissalCalculator
       }
     ]
   },

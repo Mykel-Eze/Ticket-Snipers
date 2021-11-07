@@ -42,7 +42,7 @@
                             <router-link to="/auth-page" class="">Let's Get Started</router-link>
                         </li>
                         <li>
-                            <router-link to="#" class="modal-trigger" data-target="eligibility-calculator">Eligibility Calculator</router-link>
+                            <router-link to="/calculator" class="">Eligibility Calculator</router-link>
                         </li>
                         <li>
                             <a href="/#auto-insurance" class="">Insurance Savings Generator</a>

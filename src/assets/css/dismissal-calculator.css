@@ -1,0 +1,102 @@
+#eligibility-calculator {
+    background: #0556A2 url(../images/calculator-bg.jpg);
+    box-sizing: border-box;
+    box-shadow: 0px 12px 21px 10px rgba(4, 30, 139, 0.0478311);
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+}
+
+form#eligibility-calc-form{
+    background: rgba(255, 255, 255, 0.62);
+    mix-blend-mode: normal;
+    opacity: 0.85;
+    border: 1px solid rgba(0, 102, 245, 0.122023);
+    box-sizing: border-box;
+    box-shadow: 0px 12px 21px 10px rgba(4, 30, 139, 0.0478311);
+    backdrop-filter: blur(81.5485px);
+    padding: 30px;
+    position: relative;
+    border-radius: 5px;
+    transform: translateY(20%);
+}
+h4.ec-form-title {
+    font-size: 35px;
+    font-family: var(--font-bold);
+    letter-spacing: -1.5px;
+    color: var(--sec-color);
+}
+h5.ec-sub-title {
+    font-size: 18px;
+    font-family: var(--font-medium);
+    margin-bottom: 25px;
+    color: var(--sec-color);
+}
+.flex-div.below-form-txt {
+    margin-top: 20px;
+    padding: 0;
+    font-family: var(--font-smbold);
+    font-size: 12px;
+    /* color: rgba(2, 34, 83, 0.399038); */
+    color: white;
+    margin-bottom: 10px;
+}
+.below-form-link a {
+    /* color: rgba(2, 34, 83, 0.399038); */
+    color: white;
+}
+a.forgot-password-link, a.calculate-savings-link {
+    font-size: 13px;
+    font-family: var(--font-smbold);
+}
+.get-started-home {
+    line-height: 3;
+    font-weight: 500;
+    color: rgba(2, 34, 83, 0.399038);
+    font-family: var(--font-smbold);
+}
+form#eligibility-calc-form .input-field:not(.active){
+    display: none;
+}
+
+.field-and-details-wrappers {
+    display: grid;
+    grid-template-columns: 1fr minmax(120px, 40%);
+    grid-gap: 20px;
+}
+#details-box-wrapper {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#details-box-wrapper > div.dbw {
+    background: #E9F0FD;
+    border: 1px solid #D9E2EF;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #022B69;
+    font-size: 10px;
+    padding: 0 15px 10px;
+    min-height: 130px;
+    max-height: 200px;
+}
+#details-box-wrapper h5{
+    font-size: 12px;
+    color: #657FA8;
+    font-family: var(--font-medium);
+}
+ul.option-details-list {
+    padding-left: 20px;
+}
+ul.option-details-list li {
+    list-style-type: disc;
+}
+/*---=== end of Modal Forms ===---*/
+
+@media(max-width: 600px) {
+    h4.ec-form-title {
+        font-size: 30px;
+    }
+    .field-and-details-wrappers {
+        grid-template-columns: 100%;
+    }
+}
