@@ -25,6 +25,7 @@ h4.ec-form-title {
     font-family: var(--font-bold);
     letter-spacing: -1.5px;
     color: var(--sec-color);
+    margin-bottom: 40px;
 }
 h5.ec-sub-title {
     font-size: 18px;
@@ -55,29 +56,35 @@ a.forgot-password-link, a.calculate-savings-link {
     color: rgba(2, 34, 83, 0.399038);
     font-family: var(--font-smbold);
 }
-form#eligibility-calc-form .input-field:not(.active){
+form#eligibility-calc-form .options-block:not(.active){
     display: none;
 }
 
 .field-and-details-wrappers {
     display: grid;
-    grid-template-columns: 1fr minmax(120px, 40%);
+    grid-template-columns: 1fr minmax(120px, 35%);
     grid-gap: 20px;
 }
+hr.dbw-hr {
+    background: var(--sec-color);
+    border: none;
+    height: 1px;
+}
 #details-box-wrapper {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     margin-bottom: 1rem;
 }
 #details-box-wrapper > div.dbw {
-    background: #E9F0FD;
+    background: #E9F0FD url(../images/footer-bg.png);
     border: 1px solid #D9E2EF;
     box-sizing: border-box;
     border-radius: 3px;
     color: #022B69;
     font-size: 10px;
     padding: 0 15px 10px;
-    min-height: 130px;
-    max-height: 200px;
+    min-height: 60vh;
+    max-height: 100vh;
+    background-size: contain;
 }
 #details-box-wrapper h5{
     font-size: 12px;

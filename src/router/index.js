@@ -29,6 +29,7 @@ import Press from '../views/Press.vue'
 import Faq from '../views/Faq.vue'
 import Resources from '../views/Resources.vue'
 import DismissalCalculator from '../views/DismissalCalculator.vue'
+import DismissalSuccess from '../views/DismissalSuccess.vue'
 
 // Login/Signup, and other Authentication pages
 import AuthPage from '../auth-views/AuthPage.vue'
@@ -152,6 +153,11 @@ const routes = [
         path: '/calculator',
         name: 'DismissalCalculator',
         component: DismissalCalculator
+      },
+      {
+        path: '/dissmisal-success',
+        name: 'DismissalSuccess',
+        component: DismissalSuccess
       }
     ]
   },
