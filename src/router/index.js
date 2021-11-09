@@ -30,6 +30,7 @@ import Faq from '../views/Faq.vue'
 import Resources from '../views/Resources.vue'
 import DismissalCalculator from '../views/DismissalCalculator.vue'
 import DismissalSuccess from '../views/DismissalSuccess.vue'
+import Welcome from '../views/Welcome.vue'
 
 // Login/Signup, and other Authentication pages
 import AuthPage from '../auth-views/AuthPage.vue'
@@ -158,6 +159,11 @@ const routes = [
         path: '/dismissal-success',
         name: 'DismissalSuccess',
         component: DismissalSuccess
+      },
+      {
+        path: '/welcome',
+        name: 'Welcome',
+        component: Welcome
       }
     ]
   },

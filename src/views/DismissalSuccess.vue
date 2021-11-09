@@ -59,7 +59,7 @@
 import M from "materialize-css"
 import $ from 'jquery'
 export default {
-    name: "EligibilityCalculator",
+    name: "EligibilitySuccess",
     mounted(){
         var elemsSelect = document.querySelectorAll("select");
         M.FormSelect.init(elemsSelect);
