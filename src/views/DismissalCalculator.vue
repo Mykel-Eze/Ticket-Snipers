@@ -225,7 +225,6 @@ export default {
 
 <style src="../assets/css/dismissal-calculator.css" scoped></style>
 <style src="../assets/css/d-calculator.css" scoped></style>
-<style src="../assets/css/auth.css" scoped></style>
 
 <style>
     form#eligibility-calc-form .select-wrapper input.select-dropdown {

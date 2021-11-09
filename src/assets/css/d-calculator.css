@@ -1,4 +1,4 @@
-form#eligibility-calc-form {
+form#eligibility-calc-form, #eligibility-success {
     margin-bottom: 20%;
 }
 .progress-section {
@@ -220,7 +220,7 @@ form#eligibility-calc-form #opt-block-3 .file-field .file-path-wrapper {
 }
 
 @media(max-width: 992px) {
-    form#eligibility-calc-form {
+    form#eligibility-calc-form, #eligibility-success {
         transform: translateY(10%);
     }
 }
@@ -228,7 +228,7 @@ form#eligibility-calc-form #opt-block-3 .file-field .file-path-wrapper {
     .options-wrapper {
         grid-template-columns: 1fr;
     }
-    form#eligibility-calc-form {
+    form#eligibility-calc-form, #eligibility-success {
         margin-bottom: 0%;
         transform: none;
     }

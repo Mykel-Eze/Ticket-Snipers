@@ -155,7 +155,7 @@ const routes = [
         component: DismissalCalculator
       },
       {
-        path: '/dissmisal-success',
+        path: '/dismissal-success',
         name: 'DismissalSuccess',
         component: DismissalSuccess
       }
