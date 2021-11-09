@@ -119,6 +119,9 @@ a.pry-bg.pry-btn:hover {
     }
 }
 @media(max-width: 600px) {
+    .welcome-text-desc {
+        font-size: 18px;
+    }
     h1.home-title {
         font-size: 30px;
     }
