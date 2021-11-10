@@ -247,9 +247,9 @@ ul.step-progress > li.active > small {
     text-align: center;
     line-height: 46px;
 }
-#fieldset-2 .input-field:not(.active){
+/* #fieldset-2 .input-field:not(.active){
     display: none;
-}
+} */
 button.btn.disabledBtn {
     /* pointer-events: none; */
     opacity: 0.5;

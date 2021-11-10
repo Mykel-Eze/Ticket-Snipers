@@ -24,6 +24,10 @@
         </div>
         <form action="/dashboard" class="col s12 m10 offset-m1 l6 offset-l3" id="signup-form">
             <div class="col s12 pad0" id="fieldset-1">
+                <div class="col s12 form-title-txt">
+                    <h4>My Contact Information</h4>
+                    <span>Your information will remail 100% safe, private, and secure.</span>
+                </div>
                 <div class="input-field col s12 m6">
                     <input id="first_name" name="first_name" type="text" class="">
                     <label for="first_name">First Name</label>
@@ -53,7 +57,13 @@
                     </div>
                 </div>
 
-                <div class="col s12">
+                <div class="col s12 form-footer-txt">
+                    <span>
+                        We recognize this email address. this ticket will be added to your pre-existing acount.
+                    </span>
+                </div>
+
+                <div class="col s12" id="continue-btn-wrapper-1">
                     <div class="flex-div justify-content-btw form-links-cont">
                         <div class="get-started-home">
                             Got an account?
@@ -67,71 +77,183 @@
             </div>
             <div class="col s12 pad0 hidden" id="fieldset-2">
                 <div id="inp-field-wrapper">
-                    <div class="input-field active col s12 m12">
-                        <select class="short-inp" id="ticket-type-received" name="ticket-type-received">
-                            <option value="" price="0" selected disabled>Type of Ticket(s) Received</option>
-                            <option value="Cell Phone" price="200">Cell Phone</option>
-                            <option value="Seat Belt" price="150">Seat Belt</option>
-                            <option value="Red Light (Officer Issued)" price="100">Red Light (Officer Issued)</option>
-                            <option value="Red Light (Camera)" price="210">Red Light (Camera)</option>
-                            <option value="Speeding" price="200">Speeding</option>
-                            <option value="Stop Sign Violation" price="220">Stop Sign Violation</option>
-                            <option value="Lane Violation" price="150">Lane Violation</option>
-                            <option value="Carpool Violation" price="100">Carpool Violation</option>
-                            <option value="Other CA Traffic Ticket" price="120">Other CA Traffic Ticket</option>
-                        </select> 
-                        <img src="../assets/images/ticket-id.svg" alt="icon" class="input-icons">
-                    </div>
-                    <div class="input-field col s12 m12">
-                        <select class="short-inp" id="delivery-days" name="delivery-days">
-                            <option value="" price="0" selected disabled>Expected Delievery Days</option>
-                            <option value="Same Day" price="30">Same Day Delivery Extra $30</option>
-                            <option value="Next Day" price="20">Next Day Delivery Extra $20</option>
-                            <option value="5 Days" price="10">Five Day Delivery Extra $10</option>
-                            <option value="10 Days" price="0">No Rush (10 Day Delivery)</option>
-                        </select> 
-                        <img src="../assets/images/date.svg" alt="icon" class="input-icons">
-                    </div>
-                    <div class="input-field col s12 m12">
-                        <input id="ticket-due-date" name="ticket-date" type="text" class="datepicker" placeholder="Ticket Due Date">
-                        <!-- <label for="ticket-due-date">Ticket Due Date</label> -->
-                        <img src="../assets/images/date.svg" alt="icon" class="input-icons">
-                    </div>
-                    <div class="input-field file-field col s12 m12">
-                        <div class="btn">
-                            <input type="file" name="citation-upload">
+                    <div class="citation-block" id="citation-block-1">
+                        <div class="col s12 form-title-txt">
+                            <h4>Type of Ticket Received</h4>
+                            <span>You can select more one violations</span>
                         </div>
-                        <div class="file-path-wrapper">
-                            <input class="file-path" id="citation-upload" type="text" placeholder="Citation Upload">
-                            <img src="../assets/images/picture.svg" alt="icon" class="input-icons">
-                            <!-- <label for="citation-upload"><small>Choose a file (PDF, JPEG, PNG)</small></label> -->
-                            <!-- <div class="calculate-savings-div">
-                                <router-link to="#" class="calculate-savings-link pry-color">Calculate your savings?</router-link>
-                            </div> -->
+                        <div class="col s12 option-details-wrapper">
+                            <div class="options-wrapper">
+                                <label class="option-block">
+                                    <input type="checkbox" name="ticket_type" value="Cell Phone" checked="checked"/>
+                                    <div></div>
+                                    <span class="truncate">Cell Phone</span>
+                                </label>
+                                <label class="option-block">
+                                    <input type="checkbox" name="ticket_type" value="Stop Sign Violation"/>
+                                    <div></div>
+                                    <span class="truncate">Stop Sign Violation</span>
+                                </label>
+                                <label class="option-block">
+                                    <input type="checkbox" name="ticket_type" value="Seat Belt"/>
+                                    <div></div>
+                                    <span class="truncate">Seat Belt</span>
+                                </label>
+                                <label class="option-block">
+                                    <input type="checkbox" name="ticket_type" value="Lane Violation"/>
+                                    <div></div>
+                                    <span class="truncate">Lane Violation</span>
+                                </label>
+                                <label class="option-block">
+                                    <input type="checkbox" name="ticket_type" value="Red Light (Officer Issued)"/>
+                                    <div></div>
+                                    <span class="truncate">Red Light (Officer Issued)</span>
+                                </label>
+                                <label class="option-block">
+                                    <input type="checkbox" name="ticket_type" value="Carpool Violation"/>
+                                    <div></div>
+                                    <span class="truncate">Carpool Violation</span>
+                                </label>
+                                <label class="option-block">
+                                    <input type="checkbox" name="ticket_type" value="Speeding"/>
+                                    <div></div>
+                                    <span class="truncate">Speeding</span>
+                                </label>
+                                <label class="option-block">
+                                    <input type="checkbox" name="ticket_type" value="Speeding Over 100MPH"/>
+                                    <div></div>
+                                    <span class="truncate">Speeding Over 100MPH</span>
+                                </label>
+                                <label class="option-block">
+                                    <input type="checkbox" name="ticket_type" value="Red Light (Camera)"/>
+                                    <div></div>
+                                    <span class="truncate">Red Light (Camera)</span>
+                                </label>
+                                <label class="option-block">
+                                    <input type="checkbox" name="ticket_type" value="Other CA Traffic Ticket"/>
+                                    <div></div>
+                                    <span class="truncate">Other CA Traffic Ticket</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="citation-block" id="citation-block-2">
+                        <div class="col s12 form-title-txt">
+                            <h4>Expected defense document delivery date</h4>
+                            <span>Select expected delivery Day</span>
+                        </div>
+                        <div class="col s12 option-details-wrapper">
+                            <div class="options-wrapper">
+                                <label class="option-block">
+                                    <input type="radio" name="expected-defense" value="$30 - Same Day Delivery" checked="checked" required />
+                                    <div></div>
+                                    <span class="truncate">$30 - Same Day Delivery</span>
+                                </label>
+                                <label class="option-block">
+                                    <input type="radio" name="expected-defense" value="$20 - Next Day Delivery" required />
+                                    <div></div>
+                                    <span class="truncate">$20 - Next Day Delivery </span>
+                                </label>
+                                <label class="option-block">
+                                    <input type="radio" name="expected-defense" value="$10 - Five Day Delivery" required />
+                                    <div></div>
+                                    <span class="truncate">$10 - Five Day Delivery</span>
+                                </label>
+                                <label class="option-block">
+                                    <input type="radio" name="expected-defense" value="No Rush (10 Day Delivery)" required />
+                                    <div></div>
+                                    <span class="truncate">No Rush (10 Day Delivery)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="citation-block" id="citation-block-3">
+                        <div class="col s12 form-title-txt">
+                            <h4>Ticket Due Date</h4>
+                            <span>Select on the calendar ticket due date</span>
+                        </div>
+                        <div class="col s12 option-details-wrapper">
+                            <div class="input-field col s12 m12 pad0 mag-0">
+                                <input id="ticket-due-date" name="ticket-date" type="text" class="datepicker" placeholder="Ticket Due Date">
+                                <!-- <label for="ticket-due-date">Ticket Due Date</label> -->
+                                <img src="../assets/images/date.svg" alt="icon" class="input-icons">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="citation-block" id="citation-block-4">
+                        <div class="col s12 form-title-txt">
+                            <h4>Upload the ticket your recieved</h4>
+                            <span> PDF, JPEG, PNG</span>
+                        </div>
+                        <div class="col s12 option-details-wrapper">
+                            <div class="input-field file-field col s12 m12 pad0 mag-0">
+                                <div class="btn">
+                                    <input type="file" name="citation-upload">
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path" id="citation-upload" type="text" placeholder="Citation Upload">
+                                    <img src="../assets/images/picture.svg" alt="icon" class="input-icons">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col s12">
+                <div class="col s12" id="continue-btn-wrapper-2">
                     <div class="flex-div justify-content-btw form-links-cont">
-                        <div class="get-started-home">
-                            <div>
-                                <button type="button" id="continue-btn" class="submit-btn pry-btn btn">Next</button>
-                            </div>
-                            <div>
-                                Got an account?
-                                <a href="#" class="pry-color" @click="selectTab('login-block')"><span>Log in</span></a>
-                            </div>
-                        </div>
-                        <div>
+                        <div class="">
                             <div class="price-box">
                                 $<span id="price-box-figure">0</span>
                             </div>
+                            <a class='dropdown-trigger pry-color' href='#' data-target='savings-breakdown'>Calculate your savings here</a>
+
+                            <!-- Dropdown Structure -->
+                            <ul id='savings-breakdown' class='dropdown-content'>
+                                <li class="dp-title-bar">
+                                    <span>Calculate  your savings here</span>
+                                </li>
+                                <li class="dp-title">
+                                    <h4>Financial benefit breakedown</h4>
+                                </li>
+                                <li class="divider" tabindex="-1"></li>
+                                <li class="nesting-li">
+                                    <ul class="nested-ul">
+                                        <li class="flex-div">
+                                            <span class="option-txt">Service Fee</span>
+                                            <span class="answer-txt pry-color">$55</span>
+                                        </li>
+                                        <li class="flex-div">
+                                            <span class="option-txt">Legal Help</span>
+                                            <span class="answer-txt pry-color">$250</span>
+                                        </li>
+                                        <li class="flex-div">
+                                            <span class="option-txt">Ticket Fee</span>
+                                            <span class="answer-txt pry-color">$250- $500</span>
+                                        </li>
+                                        <li class="flex-div">
+                                            <span class="option-txt">Insurance Increase Higher rates for 3 years</span>
+                                            <span class="answer-txt pry-color">$800&nbsp;-&nbsp;$1200</span> 
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="divider" tabindex="-1"></li>
+                                <li class="dp-footer">
+                                    <h4 class="pry-color">Save over $1000</h4>
+                                    <span>by using TicketSniper.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button type="button" id="continue-btn" class="submit-btn pry-btn btn">Next</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col s12 pad0 hidden" id="fieldset-3">
+                <div class="col s12 form-title-txt flex-div">
+                    <h4>Payment&nbsp;Information</h4>
+                    <img src="../assets/images/cards-brands.png" alt="cards" class="cards-brands">
+                </div>
                 <div class="input-field col s12 m6">
                     <input id="card_first_name" name="card_first_name" type="text" class="">
                     <label for="card_first_name">First Name</label>
@@ -142,14 +264,9 @@
                     <label for="card_last_name">Last Name</label>
                     <img src="../assets/images/man.svg" alt="icon" class="input-icons">
                 </div>
-                <div class="input-field col s12 m12">
+                <div class="input-field col s12 m6">
                     <input id="credit_card_number" name="credit_card_number" type="tel" class="credit-card">
                     <label for="credit_card_number">Credit Card Number</label>
-                    <img src="../assets/images/card.svg" alt="icon" class="input-icons">
-                </div>
-                <div class="input-field col s12 m6">
-                    <input id="card_exp_date" name="card_exp_date" type="text" class="" maxlength="5">
-                    <label for="card_exp_date">Exp Date <small>(MM/YY)</small></label>
                     <img src="../assets/images/card.svg" alt="icon" class="input-icons">
                 </div>
                 <div class="input-field col s12 m6">
@@ -157,11 +274,57 @@
                     <label for="cvv">CVV</label>
                     <img src="../assets/images/card.svg" alt="icon" class="input-icons">
                 </div>
+                <div class="input-field col s12 m6">
+                    <input id="card_exp_month" name="card_exp_month" type="text" class="" maxlength="5">
+                    <label for="card_exp_month">Exp Month <small>(MM)</small></label>
+                    <img src="../assets/images/card.svg" alt="icon" class="input-icons">
+                </div>
+                <div class="input-field col s12 m6">
+                    <input id="card_exp_year" name="card_exp_year" type="text" class="" maxlength="5">
+                    <label for="card_exp_year">Exp Year <small>(YY)</small></label>
+                    <img src="../assets/images/card.svg" alt="icon" class="input-icons">
+                </div>
 
                 <div class="col s12">
                     <div class="flex-div justify-content-btw form-links-cont">
-                        <div class="get-started-home cards-brands-div">
-                            <img src="../assets/images/cards-brands.png" alt="cards" class="cards-brands">
+                        <div class="text-center-xs">
+                            <span class="ts-fee">Ticket Snipers Fee <b>$179</b></span> <br />
+                            <a class='dropdown-trigger pry-color' href='#' data-target='savings-breakdown-2'>Calculate your savings here</a>
+                            <!-- Dropdown Structure -->
+                            <ul id='savings-breakdown-2' class='dropdown-content'>
+                                <li class="dp-title-bar">
+                                    <span>Calculate  your savings here</span>
+                                </li>
+                                <li class="dp-title">
+                                    <h4>Financial benefit breakedown</h4>
+                                </li>
+                                <li class="divider" tabindex="-1"></li>
+                                <li class="nesting-li">
+                                    <ul class="nested-ul">
+                                        <li class="flex-div">
+                                            <span class="option-txt">Service Fee</span>
+                                            <span class="answer-txt pry-color">$55</span>
+                                        </li>
+                                        <li class="flex-div">
+                                            <span class="option-txt">Legal Help</span>
+                                            <span class="answer-txt pry-color">$250</span>
+                                        </li>
+                                        <li class="flex-div">
+                                            <span class="option-txt">Ticket Fee</span>
+                                            <span class="answer-txt pry-color">$250- $500</span>
+                                        </li>
+                                        <li class="flex-div">
+                                            <span class="option-txt">Insurance Increase Higher rates for 3 years</span>
+                                            <span class="answer-txt pry-color">$800&nbsp;-&nbsp;$1200</span> 
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="divider" tabindex="-1"></li>
+                                <li class="dp-footer">
+                                    <h4 class="pry-color">Save over $1000</h4>
+                                    <span>by using TicketSniper.com</span>
+                                </li>
+                            </ul>
                         </div>
                         <div>
                             <button type="submit" class="submit-btn pry-btn btn disabledBtn">Submit</button>
@@ -261,6 +424,11 @@ export default {
             autoClose: true
         });
 
+        var elemsDropdown = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(elemsDropdown, {
+            constrainWidth: false
+        });
+
         //Stepforms Toggles Functions
 
         // Check if all fields are filled in "Fieldset-1"
@@ -276,31 +444,38 @@ export default {
         //Stepforms Toggles
 
         $('#fieldset-1').on('click', 'button.submit-btn.activatedBtn', function() {            
-            $("#fieldset-1").slideUp();
+            $("#continue-btn-wrapper-1").slideUp();
             $("#fieldset-2").slideDown();
             $("li.step-2").addClass("active");
             $("ul.step-progress .progress .determinate").width("50%");
         });
-        
-        $("#continue-btn").click(function(){
-            if($('#inp-field-wrapper > .input-field.active').is(":last-child")){
-                $("#fieldset-2").slideUp();
-                $("#fieldset-3").slideDown();
-                $("li.step-3").addClass("active");
-                $("ul.step-progress .progress .determinate").width("98%");
-            } else {
-                // Continue Button Function
-                var inpField = $("#fieldset-2 .input-field.active");
 
-                $('#fieldset-2 .input-field').removeClass('active');
-                inpField.next().addClass('active');
-
-                if($('#inp-field-wrapper > .input-field.active').is(":last-child")){
-                    $(this).text("Continue");
-                    this.fieldset3_checker();
-                }
-            }
+        $('#fieldset-2').on('click', '#continue-btn', function() {            
+            $("#continue-btn-wrapper-2").slideUp();
+            $("#fieldset-3").slideDown();
+            $("li.step-3").addClass("active");
+            $("ul.step-progress .progress .determinate").width("98%");
         });
+        
+        // $("#continue-btn").click(function(){
+        //     if($('#inp-field-wrapper > .input-field.active').is(":last-child")){
+        //         $("#fieldset-2").slideUp();
+        //         $("#fieldset-3").slideDown();
+        //         $("li.step-3").addClass("active");
+        //         $("ul.step-progress .progress .determinate").width("98%");
+        //     } else {
+        //         // Continue Button Function
+        //         var inpField = $("#fieldset-2 .input-field.active");
+
+        //         $('#fieldset-2 .input-field').removeClass('active');
+        //         inpField.next().addClass('active');
+
+        //         if($('#inp-field-wrapper > .input-field.active').is(":last-child")){
+        //             $(this).text("Continue");
+        //             this.fieldset3_checker();
+        //         }
+        //     }
+        // });
         $("ul.step-progress").click(function(){
             $("#fieldset-3").slideUp();
             $("#fieldset-2").slideUp();
@@ -357,6 +532,7 @@ export default {
 </script>
 
 <style src="../assets/css/auth.css" scoped></style>
+<style src="../assets/css/signup.css" scoped></style>
 
 <style>
 form#signup-form .select-wrapper input.select-dropdown {
@@ -389,10 +565,10 @@ form#signup-form li:not(.disabled) [type="checkbox"]:checked+span:not(.lever):be
     border-bottom-color: var(--pry-color);
 }
 form#signup-form .modal.datepicker-modal.open {
-    position: absolute;
+    position: fixed;
     width: 100%;
     border-radius: 16px;
-    top: -10px !important;
+    top: 10% !important;
 }
 form#signup-form .modal.datepicker-modal.open + .modal-overlay {
     background: transparent;
@@ -430,7 +606,15 @@ div#datepicker-title-om > button {
     height: 25px;
     background: transparent !important;
 }
+.dropdown-content.select-dropdown li>a, .dropdown-content.select-dropdown li>span {
+    color: var(--pry-color) !important;
+}
 form#signup-form .datepicker-controls {
     align-items: center;
+}
+@media(min-width: 601px) {
+    form#signup-form .datepicker-modal {
+        max-width: 390px !important;
+    }
 }
 </style>

@@ -1,0 +1,189 @@
+.form-title-txt {
+    margin-bottom: 12px;
+}
+.form-title-txt h4 {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+.form-title-txt span, .form-footer-txt {
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(2, 34, 83, 0.399038);
+}
+.form-footer-txt {
+    margin: 8px 0 15px;
+}
+.form-links-cont {
+    align-items: center;
+}
+
+div#fieldset-2 {
+    margin-top: 30px;
+}
+.citation-block {
+    float: left;
+    padding: 30px 0 20px;
+    border-top: 1px dotted;
+    width: 100%;
+}
+
+form#signup-form #fieldset-2 label {
+    left: 0;
+    opacity: 1;
+}
+.option-details-wrapper {
+    margin: 20px 0 30px;
+}
+.options-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+label.option-block {
+    height: 48px;
+    background-color: #E9F0FD;
+    color: var(--pry-color);
+    box-shadow: none;
+    padding: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+    line-height: 48px;
+}
+label.option-block > span {
+    color: #8D99AE;
+    position: relative;
+}
+label.option-block > input{ 
+    visibility: hidden;
+    position: absolute;
+}
+label.option-block > input:checked + div {
+    border: 1px solid white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 4px;
+    background-color: var(--sec-color);
+}
+label.option-block > input:checked + div + span {
+    color: white;
+}
+
+#fieldset-3 {
+    float: left;
+    padding: 30px 0 20px !important;
+    border-top: 1px dotted;
+    width: 100%;
+}
+/* #continue-btn-wrapper-2 {
+    margin-bottom: 50px;
+} */
+#fieldset-3 .get-started-home.cards-brands-div {
+    display: block;
+}
+#fieldset-3 .form-title-txt.flex-div {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+img.cards-brands {
+    width: 45%;
+}
+#fieldset-3 .form-links-cont {
+    margin-top: 20px !important;
+    float: left;
+    width: 100%;
+}
+a.dropdown-trigger.pry-color {
+    line-height: 13px;
+    text-decoration-line: underline;
+    font-size: 11px;
+}
+.ts-fee {
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(2, 34, 83, 0.399038);
+}
+
+ul#savings-breakdown, ul#savings-breakdown-2 {
+    color: var(--pry-color);
+    max-width: 200px;
+}
+ul#savings-breakdown li, ul#savings-breakdown-2 li {
+    font-size: 10px;
+    min-height: auto;
+}
+ul#savings-breakdown li:hover, ul#savings-breakdown-2 li:hover {
+    background-color: transparent;
+}
+ul#savings-breakdown li.dp-title-bar, ul#savings-breakdown-2 li.dp-title-bar {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 13px;
+    color: white;
+    background: var(--pry-color);
+    height: 30px;
+    min-height: 30px;
+    line-height: 40px;
+    padding: 0 10px !important;
+}
+ul#savings-breakdown li span, ul#savings-breakdown-2 li span {
+    font-size: 10px !important;
+    padding: 0!important;
+}
+ul#savings-breakdown li.dp-title-bar span, ul#savings-breakdown-2 li.dp-title-bar span {
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 30px;
+}
+li.dp-title, li.dp-footer {
+    padding: 10px;
+}
+/* li.dp-footer {
+    padding-bottom: 15px;
+} */
+li.dp-title h4, li.dp-footer h4 {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0;
+    margin: 0;
+}
+ul.nested-ul .flex-div{
+    align-items: center;
+    justify-content: space-between;
+}
+span.answer-txt.pry-color {
+    color: var(--pry-color) !important;
+    flex-grow: 1;
+    text-align: right;
+}
+ul.nested-ul li {
+    padding: 5px 10px;
+}
+
+@media(max-width: 600px) {
+    .options-wrapper {
+        grid-template-columns: 100%;
+    }
+    .flex-div.form-links-cont > div {
+        width: 80%;
+    }
+    .flex-div.form-links-cont > div:nth-child(2){
+        margin-bottom: 20px;
+    }
+    #fieldset-3 .form-title-txt.flex-div {
+        flex-direction: column;
+    }
+    #fieldset-3 .form-title-txt.flex-div > h4 {
+        margin-bottom: 10px;
+    }
+}
