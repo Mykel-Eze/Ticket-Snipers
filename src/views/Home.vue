@@ -562,6 +562,16 @@ export default {
 
 <style src="../assets/css/home.css" scoped></style>
 
+<style scoped>
+#home  {
+  height: auto;
+}
+#home > .row {
+    top: 0;
+    transform: none;
+}
+</style>
+
 <style>
 .stepform-div .select-wrapper input.select-dropdown{
   border-bottom: 1px solid transparent !important;
