@@ -46,7 +46,7 @@
                     </ul>
                 </div>
                 <div class="col s12 center welcome-btn-wrapper">
-                    <router-link to="/auth-form#login-form" class="pry-bg pry-btn">LOGIN AND TELL US YOUR STORY</router-link>
+                    <router-link to="/login" class="pry-bg pry-btn">LOGIN AND TELL US YOUR STORY</router-link>
                 </div>
             </div>
         </div>

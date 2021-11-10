@@ -22,7 +22,7 @@
                 </div>
             </ul>
         </div>
-        <form action="/dashboard" class="col s12 m10 offset-m1 l6 offset-l3" id="signup-form">
+        <form action="/welcome" class="col s12 m10 offset-m1 l6 offset-l3" id="signup-form">
             <div class="col s12 pad0" id="fieldset-1">
                 <div class="col s12 form-title-txt">
                     <h4>My Contact Information</h4>

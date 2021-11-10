@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="login-block">
         <h4 class="center auth-title">
             <span class="sec-color block-xs">Welcome back,</span> Login in to continue
         </h4>
