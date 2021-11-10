@@ -37,7 +37,7 @@
                                             <span class="">Red Light Camera</span>
                                         </label>
                                         <label class="option-block">
-                                            <input type="radio" name="option" value="Red Light(Officer Isssued)" checked="checked" required />
+                                            <input type="radio" name="option" value="Red Light(Officer Isssued)" required />
                                             <div></div>
                                             <span class="">Red Light(Officer Isssued)</span>
                                         </label>
@@ -47,7 +47,7 @@
                                             <span class="">Carpool</span>
                                         </label>
                                         <label class="option-block">
-                                            <input type="radio" name="option" value="Cell Phone" checked="checked" required />
+                                            <input type="radio" name="option" value="Cell Phone" required />
                                             <div></div>
                                             <span class="">Cell Phone</span>
                                         </label>
