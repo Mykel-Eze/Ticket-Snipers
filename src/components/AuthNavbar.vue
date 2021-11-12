@@ -22,17 +22,18 @@
 
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
-                        <router-link to="/about" class="" @click="scrollToTop()">About</router-link>
+                        <router-link to="/tickets" class="" @click="scrollToTop()">Ticket List</router-link>
                     </li>
                     <li>
                         <router-link to="/how-it-works" class="" @click="scrollToTop()">How it Works</router-link>
                     </li>
                     <li>
-                        <router-link to="/tickets" class="" @click="scrollToTop()">Tickets</router-link>
-                    </li>
-                    <li>
                         <router-link to="/pricing" class="" @click="scrollToTop()">Pricing</router-link>
                     </li>
+                    <li>
+                        <router-link to="/about" class="" @click="scrollToTop()">About</router-link>
+                    </li>
+                    
                     <li>
                         <a style="cursor: pointer;">
                             <button class="nav-pry-btn btn pointer">

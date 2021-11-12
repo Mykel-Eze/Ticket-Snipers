@@ -11,9 +11,11 @@
                         </router-link>
                     </div>
                     <div class="btn-wrapper flex-div">
-                        <button class="sec-btn btn hover-scale modal-trigger" data-target="eligibility-calculator">
-                            Can My Case Be Beat?
-                        </button>
+                        <router-link to="/calculator" custom v-slot="{ navigate }">
+                            <button class="sec-btn btn hover-scale" @click="navigate" role="link">
+                                Can My Case Be Beat?
+                            </button>
+                        </router-link>
                         <router-link to="/auth-page" custom v-slot="{ navigate }">
                             <button @click="navigate" role="link" class="pry-btn btn white-bg-btn hover-scale">
                                 Fight MY Ticket <img src="../assets/images/target-icon-blue.svg" alt="icon">

@@ -10,9 +10,11 @@
                             <span>Learn More with a Free Ticket Review</span>
                         </a>
                     </div>
-                    <button class="pry-btn btn white-bg-btn modal-trigger" data-target="eligibility-calculator">
-                        Can My Case Be Beat? <img src="../assets/images/calculator-blue.svg" alt="icon">
-                    </button>
+                    <router-link to="/calculator" custom v-slot="{ navigate }">
+                        <button class="pry-btn btn white-bg-btn" @click="navigate; scrollToTop()" role="link" data-target="eligibility-calculator">
+                            Can My Case Be Beat? <img src="../assets/images/calculator-blue.svg" alt="icon">
+                        </button>
+                    </router-link>
                 </div>
             </div>
         </div>

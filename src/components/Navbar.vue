@@ -70,16 +70,16 @@
             <router-link to="/" class="sidenav-close" @click="scrollToTop()">Home</router-link>
         </li>
         <li>
-            <router-link to="/about" class="sidenav-close" @click="scrollToTop()">About</router-link>
+            <router-link to="/tickets" class="sidenav-close" @click="scrollToTop()">Ticket List</router-link>
         </li>
         <li>
             <router-link to="/how-it-works" class="sidenav-close" @click="scrollToTop()">How it Works</router-link>
         </li>
         <li>
-            <router-link to="/tickets" class="sidenav-close" @click="scrollToTop()">Tickets</router-link>
+            <router-link to="/pricing" class="sidenav-close" @click="scrollToTop()">Pricing</router-link>
         </li>
         <li>
-            <router-link to="/pricing" class="sidenav-close" @click="scrollToTop()">Pricing</router-link>
+            <router-link to="/about" class="sidenav-close" @click="scrollToTop()">About</router-link>
         </li>
         <li class="hire-us-li hul-1">
             <router-link to="/auth-page" custom v-slot="{ navigate }">
@@ -88,7 +88,7 @@
                 </button>
             </router-link>
         </li>
-        <li class="hire-us-li">
+        <li class="hire-us-li hul-2">
             <a href="/auth-page#login-block">
                 <button class="nav-pry-btn-2 btn pointer">Sign in</button>
             </a>

@@ -172,6 +172,10 @@ nav .brand-logo {
     .sidenav li.hire-us-li.hul-1 {
         bottom: 135px;
     }
+    .sidenav li.hire-us-li.hul-2 {
+        width: 100%;
+        left: 0;
+    }
 }
 @media(max-width: 600px) {
     nav.main-nav {

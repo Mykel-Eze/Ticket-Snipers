@@ -41,6 +41,13 @@ export default {
     mounted() {
         var elemsTabs = document.querySelectorAll('.tabs');
         M.Tabs.init(elemsTabs);
+
+        this.scrollToTop();
+    },
+    methods:{
+         scrollToTop() {
+            window.scrollTo(0, 0);
+        }
     }
 }
 </script>

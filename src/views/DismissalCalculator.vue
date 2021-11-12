@@ -196,7 +196,8 @@ export default {
         $(".county-list li").click(function(){
             var selectedCounty = $(this).text()
             $("#search-county").val(selectedCounty);
-        })
+        }),
+        this.scrollToTop();
     },
     methods: {
         searchFunction() {
@@ -218,6 +219,9 @@ export default {
                     li[i].style.display = "none";
                 }
             }
+        },
+        scrollToTop() {
+            window.scrollTo(0, 0);
         }
     }
 }
